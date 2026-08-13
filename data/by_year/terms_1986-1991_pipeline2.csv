@@ -1,0 +1,153 @@
+rank,term,n_tokens,freq
+1,"string theory",2,40
+2,"field theory",2,28
+3,"two dimensional",2,21
+4,"space time",2,21
+5,"matrix model",2,20
+6,"conformal field",2,17
+7,"gauge theory",2,17
+8,"chern simons",2,17
+9,"banach space",2,15
+10,"conformal field theories",3,14
+11,"classical solutions",2,14
+12,"three dimensions",2,13
+13,"correlation functions",2,13
+14,"physical states",2,12
+15,"virasoro constraints",2,12
+16,"target space",2,12
+17,"non trivial",2,11
+18,"matter fields",2,11
+19,"superstring theory",2,10
+20,"central charge",2,10
+21,"two dimensions",2,10
+22,"black hole",2,10
+23,"partition function",2,10
+24,"non perturbative",2,10
+25,"quantum gravity",2,10
+26,"four dimensions",2,10
+27,"kac moody algebras",3,9
+28,"non linear",2,9
+29,"hamiltonian structure",2,9
+30,"moduli space",2,9
+31,"lie algebra",2,9
+32,"two dimensional black hole",4,9
+33,"partition functions",2,9
+34,"effective string",2,9
+35,"continuum limit",2,9
+36,"low energy",2,8
+37,"charged black hole",3,8
+38,"perturbation theory",2,8
+39,"wess zumino",2,8
+40,"yang mills",2,8
+41,"string theories",2,8
+42,"vertex operators",2,8
+43,"neveu schwarz",2,8
+44,"kp hierarchy",2,8
+45,"self dual",2,8
+46,"conformal field theory",3,8
+47,"matrix models",2,8
+48,"invariant under",2,8
+49,"brst cohomology",2,8
+50,"first order",2,7
+51,"group symmetries",2,7
+52,"general relativity",2,7
+53,"differential equations",2,7
+54,"topological gravity",2,7
+55,"minimal models",2,7
+56,"kdv hierarchies",2,7
+57,"parameter family",2,7
+58,"field theories",2,7
+59,"critical points",2,7
+60,"critical point",2,7
+61,"ising model",2,6
+62,"tree level",2,6
+63,"two dimensional quantum gravity",4,6
+64,"infinite dimensional quantum",3,6
+65,"gauge theories",2,6
+66,"2d quantum gravity",3,6
+67,"yang baxter",2,6
+68,"highest weight",2,6
+69,"coulomb gas",2,6
+70,"world sheet",2,6
+71,"modular invariant",2,6
+72,"string equation",2,6
+73,"affine toda",2,6
+74,"minimal models coupled",3,6
+75,"quantum group",2,6
+76,"three dimensional",2,6
+77,"landau ginzburg",2,6
+78,"bethe ansatz",2,6
+79,"topological field theory",3,6
+80,"wzw models",2,6
+81,"virasoro algebra",2,5
+82,"area preserving diffeomorphisms",3,5
+83,"coupling constant",2,5
+84,"antisymmetric tensor",2,5
+85,"random surfaces",2,5
+86,"ghost number",2,5
+87,"liouville theory",2,5
+88,"three point correlation functions",4,5
+89,"renormalization group flow",3,5
+90,"non abelian",2,5
+91,"point correlation functions",3,5
+92,"path integral",2,5
+93,"tau function",2,5
+94,"gauge group",2,5
+95,"hilbert space",2,5
+96,"hausdorff dimension",2,5
+97,"non linear sigma model",4,4
+98,"double scaling limit",3,4
+99,"hermitian matrix model",3,4
+100,"short distance",2,4
+101,"gravity coupled",2,4
+102,"two dimensional quantum",3,4
+103,"quantum mechanics",2,4
+104,"effective action",2,4
+105,"cosmological constant",2,4
+106,"double scaling",2,4
+107,"2d gravity",2,4
+108,"two dimensional conformal field theory",5,4
+109,"quantum field theory",3,4
+110,"supersymmetric sigma model",3,4
+111,"sigma models",2,4
+112,"sigma model",2,3
+113,"models coupled",2,3
+114,"heterotic string theory",3,3
+115,"two dimensional quantum gravity coupled",5,3
+116,"closed string theory",3,3
+117,"quantum group symmetries",3,3
+118,"2d gravity coupled",3,3
+119,"two dimensional gravity",3,3
+120,"heterotic string theories",3,3
+121,"quantum mechanical",2,3
+122,"dimensional quantum",2,3
+123,"two dimensional conformal field theories",5,3
+124,"integrable hierarchies",2,3
+125,"four dimensional",2,3
+126,"topological field",2,3
+127,"heterotic string",2,3
+128,"supersymmetric sigma models",3,3
+129,"string vacua",2,3
+130,"lie algebras",2,2
+131,"charged black holes",3,2
+132,"2d quantum",2,2
+133,"kac moody algebra",3,2
+134,"two dimensional conformal",3,2
+135,"phase space",2,2
+136,"quantum field",2,2
+137,"chern simons theory",3,2
+138,"infinite dimensional",2,2
+139,"banach spaces",2,2
+140,"kac moody",2,1
+141,"field theoretic",2,1
+142,"dimensional gravity",2,1
+143,"area preserving",2,1
+144,"quantum gravity coupled",3,1
+145,"free field",2,1
+146,"point functions",2,1
+147,"dimensional black",2,1
+148,"two dimensional conformal field",4,1
+149,"renormalization group",2,1
+150,"three point",2,1
+151,"charged black",2,1
+152,"black holes",2,1

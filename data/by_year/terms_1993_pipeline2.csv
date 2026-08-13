@@ -1,0 +1,3858 @@
+rank,term,n_tokens,freq
+1,"two dimensional",2,348
+2,"field theory",2,300
+3,"standard model",2,265
+4,"string theory",2,188
+5,"low energy",2,156
+6,"quantum gravity",2,144
+7,"ground state",2,133
+8,"first order",2,121
+9,"effective action",2,112
+10,"space time",2,101
+11,"high energy",2,101
+12,"matrix model",2,97
+13,"quantum group",2,97
+14,"leading order",2,97
+15,"two dimensions",2,96
+16,"gauge theory",2,92
+17,"new approach",2,90
+18,"perturbation theory",2,87
+19,"general relativity",2,84
+20,"correlation functions",2,82
+21,"wave functions",2,80
+22,"free energy",2,78
+23,"large scale",2,77
+24,"exact solutions",2,76
+25,"partition function",2,75
+26,"experimental data",2,75
+27,"numerical simulations",2,74
+28,"higher order",2,73
+29,"phase space",2,73
+30,"coupling constant",2,70
+31,"cross section",2,70
+32,"minimal models",2,69
+33,"matrix models",2,67
+34,"boundary conditions",2,67
+35,"zero temperature",2,67
+36,"finite temperature",2,67
+37,"chern simons",2,66
+38,"form factors",2,66
+39,"chiral symmetry",2,65
+40,"renormalization group",2,65
+41,"gauge theories",2,64
+42,"wave function",2,64
+43,"finite dimensional",2,64
+44,"quantum mechanics",2,64
+45,"lattice qcd",2,64
+46,"non local",2,63
+47,"non perturbative",2,62
+48,"scalar fields",2,62
+49,"magnetic field",2,62
+50,"gauge field",2,61
+51,"model independent",2,60
+52,"structure functions",2,59
+53,"moduli space",2,58
+54,"effective theory",2,58
+55,"single particle",2,57
+56,"critical point",2,57
+57,"non abelian",2,57
+58,"matter fields",2,57
+59,"strong coupling",2,57
+60,"phase transition",2,57
+61,"cp violation",2,57
+62,"bound state",2,56
+63,"gauge fields",2,56
+64,"non trivial",2,56
+65,"quark mass",2,56
+66,"quantum fluctuations",2,55
+67,"large class",2,55
+68,"perturbative qcd",2,55
+69,"self consistent",2,55
+70,"four dimensions",2,54
+71,"four dimensional",2,54
+72,"finite size",2,53
+73,"effective potential",2,53
+74,"physical states",2,51
+75,"general solution",2,51
+76,"order parameter",2,51
+77,"final state",2,51
+78,"yang mills",2,50
+79,"loop corrections",2,50
+80,"hilbert space",2,49
+81,"left right",2,49
+82,"structure function",2,49
+83,"parameter space",2,49
+84,"new physics",2,48
+85,"non zero",2,48
+86,"fixed point",2,48
+87,"monte carlo simulations",3,48
+88,"higgs boson",2,48
+89,"classical limit",2,47
+90,"gauge invariance",2,47
+91,"classical solutions",2,46
+92,"infinite number",2,46
+93,"scattering amplitudes",2,46
+94,"new class",2,46
+95,"symmetry breaking",2,46
+96,"cosmological constant",2,46
+97,"mean field",2,46
+98,"mass spectrum",2,46
+99,"cosmological models",2,46
+100,"heavy meson",2,46
+101,"exact solution",2,45
+102,"yukawa couplings",2,45
+103,"three dimensional",2,45
+104,"tree level",2,45
+105,"black hole",2,44
+106,"lattice gauge theory",3,44
+107,"matrix elements",2,44
+108,"early universe",2,44
+109,"sigma models",2,43
+110,"field theories",2,43
+111,"effective lagrangian",2,43
+112,"invariant under",2,43
+113,"lie algebras",2,43
+114,"gauge invariant",2,43
+115,"critical temperature",2,43
+116,"second order",2,43
+117,"gauge group",2,43
+118,"spontaneously broken",2,43
+119,"quark masses",2,43
+120,"form factor",2,42
+121,"special case",2,42
+122,"sigma model",2,42
+123,"electroweak interactions",2,42
+124,"nuclear matter",2,42
+125,"cross sections",2,42
+126,"conformal field theory",3,41
+127,"closed form",2,41
+128,"path integral",2,41
+129,"initial state",2,41
+130,"critical behavior",2,40
+131,"two body",2,40
+132,"upper bound",2,40
+133,"dynamical system",2,40
+134,"central charge",2,40
+135,"qcd sum rules",3,40
+136,"long range",2,40
+137,"low temperature",2,40
+138,"high energies",2,40
+139,"power law",2,40
+140,"distribution function",2,40
+141,"lattice calculation",2,40
+142,"decay rate",2,39
+143,"light mesons",2,39
+144,"conformal field",2,38
+145,"time dependent",2,38
+146,"continuum limit",2,37
+147,"infinite dimensional",2,37
+148,"phase transitions",2,37
+149,"ising model",2,37
+150,"qcd corrections",2,37
+151,"point like",2,36
+152,"non relativistic",2,36
+153,"coherent states",2,36
+154,"critical exponents",2,36
+155,"energy spectrum",2,36
+156,"monte carlo",2,36
+157,"heavy quark",2,36
+158,"einstein equations",2,35
+159,"lie algebra",2,34
+160,"canonical quantization",2,34
+161,"real time",2,34
+162,"gravitational field",2,34
+163,"harmonic oscillator",2,34
+164,"probability distribution",2,34
+165,"chiral symmetry breaking",3,34
+166,"initial conditions",2,34
+167,"power spectrum",2,34
+168,"light cone",2,33
+169,"exactly solvable",2,33
+170,"topological field theory",3,33
+171,"particle physics",2,33
+172,"scalar field",2,33
+173,"hamiltonian formalism",2,33
+174,"mean field theory",3,33
+175,"finite number",2,33
+176,"correlation function",2,33
+177,"green functions",2,32
+178,"differential equations",2,32
+179,"chiral fermions",2,32
+180,"angular momentum",2,32
+181,"three dimensions",2,32
+182,"pair production",2,32
+183,"tan beta",2,32
+184,"integrable systems",2,31
+185,"gauge couplings",2,31
+186,"time evolution",2,31
+187,"spontaneous symmetry breaking",3,31
+188,"energy momentum",2,31
+189,"radiative corrections",2,31
+190,"gauge bosons",2,30
+191,"de sitter",2,30
+192,"nambu jona lasinio model",4,30
+193,"first order phase transition",4,30
+194,"self dual",2,29
+195,"quantum mechanical",2,29
+196,"schwinger model",2,29
+197,"coset models",2,29
+198,"time scale",2,29
+199,"banach space",2,29
+200,"wilson loops",2,29
+201,"two loop",2,29
+202,"gauge field theories",3,29
+203,"short distance",2,29
+204,"domain walls",2,29
+205,"high temperature",2,29
+206,"thermal equilibrium",2,29
+207,"small scale",2,29
+208,"density fluctuations",2,29
+209,"deep inelastic scattering",3,29
+210,"topological charge",2,28
+211,"gravity coupled",2,28
+212,"specific heat",2,28
+213,"non linear",2,28
+214,"correlation length",2,28
+215,"square lattice",2,28
+216,"einstein gravity",2,28
+217,"electric charge",2,28
+218,"grand unification",2,28
+219,"energy density",2,28
+220,"landau ginzburg",2,28
+221,"two types",2,28
+222,"galaxy clusters",2,28
+223,"branching ratio",2,28
+224,"general procedure",2,27
+225,"conformal field theories",3,27
+226,"infty algebra",2,27
+227,"charged particles",2,27
+228,"irreducible representations",2,27
+229,"target space",2,27
+230,"cosmic strings",2,27
+231,"new features",2,27
+232,"beta function",2,27
+233,"bound states",2,27
+234,"axial vector",2,27
+235,"numerical data",2,27
+236,"sum rules",2,27
+237,"two photon",2,27
+238,"bar nu",2,27
+239,"elastic scattering",2,27
+240,"current algebra",2,26
+241,"local density",2,26
+242,"mass generation",2,26
+243,"explicit form",2,26
+244,"differential operators",2,26
+245,"phase structure",2,26
+246,"higgs mass",2,26
+247,"dynamical systems",2,26
+248,"theoretical predictions",2,26
+249,"available data",2,26
+250,"baryon number",2,26
+251,"semileptonic decays",2,26
+252,"superconformal algebra",2,25
+253,"explicit expressions",2,25
+254,"two dimensional dilaton",3,25
+255,"poisson structure",2,25
+256,"quantum electrodynamics",2,25
+257,"hamiltonian systems",2,25
+258,"group su",2,25
+259,"operator algebras",2,25
+260,"tensor product",2,25
+261,"revised version",2,25
+262,"quenched approximation",2,25
+263,"weak coupling",2,25
+264,"spin excitations",2,25
+265,"vacuum structure",2,25
+266,"lowest order",2,25
+267,"scalar sector",2,25
+268,"three point",2,25
+269,"numerical methods",2,25
+270,"quantum numbers",2,25
+271,"initial data",2,25
+272,"quark gluon",2,25
+273,"gamma ray bursts",3,25
+274,"dark matter",2,25
+275,"total cross section",3,25
+276,"gamma colliders",2,25
+277,"mt gev",2,25
+278,"long time",2,24
+279,"discrete time",2,24
+280,"minkowski space",2,24
+281,"gravitational wave",2,24
+282,"explicit solution",2,24
+283,"detailed analysis",2,24
+284,"supersymmetry breaking",2,24
+285,"coupling constants",2,24
+286,"free particle",2,24
+287,"ward identities",2,24
+288,"arbitrary number",2,24
+289,"relativistic particle",2,24
+290,"invited talk",2,24
+291,"phys lett",2,24
+292,"asymptotic behavior",2,24
+293,"fine tuning",2,24
+294,"explicit construction",2,23
+295,"supergravity model",2,23
+296,"schr odinger equation",3,23
+297,"black holes",2,23
+298,"hawking radiation",2,23
+299,"physical properties",2,23
+300,"external fields",2,23
+301,"weak interaction",2,23
+302,"hamiltonian formulation",2,23
+303,"off shell",2,23
+304,"dynamical fermions",2,23
+305,"dirac equation",2,23
+306,"effective hamiltonian",2,23
+307,"low energies",2,23
+308,"string world sheet",3,22
+309,"quantum gravity coupled",3,22
+310,"yang baxter equation",3,22
+311,"higher dimensions",2,22
+312,"riemann surface",2,22
+313,"virasoro algebra",2,22
+314,"open system",2,22
+315,"hopf algebra",2,22
+316,"supersymmetric extension",2,22
+317,"scalar field theory",3,22
+318,"configuration space",2,22
+319,"antisymmetric tensor",2,22
+320,"spin wave",2,22
+321,"total energy",2,22
+322,"global symmetries",2,22
+323,"semi classical",2,22
+324,"scattering amplitude",2,22
+325,"self energy",2,22
+326,"strong constraints",2,22
+327,"excited states",2,22
+328,"hubbard model",2,22
+329,"electroweak symmetry",2,22
+330,"chiral perturbation theory",3,22
+331,"conformal matter",2,21
+332,"discrete states",2,21
+333,"hamiltonian reduction",2,21
+334,"zero modes",2,21
+335,"algebraic structure",2,21
+336,"chern simons term",3,21
+337,"type ii",2,21
+338,"topological gravity",2,21
+339,"invariant mass",2,21
+340,"non compact",2,21
+341,"delta function",2,21
+342,"fundamental representation",2,21
+343,"vertex operators",2,21
+344,"arbitrary level",2,21
+345,"goldstone bosons",2,21
+346,"inflationary universe",2,21
+347,"statistical mechanics",2,21
+348,"spherically symmetric",2,21
+349,"master equation",2,21
+350,"semiclassical approximation",2,21
+351,"parameter family",2,21
+352,"neutrino masses",2,21
+353,"first order parameter",3,21
+354,"fermion masses",2,21
+355,"expectation values",2,21
+356,"data set",2,21
+357,"scaling behavior",2,21
+358,"hadron colliders",2,21
+359,"weak decays",2,21
+360,"loop approximation",2,20
+361,"sum over",2,20
+362,"ashtekar variables",2,20
+363,"conformally invariant",2,20
+364,"back reaction",2,20
+365,"brst cohomology",2,20
+366,"two dimensional black hole",4,20
+367,"2d gravity",2,20
+368,"energy momentum tensor",3,20
+369,"riemann surfaces",2,20
+370,"excitation spectrum",2,20
+371,"scaling limit",2,20
+372,"interacting electrons",2,20
+373,"general formula",2,20
+374,"higgs sector",2,20
+375,"discrete symmetry",2,20
+376,"star formation",2,20
+377,"statistical properties",2,20
+378,"structure formation",2,20
+379,"spectral function",2,20
+380,"cobe data",2,20
+381,"body simulations",2,20
+382,"final states",2,20
+383,"heavy quarks",2,20
+384,"boson masses",2,20
+385,"string tension",2,19
+386,"central extension",2,19
+387,"loop variables",2,19
+388,"special emphasis",2,19
+389,"gravitational field theory",3,19
+390,"calabi yau",2,19
+391,"mass shell",2,19
+392,"path integrals",2,19
+393,"vector boson",2,19
+394,"deformation parameter",2,19
+395,"brst symmetry",2,19
+396,"critical value",2,19
+397,"2d quantum gravity",3,19
+398,"two classes",2,19
+399,"first class",2,19
+400,"higher spin",2,19
+401,"evolution equations",2,19
+402,"vector fields",2,19
+403,"anomalous dimensions",2,19
+404,"spectral parameter",2,19
+405,"schr odinger",2,19
+406,"lower bound",2,19
+407,"self similar",2,19
+408,"stress tensor",2,19
+409,"fixed points",2,19
+410,"magnetic moments",2,19
+411,"positive energy",2,19
+412,"heisenberg model",2,19
+413,"green function",2,19
+414,"constant curvature",2,19
+415,"bethe ansatz",2,19
+416,"two approaches",2,19
+417,"galaxy formation",2,19
+418,"production rate",2,19
+419,"nucleon interaction",2,19
+420,"nearest neighbor",2,19
+421,"heavy baryon",2,19
+422,"sum rule",2,19
+423,"baryon asymmetry",2,19
+424,"mixing angles",2,19
+425,"minimal supersymmetric standard model",4,19
+426,"transfer matrices",2,18
+427,"total number",2,18
+428,"electromagnetic field",2,18
+429,"closed string theory",3,18
+430,"loop level",2,18
+431,"topological field",2,18
+432,"zero curvature",2,18
+433,"simple proof",2,18
+434,"vector spaces",2,18
+435,"non vanishing",2,18
+436,"perturbative expansion",2,18
+437,"edge states",2,18
+438,"periodic boundary conditions",3,18
+439,"low energy spectrum",3,18
+440,"non equilibrium",2,18
+441,"bosonic string theory",3,18
+442,"threshold corrections",2,18
+443,"heavy fermions",2,18
+444,"two dimensional qcd",3,18
+445,"point correlation functions",3,18
+446,"string theories",2,18
+447,"parity violation",2,18
+448,"complete set",2,18
+449,"fluid dynamics",2,18
+450,"loop representation",2,18
+451,"figures available",2,18
+452,"vacuum expectation values",3,18
+453,"non singular",2,18
+454,"yang mills theories",3,18
+455,"theoretical physics",2,18
+456,"yukawa coupling",2,18
+457,"equal time",2,18
+458,"matrix element",2,18
+459,"production mechanism",2,18
+460,"pure su",2,18
+461,"monte carlo algorithm",3,18
+462,"surface brightness",2,18
+463,"gravitational waves",2,18
+464,"few gev",2,18
+465,"numerical calculations",2,18
+466,"radiative decays",2,18
+467,"higgs bosons",2,18
+468,"jet production",2,18
+469,"integral over",2,17
+470,"angular correlation",2,17
+471,"full quantum",2,17
+472,"four point",2,17
+473,"finite lattices",2,17
+474,"commutation relations",2,17
+475,"loop effective action",3,17
+476,"conserved charges",2,17
+477,"value problem",2,17
+478,"non gaussian",2,17
+479,"gravitational potential",2,17
+480,"heat kernel",2,17
+481,"partial differential equations",3,17
+482,"density matrix",2,17
+483,"charged particle",2,17
+484,"magnetic field theory",3,17
+485,"phase diagram",2,17
+486,"quantum groups",2,17
+487,"quantum corrections",2,17
+488,"renormalization group equations",3,17
+489,"spacetime dimensions",2,17
+490,"charge density",2,17
+491,"two sets",2,17
+492,"chiral limit",2,17
+493,"fermion mass",2,17
+494,"gauge coupling",2,17
+495,"agrees well",2,17
+496,"interaction strength",2,17
+497,"finite temperatures",2,17
+498,"scale invariant",2,17
+499,"near threshold",2,17
+500,"loop diagrams",2,17
+501,"first order phase transitions",4,17
+502,"cosmic microwave background anisotropies",4,17
+503,"intermediate mass",2,17
+504,"neutrino mass",2,17
+505,"proton decay",2,17
+506,"short range",2,17
+507,"strong magnetic field",3,17
+508,"random phase",2,17
+509,"many body",2,17
+510,"vector mesons",2,17
+511,"spin dependent",2,17
+512,"meson nucleon",2,17
+513,"decay modes",2,17
+514,"doublet model",2,17
+515,"new invariants",2,16
+516,"supersymmetric extensions",2,16
+517,"fermi gas",2,16
+518,"heterotic string theory",3,16
+519,"curved spacetime",2,16
+520,"simplest case",2,16
+521,"particle masses",2,16
+522,"gauge field theory",3,16
+523,"general relativistic",2,16
+524,"physical interpretation",2,16
+525,"sine gordon",2,16
+526,"quantum group su",3,16
+527,"heisenberg algebra",2,16
+528,"fock space",2,16
+529,"bar psi",2,16
+530,"relativistic quantum",2,16
+531,"wide class",2,16
+532,"strong coupling constant",3,16
+533,"topological properties",2,16
+534,"odd number",2,16
+535,"wilson loop",2,16
+536,"chiral lagrangian",2,16
+537,"tensor potential",2,16
+538,"quantum chains",2,16
+539,"spin chain",2,16
+540,"two loop corrections",3,16
+541,"upper limits",2,16
+542,"two loops",2,16
+543,"long wavelength",2,16
+544,"two dimensional ising model",4,16
+545,"vertex models",2,16
+546,"systematic analysis",2,16
+547,"poisson bracket",2,16
+548,"orthogonal polynomials",2,16
+549,"explicit calculation",2,16
+550,"left right symmetric",3,16
+551,"size dependence",2,16
+552,"nambu jona lasinio",3,16
+553,"density rho",2,16
+554,"numerical simulation",2,16
+555,"pion decay",2,16
+556,"accretion disk",2,16
+557,"spiral galaxies",2,16
+558,"cold dark matter",3,16
+559,"galactic halo",2,16
+560,"neutral meson",2,16
+561,"experimental constraints",2,16
+562,"light quarks",2,16
+563,"light quark",2,16
+564,"hard core",2,16
+565,"random surfaces",2,15
+566,"geometric structure",2,15
+567,"hadronic collisions",2,15
+568,"non unitary",2,15
+569,"kp hierarchies",2,15
+570,"infty symmetry",2,15
+571,"kac moody algebra",3,15
+572,"wheeler dewitt equation",3,15
+573,"natural framework",2,15
+574,"chemical potential",2,15
+575,"supersymmetric quantum",2,15
+576,"arbitrary dimensions",2,15
+577,"conservation laws",2,15
+578,"continuous spectrum",2,15
+579,"necessary conditions",2,15
+580,"static properties",2,15
+581,"physical spectrum",2,15
+582,"field configurations",2,15
+583,"flat space",2,15
+584,"gauge group su",3,15
+585,"semi simple",2,15
+586,"light front",2,15
+587,"dirac operator",2,15
+588,"small perturbations",2,15
+589,"saddle point",2,15
+590,"external magnetic field",3,15
+591,"universality class",2,15
+592,"neutron stars",2,15
+593,"conformal invariance",2,15
+594,"free parameters",2,15
+595,"four fermion",2,15
+596,"non critical",2,15
+597,"vacuum polarization",2,15
+598,"brans dicke",2,15
+599,"transition amplitude",2,15
+600,"spectral properties",2,15
+601,"mass distribution",2,15
+602,"non minimal",2,15
+603,"big bang",2,15
+604,"interacting through",2,15
+605,"supersymmetric standard model",3,15
+606,"energy levels",2,15
+607,"scaling law",2,15
+608,"two components",2,15
+609,"chaotic systems",2,15
+610,"primordial nucleosynthesis",2,15
+611,"cosmic ray",2,15
+612,"lower limit",2,15
+613,"electron positron",2,15
+614,"mixing angle",2,15
+615,"high statistics",2,15
+616,"strongly interacting",2,15
+617,"experimental values",2,15
+618,"rho meson",2,15
+619,"q2 dependence",2,15
+620,"decay rates",2,15
+621,"lep data",2,15
+622,"gamma collisions",2,15
+623,"first principles",2,14
+624,"gluon exchange",2,14
+625,"2d gravity coupled",3,14
+626,"toda models",2,14
+627,"sufficient condition",2,14
+628,"affine lie algebras",3,14
+629,"central charges",2,14
+630,"canonical transformations",2,14
+631,"fusion rules",2,14
+632,"nonlinear sigma models",3,14
+633,"random matrix",2,14
+634,"constraints imposed",2,14
+635,"analytic continuation",2,14
+636,"operator delta",2,14
+637,"dirac particles",2,14
+638,"operator product",2,14
+639,"complete classification",2,14
+640,"infinite set",2,14
+641,"extended version",2,14
+642,"size scaling",2,14
+643,"path integral formalism",3,14
+644,"asymptotic expansion",2,14
+645,"dimensional black holes",3,14
+646,"asymptotically flat",2,14
+647,"loop effective",2,14
+648,"magnetic fields",2,14
+649,"processes like",2,14
+650,"mathematical physics",2,14
+651,"aharonov bohm",2,14
+652,"wilson line",2,14
+653,"analytic calculations",2,14
+654,"special attention",2,14
+655,"chiral symmetries",2,14
+656,"dirac quantization",2,14
+657,"beta functions",2,14
+658,"abelian higgs",2,14
+659,"vector potential",2,14
+660,"dimension four",2,14
+661,"massless scalar",2,14
+662,"aharonov bohm effect",3,14
+663,"toy model",2,14
+664,"fourier transform",2,14
+665,"gauge symmetry",2,14
+666,"operator product expansion",3,14
+667,"fractional quantum hall effect",4,14
+668,"microscopic description",2,14
+669,"spatial distribution",2,14
+670,"gut scale",2,14
+671,"nonperturbative corrections",2,14
+672,"kaluza klein",2,14
+673,"quark matter",2,14
+674,"xy model",2,14
+675,"new feature",2,14
+676,"dimensional qcd",2,14
+677,"anomalous dimension",2,14
+678,"two dimensional electron",3,14
+679,"too small",2,14
+680,"smooth projective",2,14
+681,"radio galaxies",2,14
+682,"during inflation",2,14
+683,"high redshift",2,14
+684,"temperature dependence",2,14
+685,"monte carlo simulation",3,14
+686,"mass difference",2,14
+687,"finite size scaling",3,14
+688,"tau decays",2,14
+689,"wilson fermions",2,14
+690,"proton collisions",2,14
+691,"hartree approximation",2,14
+692,"gluon plasma",2,14
+693,"fermi surface",2,14
+694,"violating asymmetry",2,14
+695,"pattern formation",2,14
+696,"physical observables",2,13
+697,"theta term",2,13
+698,"write down",2,13
+699,"orbifold models",2,13
+700,"black hole solutions",3,13
+701,"curvature singularity",2,13
+702,"chern simons theory",3,13
+703,"power series",2,13
+704,"brst operator",2,13
+705,"boundary condition",2,13
+706,"integrable models",2,13
+707,"tau function",2,13
+708,"explicit expression",2,13
+709,"primary fields",2,13
+710,"duality symmetry",2,13
+711,"kac moody",2,13
+712,"fermionic fields",2,13
+713,"general technique",2,13
+714,"wzw model",2,13
+715,"charged fermions",2,13
+716,"otimes su",2,13
+717,"surface tension",2,13
+718,"free fermion",2,13
+719,"superstring models",2,13
+720,"static quark",2,13
+721,"coherent state",2,13
+722,"expectation value",2,13
+723,"lower bounds",2,13
+724,"hall effect",2,13
+725,"zero mode",2,13
+726,"ground states",2,13
+727,"single parameter",2,13
+728,"regge calculus",2,13
+729,"shell model",2,13
+730,"large nc",2,13
+731,"langevin equation",2,13
+732,"second quantized",2,13
+733,"non universal",2,13
+734,"magnetic flux",2,13
+735,"finite difference",2,13
+736,"euclidean action",2,13
+737,"quantum cosmology",2,13
+738,"domain wall",2,13
+739,"higher dimensional",2,13
+740,"scaling form",2,13
+741,"low momentum",2,13
+742,"long distance",2,13
+743,"mirror symmetry",2,13
+744,"gell mann",2,13
+745,"large scale structure",3,13
+746,"axial current",2,13
+747,"large scale structure formation",4,13
+748,"inflationary models",2,13
+749,"existing data",2,13
+750,"power spectra",2,13
+751,"lepton number",2,13
+752,"velocity fields",2,13
+753,"three nucleon",2,13
+754,"large enough",2,13
+755,"rho omega",2,13
+756,"simeq gev",2,13
+757,"hadronic matrix elements",3,13
+758,"molecular dynamics",2,13
+759,"transverse momentum",2,13
+760,"parton distributions",2,13
+761,"exact diagonalization",2,13
+762,"violating processes",2,13
+763,"decay mode",2,13
+764,"large transverse",2,13
+765,"fermilab tevatron",2,13
+766,"electroweak scale",2,13
+767,"solar neutrino masses",3,13
+768,"gamma events",2,13
+769,"pi0 gamma",2,13
+770,"fermi liquid",2,13
+771,"scaling relations",2,12
+772,"simple argument",2,12
+773,"2d dilaton",2,12
+774,"braid group",2,12
+775,"highest weight representations",3,12
+776,"spin orbit",2,12
+777,"mirror manifolds",2,12
+778,"superconformal theories",2,12
+779,"dilaton field",2,12
+780,"symplectic geometry",2,12
+781,"spin chains",2,12
+782,"wess zumino",2,12
+783,"yang mills theory",3,12
+784,"duality symmetries",2,12
+785,"liouville theory",2,12
+786,"constraint algebra",2,12
+787,"gravitational theories",2,12
+788,"kp hierarchy",2,12
+789,"fundamental group",2,12
+790,"summer school",2,12
+791,"structure constants",2,12
+792,"weakly coupled",2,12
+793,"magnetic monopoles",2,12
+794,"self interactions",2,12
+795,"coadjoint orbits",2,12
+796,"critical dimension",2,12
+797,"anomaly cancellation",2,12
+798,"functional form",2,12
+799,"lattice boltzmann",2,12
+800,"supersymmetric standard",2,12
+801,"spectral density",2,12
+802,"area law",2,12
+803,"event horizon",2,12
+804,"lorentz invariance",2,12
+805,"sine gordon model",3,12
+806,"brownian motion",2,12
+807,"free fermions",2,12
+808,"second order phase transition",4,12
+809,"path integral formulation",3,12
+810,"partial wave",2,12
+811,"field strength",2,12
+812,"non commutative geometry",3,12
+813,"asymptotically free",2,12
+814,"von neumann",2,12
+815,"wilson quarks",2,12
+816,"functional integral",2,12
+817,"dispersion relation",2,12
+818,"vacuum state",2,12
+819,"complex analytic",2,12
+820,"phase space time",3,12
+821,"thermodynamic limit",2,12
+822,"gap equation",2,12
+823,"energy spectra",2,12
+824,"vacuum expectation value",3,12
+825,"physical processes",2,12
+826,"summary talk",2,12
+827,"electroweak sphaleron",2,12
+828,"numerical values",2,12
+829,"explicit formula",2,12
+830,"order phase",2,12
+831,"photon pairs",2,12
+832,"planck scale",2,12
+833,"three main",2,12
+834,"numerical solutions",2,12
+835,"intermediate states",2,12
+836,"spin correlations",2,12
+837,"scattering process",2,12
+838,"coulomb interaction",2,12
+839,"high precision",2,12
+840,"approx gev",2,12
+841,"velocity dispersion",2,12
+842,"small clusters",2,12
+843,"reaction rates",2,12
+844,"central region",2,12
+845,"transition probability",2,12
+846,"electroweak theory",2,12
+847,"neutron proton",2,12
+848,"evolution equation",2,12
+849,"heavy quark mass",3,12
+850,"heavy quark effective theory",4,12
+851,"decay amplitudes",2,12
+852,"deep inelastic",2,12
+853,"decay width",2,12
+854,"branching ratios",2,12
+855,"normal state",2,12
+856,"precision measurements",2,12
+857,"standard model sm",3,12
+858,"supersymmetric particles",2,12
+859,"ell bar nu",3,12
+860,"asymptotic freedom",2,11
+861,"wess zumino witten",3,11
+862,"topological solitons",2,11
+863,"open problems",2,11
+864,"adm mass",2,11
+865,"brst analysis",2,11
+866,"breaking parameters",2,11
+867,"heavy ion",2,11
+868,"non perturbative qcd",3,11
+869,"solvable lattice",2,11
+870,"einstein maxwell",2,11
+871,"green schwarz",2,11
+872,"brst operators",2,11
+873,"lattice qed",2,11
+874,"cohomology classes",2,11
+875,"batalin vilkovisky",2,11
+876,"group manifold",2,11
+877,"general scheme",2,11
+878,"three generations",2,11
+879,"differential calculus",2,11
+880,"numerical solution",2,11
+881,"highest weight",2,11
+882,"non commuting",2,11
+883,"gauge transformation",2,11
+884,"magnetic monopole",2,11
+885,"renormalization scheme",2,11
+886,"non abelian gauge theory",4,11
+887,"qcd vacuum",2,11
+888,"consistent treatment",2,11
+889,"small enough",2,11
+890,"too large",2,11
+891,"finitely generated",2,11
+892,"negative energy",2,11
+893,"experimental tests",2,11
+894,"standard model independent",3,11
+895,"quantum affine",2,11
+896,"continuous phase transition",3,11
+897,"axial anomaly",2,11
+898,"unified theory",2,11
+899,"curved space time",3,11
+900,"generating functional",2,11
+901,"finite range",2,11
+902,"fermion operators",2,11
+903,"kinetic term",2,11
+904,"dyson equation",2,11
+905,"after reviewing",2,11
+906,"minimal susy",2,11
+907,"exact expressions",2,11
+908,"differential equation",2,11
+909,"soliton solutions",2,11
+910,"vector bosons",2,11
+911,"non degenerate",2,11
+912,"bundle over",2,11
+913,"invariance under",2,11
+914,"distribution functions",2,11
+915,"flat universe",2,11
+916,"chiral dynamics",2,11
+917,"fermion propagator",2,11
+918,"adjoint representation",2,11
+919,"lying states",2,11
+920,"proper time",2,11
+921,"higgs mechanism",2,11
+922,"rest frame",2,11
+923,"fermion number",2,11
+924,"natural solution",2,11
+925,"model predicts",2,11
+926,"cp problem",2,11
+927,"fermion systems",2,11
+928,"length scales",2,11
+929,"analytic expressions",2,11
+930,"numerical calculation",2,11
+931,"strongly correlated",2,11
+932,"three body",2,11
+933,"steady state",2,11
+934,"high resolution",2,11
+935,"length scale",2,11
+936,"cosmic microwave background",3,11
+937,"stellar evolution",2,11
+938,"upper limit",2,11
+939,"impulse approximation",2,11
+940,"neutral current",2,11
+941,"electron gas",2,11
+942,"massive neutrinos",2,11
+943,"mass scales",2,11
+944,"fluctuation dissipation",2,11
+945,"scattering processes",2,11
+946,"nuclear medium",2,11
+947,"heavy nuclei",2,11
+948,"quark confinement",2,11
+949,"two higgs boson",3,11
+950,"spin correlation",2,11
+951,"full qcd",2,11
+952,"background processes",2,11
+953,"triangular lattice",2,11
+954,"range interactions",2,11
+955,"neutron scattering",2,11
+956,"hartree fock",2,11
+957,"boson exchange",2,11
+958,"meson exchange",2,11
+959,"magnetic moment",2,11
+960,"leptonic decays",2,11
+961,"weak scale",2,11
+962,"charged leptons",2,11
+963,"electroweak baryogenesis",2,11
+964,"hadron collider",2,11
+965,"phenomenological consequences",2,11
+966,"susy gut",2,11
+967,"commuting family",2,10
+968,"bogomol nyi",2,10
+969,"detailed discussion",2,10
+970,"rank two",2,10
+971,"non abelian gauge field",4,10
+972,"spacetime geometry",2,10
+973,"electromagnetic current",2,10
+974,"dilaton gravity",2,10
+975,"2d quantum",2,10
+976,"moduli spaces",2,10
+977,"calabi yau manifold",3,10
+978,"infrared divergences",2,10
+979,"configuration space time",3,10
+980,"klein gordon",2,10
+981,"vertex operator",2,10
+982,"fine structure",2,10
+983,"particle creation",2,10
+984,"consistent description",2,10
+985,"reduced phase",2,10
+986,"transfer matrix models",3,10
+987,"basic ideas",2,10
+988,"simple lie algebras",3,10
+989,"giving rise",2,10
+990,"transformation properties",2,10
+991,"fractional statistics",2,10
+992,"statistical parameter",2,10
+993,"hamilton jacobi",2,10
+994,"variational approach",2,10
+995,"reissner nordstrom",2,10
+996,"discrete symmetries",2,10
+997,"reaction diffusion",2,10
+998,"topologically massive",2,10
+999,"consistency conditions",2,10
+1000,"first class constraints",3,10
+1001,"invariant potentials",2,10
+1002,"nonzero temperature",2,10
+1003,"equivalence theorem",2,10
+1004,"two dimensional sphere",3,10
+1005,"lie groups",2,10
+1006,"thirring model",2,10
+1007,"symmetry breaking mechanism",3,10
+1008,"spacetime topology",2,10
+1009,"collective excitations",2,10
+1010,"lattices up",2,10
+1011,"linear regime",2,10
+1012,"lax pair",2,10
+1013,"string vacua",2,10
+1014,"robertson walker",2,10
+1015,"filling factor",2,10
+1016,"cellular automaton",2,10
+1017,"zeta function",2,10
+1018,"discrete spectrum",2,10
+1019,"electromagnetic interactions",2,10
+1020,"heterotic string",2,10
+1021,"calogero moser",2,10
+1022,"cosmological constraints",2,10
+1023,"perturbative calculations",2,10
+1024,"renormalization group flow",3,10
+1025,"gravitational collapse",2,10
+1026,"quasi linear",2,10
+1027,"inverse square",2,10
+1028,"supergravity models",2,10
+1029,"violating interactions",2,10
+1030,"vortex solutions",2,10
+1031,"quark gluon plasma",3,10
+1032,"complex valued",2,10
+1033,"approximation scheme",2,10
+1034,"models predict",2,10
+1035,"order cal",2,10
+1036,"level density",2,10
+1037,"pair creation",2,10
+1038,"ward identity",2,10
+1039,"localized states",2,10
+1040,"lattice actions",2,10
+1041,"charge transfer",2,10
+1042,"small amplitude",2,10
+1043,"lorentz covariant",2,10
+1044,"inner product",2,10
+1045,"strongly dependent",2,10
+1046,"vacuum spacetimes",2,10
+1047,"well suited",2,10
+1048,"em et",2,10
+1049,"lagrangian approach",2,10
+1050,"briefly reviewed",2,10
+1051,"parton model",2,10
+1052,"two flavors",2,10
+1053,"energies below",2,10
+1054,"phys rev",2,10
+1055,"finite lattices up",3,10
+1056,"mixing parameter",2,10
+1057,"luttinger liquid",2,10
+1058,"half filled",2,10
+1059,"dynamical evolution",2,10
+1060,"parameter alpha",2,10
+1061,"cellular automata",2,10
+1062,"linear sigma",2,10
+1063,"hypercubic lattice",2,10
+1064,"sterile neutrinos",2,10
+1065,"background radiation",2,10
+1066,"ray spectrum",2,10
+1067,"peculiar velocities",2,10
+1068,"interstellar medium",2,10
+1069,"perturbation spectra",2,10
+1070,"next generation",2,10
+1071,"low frequency",2,10
+1072,"neutron star",2,10
+1073,"line emission",2,10
+1074,"fourth order",2,10
+1075,"decoherence functional",2,10
+1076,"theoretical methods",2,10
+1077,"majorana neutrinos",2,10
+1078,"particle hole",2,10
+1079,"pi nn",2,10
+1080,"banach spaces",2,10
+1081,"quark antiquark",2,10
+1082,"decay constant",2,10
+1083,"anderson model",2,10
+1084,"thermal fluctuations",2,10
+1085,"sigma term",2,10
+1086,"isgur wise",2,10
+1087,"octet baryon",2,10
+1088,"half filling",2,10
+1089,"quark effective",2,10
+1090,"nuclear collisions",2,10
+1091,"momentum transfer",2,10
+1092,"collider energies",2,10
+1093,"helicity amplitudes",2,10
+1094,"electric dipole",2,10
+1095,"linear response",2,10
+1096,"color transparency",2,10
+1097,"transport properties",2,10
+1098,"drell yan",2,10
+1099,"ssc energies",2,10
+1100,"two higgs doublet",3,10
+1101,"symmetry breaking sector",3,10
+1102,"see saw mechanism",3,10
+1103,"electroweak radiative",2,10
+1104,"lep ii",2,10
+1105,"neutral currents",2,10
+1106,"linear colliders",2,10
+1107,"workshop june",2,10
+1108,"lattice gas",2,10
+1109,"superconducting transition",2,10
+1110,"two dimensional target space",4,9
+1111,"yang baxter",2,9
+1112,"algebraic structures",2,9
+1113,"closed strings",2,9
+1114,"kdv equation",2,9
+1115,"off critical",2,9
+1116,"poincare group",2,9
+1117,"schrodinger equation",2,9
+1118,"many particle",2,9
+1119,"miura transformation",2,9
+1120,"curved space",2,9
+1121,"entropy production",2,9
+1122,"soliton like",2,9
+1123,"flat space time",3,9
+1124,"symplectic form",2,9
+1125,"vertex corrections",2,9
+1126,"integral representation",2,9
+1127,"coordinate system",2,9
+1128,"trace formula",2,9
+1129,"kdv hierarchy",2,9
+1130,"kazakov migdal",2,9
+1131,"result indicates",2,9
+1132,"planck mass",2,9
+1133,"coset model",2,9
+1134,"group equations",2,9
+1135,"background spacetime",2,9
+1136,"open string theory",3,9
+1137,"dynamical scaling",2,9
+1138,"uq widehat",2,9
+1139,"critical string",2,9
+1140,"scalar curvature",2,9
+1141,"critical string theory",3,9
+1142,"zero momentum",2,9
+1143,"second part",2,9
+1144,"coulomb potential",2,9
+1145,"closed string",2,9
+1146,"topological field theories",3,9
+1147,"holomorphic maps",2,9
+1148,"winding number",2,9
+1149,"action principle",2,9
+1150,"spin independent",2,9
+1151,"boson systems",2,9
+1152,"wheeler dewitt",2,9
+1153,"supersymmetric quantum mechanics",3,9
+1154,"inverse powers",2,9
+1155,"integrable representations",2,9
+1156,"tensor products",2,9
+1157,"critical exponent",2,9
+1158,"baby universes",2,9
+1159,"toda theories",2,9
+1160,"loop effective potential",3,9
+1161,"vector bundle",2,9
+1162,"large numbers",2,9
+1163,"curvature condition",2,9
+1164,"wznw model",2,9
+1165,"affine kac moody algebra",4,9
+1166,"modules over",2,9
+1167,"symmetric solutions",2,9
+1168,"high frequency",2,9
+1169,"square root",2,9
+1170,"factorization approximation",2,9
+1171,"infinite series",2,9
+1172,"annihilation operators",2,9
+1173,"dynamical variables",2,9
+1174,"singular vectors",2,9
+1175,"anomaly free",2,9
+1176,"imaginary part",2,9
+1177,"naked singularities",2,9
+1178,"self adjoint",2,9
+1179,"charge radius",2,9
+1180,"fermionic formulation",2,9
+1181,"conserved currents",2,9
+1182,"analytic approximation",2,9
+1183,"universal enveloping algebra",3,9
+1184,"complex structures",2,9
+1185,"dilaton coupling",2,9
+1186,"massive modes",2,9
+1187,"non analytic",2,9
+1188,"rational functions",2,9
+1189,"spin correlation functions",3,9
+1190,"field theoretical",2,9
+1191,"supergravity theories",2,9
+1192,"moment map",2,9
+1193,"analytic structure",2,9
+1194,"international workshop",2,9
+1195,"off diagonal",2,9
+1196,"topological defects",2,9
+1197,"minkowski space time",3,9
+1198,"simplified model",2,9
+1199,"fokker planck",2,9
+1200,"physical quantities",2,9
+1201,"theoretical prediction",2,9
+1202,"charged current",2,9
+1203,"energy flux",2,9
+1204,"initial value",2,9
+1205,"cosmic censorship",2,9
+1206,"uncertainty relation",2,9
+1207,"massive vector",2,9
+1208,"grand unified",2,9
+1209,"landau level",2,9
+1210,"wilson action",2,9
+1211,"gravitational scattering",2,9
+1212,"mean values",2,9
+1213,"flux tube",2,9
+1214,"cosmological perturbations",2,9
+1215,"epsilon expansion",2,9
+1216,"thermodynamic properties",2,9
+1217,"chiral perturbation",2,9
+1218,"transition line",2,9
+1219,"finite width",2,9
+1220,"collective motion",2,9
+1221,"two regimes",2,9
+1222,"quantum chromodynamics",2,9
+1223,"dynamically broken",2,9
+1224,"point correlation",2,9
+1225,"polarized electrons",2,9
+1226,"infrared limit",2,9
+1227,"linear sigma model",3,9
+1228,"universal scaling",2,9
+1229,"lambda phi4",2,9
+1230,"real line",2,9
+1231,"burst sources",2,9
+1232,"galaxy surveys",2,9
+1233,"initial fluctuations",2,9
+1234,"primordial density fluctuations",3,9
+1235,"early type",2,9
+1236,"phase shift",2,9
+1237,"large magellanic cloud",3,9
+1238,"angular distributions",2,9
+1239,"cosmic microwave background radiation",4,9
+1240,"active galactic nuclei",3,9
+1241,"gravitational instability",2,9
+1242,"unstable modes",2,9
+1243,"msw solution",2,9
+1244,"stability properties",2,9
+1245,"zel dovich approximation",3,9
+1246,"dispersion relations",2,9
+1247,"two spatial",2,9
+1248,"cross over",2,9
+1249,"kinetic energy",2,9
+1250,"decay products",2,9
+1251,"time dependence",2,9
+1252,"bethe salpeter",2,9
+1253,"confining potential",2,9
+1254,"lattice gauge",2,9
+1255,"chiral symmetry restoration",3,9
+1256,"isgur wise function",3,9
+1257,"high temperatures",2,9
+1258,"beta decay",2,9
+1259,"instanton induced",2,9
+1260,"mass splitting",2,9
+1261,"two higgs mass",3,9
+1262,"pion production",2,9
+1263,"nuclear structure",2,9
+1264,"higher energies",2,9
+1265,"photon emission",2,9
+1266,"momentum distribution",2,9
+1267,"hadron collisions",2,9
+1268,"bethe salpeter equation",3,9
+1269,"total cross sections",3,9
+1270,"fragmentation functions",2,9
+1271,"quark gluon fusion",3,9
+1272,"josephson junction",2,9
+1273,"electroweak symmetry breaking",3,9
+1274,"scalar doublet",2,9
+1275,"spin flavor",2,9
+1276,"two higgs doublets",3,9
+1277,"mass mh",2,9
+1278,"electron beam",2,9
+1279,"nu tau",2,9
+1280,"mh gev",2,9
+1281,"production via",2,9
+1282,"radiative correction",2,9
+1283,"linear collider",2,9
+1284,"weak interactions",2,9
+1285,"chiral soliton",2,9
+1286,"qcd predictions",2,9
+1287,"kondo model",2,9
+1288,"string susceptibility",2,8
+1289,"duality transformations",2,8
+1290,"index theorem",2,8
+1291,"gauged wzw model",3,8
+1292,"nambu goto",2,8
+1293,"light cone gauge theory",4,8
+1294,"wzw models",2,8
+1295,"dyson equations",2,8
+1296,"multi component",2,8
+1297,"integral formalism",2,8
+1298,"rational conformal field theory",4,8
+1299,"world sheet",2,8
+1300,"twistor like",2,8
+1301,"2d ising model",3,8
+1302,"integration over",2,8
+1303,"spatial dimension",2,8
+1304,"current algebras",2,8
+1305,"drinfeld sokolov",2,8
+1306,"linear dilaton",2,8
+1307,"geometrical structure",2,8
+1308,"higher genus",2,8
+1309,"quantization condition",2,8
+1310,"limiting case",2,8
+1311,"batalin vilkovisky bv formalism",4,8
+1312,"information paradox",2,8
+1313,"calogero model",2,8
+1314,"lowest landau level",3,8
+1315,"dynamically triangulated random surfaces",4,8
+1316,"superstring theory",2,8
+1317,"explicit formulae",2,8
+1318,"quantum double",2,8
+1319,"reduced phase space",3,8
+1320,"term proportional",2,8
+1321,"ghost number",2,8
+1322,"matter sector",2,8
+1323,"master equations",2,8
+1324,"gauge invariant under",3,8
+1325,"space time dependent",3,8
+1326,"apparent horizon",2,8
+1327,"difference operators",2,8
+1328,"liouville field theory",3,8
+1329,"twisted sectors",2,8
+1330,"quantum mechanical system",3,8
+1331,"conserved quantities",2,8
+1332,"long range interactions",3,8
+1333,"background independence",2,8
+1334,"w3 strings",2,8
+1335,"skyrme model",2,8
+1336,"matching conditions",2,8
+1337,"recursion relations",2,8
+1338,"quantum hall effect",3,8
+1339,"hopf algebras",2,8
+1340,"semi infinite",2,8
+1341,"charged scalar",2,8
+1342,"internal symmetry",2,8
+1343,"projection operators",2,8
+1344,"strong coupling region",3,8
+1345,"open strings",2,8
+1346,"algebraic approach",2,8
+1347,"surprising result",2,8
+1348,"irreducible representation",2,8
+1349,"elementary introduction",2,8
+1350,"axion dilaton",2,8
+1351,"multi particle",2,8
+1352,"screening charge",2,8
+1353,"fermi motion",2,8
+1354,"transfer matrix",2,8
+1355,"valued functions",2,8
+1356,"wave functional",2,8
+1357,"algebraic properties",2,8
+1358,"random matrix model",3,8
+1359,"functional determinants",2,8
+1360,"fractal structure",2,8
+1361,"bethe ansatz equations",3,8
+1362,"leading log",2,8
+1363,"function describing",2,8
+1364,"liouville action",2,8
+1365,"knizhnik zamolodchikov equations",3,8
+1366,"potts model",2,8
+1367,"scattering angle",2,8
+1368,"non abelian chern simons",4,8
+1369,"meissner effect",2,8
+1370,"non adiabatic",2,8
+1371,"well behaved",2,8
+1372,"collective field theory",3,8
+1373,"mass matrix",2,8
+1374,"finite temperature dependence",3,8
+1375,"2d quantum gravity coupled",4,8
+1376,"time variable",2,8
+1377,"simplest non",2,8
+1378,"internal structure",2,8
+1379,"brs cohomology",2,8
+1380,"coordinate ring",2,8
+1381,"cosmological phase transition",3,8
+1382,"trace anomaly",2,8
+1383,"gauss law",2,8
+1384,"transfer matrix model",3,8
+1385,"open string",2,8
+1386,"region around",2,8
+1387,"complex numbers",2,8
+1388,"non commutative",2,8
+1389,"second law",2,8
+1390,"transition occurs",2,8
+1391,"spherical symmetry",2,8
+1392,"asymptotic behaviour",2,8
+1393,"left invariant",2,8
+1394,"non perturbative expansion",3,8
+1395,"relativistic mean",2,8
+1396,"total energy density",3,8
+1397,"soliton solution",2,8
+1398,"theta functions",2,8
+1399,"direct product",2,8
+1400,"bose einstein",2,8
+1401,"strong cp problem",3,8
+1402,"exactly soluble",2,8
+1403,"minimal supersymmetric",2,8
+1404,"mapped onto",2,8
+1405,"quantum correction",2,8
+1406,"canonical variables",2,8
+1407,"significant differences",2,8
+1408,"vector like",2,8
+1409,"navier stokes",2,8
+1410,"diffeomorphism invariant",2,8
+1411,"quantum coherence",2,8
+1412,"higgs fields",2,8
+1413,"mean square",2,8
+1414,"flux tubes",2,8
+1415,"liouville equation",2,8
+1416,"positive definite",2,8
+1417,"imaginary parts",2,8
+1418,"black hole physics",3,8
+1419,"scaling behaviour",2,8
+1420,"new types",2,8
+1421,"abelian gauge",2,8
+1422,"current operators",2,8
+1423,"black hole evaporation",3,8
+1424,"composite operators",2,8
+1425,"renormalization constants",2,8
+1426,"propagating through",2,8
+1427,"symplectic manifold",2,8
+1428,"dynamically generated",2,8
+1429,"higgs particle",2,8
+1430,"path integral over",3,8
+1431,"massless scalar field",3,8
+1432,"scalar particles",2,8
+1433,"coarse grained",2,8
+1434,"variational principle",2,8
+1435,"flow equations",2,8
+1436,"zero frequency",2,8
+1437,"critical density",2,8
+1438,"strongly coupled",2,8
+1439,"lattice gauge field theories",4,8
+1440,"wigner type",2,8
+1441,"system size",2,8
+1442,"high temperature dependence",3,8
+1443,"algebraic curve",2,8
+1444,"low lying",2,8
+1445,"gaugino masses",2,8
+1446,"exact value",2,8
+1447,"radiatively induced",2,8
+1448,"scale factor",2,8
+1449,"periodic potential",2,8
+1450,"infrared fixed point",3,8
+1451,"pauli principle",2,8
+1452,"upper bounds",2,8
+1453,"neural networks",2,8
+1454,"nonlinear evolution",2,8
+1455,"cosmic rays",2,8
+1456,"systematic errors",2,8
+1457,"peculiar velocity",2,8
+1458,"nuclear shell",2,8
+1459,"cmb anisotropy",2,8
+1460,"observational data",2,8
+1461,"right handed neutrino",3,8
+1462,"elliptical galaxies",2,8
+1463,"single cluster",2,8
+1464,"temperature anisotropy",2,8
+1465,"solar neutrino",2,8
+1466,"stability analysis",2,8
+1467,"microwave background",2,8
+1468,"weakly interacting",2,8
+1469,"high energy spectra",3,8
+1470,"light higgs mass",3,8
+1471,"first generation",2,8
+1472,"heat bath",2,8
+1473,"initial particles",2,8
+1474,"light quark mass",3,8
+1475,"two dimensional disordered",3,8
+1476,"hadron masses",2,8
+1477,"experimental limit",2,8
+1478,"heavy quark masses",3,8
+1479,"beta decay constants",3,8
+1480,"ladder approximation",2,8
+1481,"sea quarks",2,8
+1482,"scattering length",2,8
+1483,"odd observables",2,8
+1484,"relativistic corrections",2,8
+1485,"experimental measurements",2,8
+1486,"pseudoscalar meson",2,8
+1487,"finite nuclei",2,8
+1488,"binding energy",2,8
+1489,"heavy ion collisions",3,8
+1490,"high energy hadronic collisions",4,8
+1491,"two body decays",3,8
+1492,"quantum chaos",2,8
+1493,"rapidity gaps",2,8
+1494,"heavy particles",2,8
+1495,"cp asymmetries",2,8
+1496,"mixing parameters",2,8
+1497,"low energy hadronic",3,8
+1498,"inclusive cross section",3,8
+1499,"boson couplings",2,8
+1500,"quarkonium states",2,8
+1501,"pair production via",3,8
+1502,"production mechanisms",2,8
+1503,"kobayashi maskawa",2,8
+1504,"electroweak radiative corrections",3,8
+1505,"lepton spectrum",2,8
+1506,"semileptonic decay",2,8
+1507,"electronic structure",2,8
+1508,"superfluid density",2,8
+1509,"quantum antiferromagnets",2,8
+1510,"scale free",2,7
+1511,"canonical commutation relations",3,7
+1512,"non local lorentz",3,7
+1513,"massive schwinger model",3,7
+1514,"spacetime supersymmetry",2,7
+1515,"super virasoro",2,7
+1516,"double scaling limit",3,7
+1517,"null infinity",2,7
+1518,"supersymmetric integrable",2,7
+1519,"ideal gas",2,7
+1520,"rsos models",2,7
+1521,"simply laced",2,7
+1522,"landau ginzburg theories",3,7
+1523,"linear sigma models",3,7
+1524,"witten model",2,7
+1525,"conformal transformations",2,7
+1526,"wess zumino term",3,7
+1527,"non zero mode",3,7
+1528,"heterotic superstring",2,7
+1529,"kerr newman",2,7
+1530,"integrable hierarchies",2,7
+1531,"complex plane",2,7
+1532,"universal enveloping",2,7
+1533,"conformal matter fields",3,7
+1534,"descent equations",2,7
+1535,"composite operator",2,7
+1536,"gross neveu model",3,7
+1537,"genus zero",2,7
+1538,"schwinger dyson equation",3,7
+1539,"self consistency",2,7
+1540,"space time scale",3,7
+1541,"lattice gauge theories",3,7
+1542,"lax operator",2,7
+1543,"fully consistent",2,7
+1544,"canonical formalism",2,7
+1545,"scaling functions",2,7
+1546,"dimensional electron",2,7
+1547,"point correlation function",3,7
+1548,"massive dirac",2,7
+1549,"schwarzschild solution",2,7
+1550,"information loss",2,7
+1551,"wess zumino witten model",4,7
+1552,"phi4 theory",2,7
+1553,"integer values",2,7
+1554,"complete integrability",2,7
+1555,"gravitational instantons",2,7
+1556,"field theoretic",2,7
+1557,"particle excitations",2,7
+1558,"callan giddings harvey",3,7
+1559,"exterior derivative",2,7
+1560,"string unification",2,7
+1561,"soft supersymmetry breaking parameters",4,7
+1562,"quasi particles",2,7
+1563,"direct sum",2,7
+1564,"special functions",2,7
+1565,"higher derivative",2,7
+1566,"simplicial quantum gravity",3,7
+1567,"random phase transition",3,7
+1568,"bundles over",2,7
+1569,"half plane",2,7
+1570,"infra red",2,7
+1571,"high energy momentum",3,7
+1572,"random walk",2,7
+1573,"left right handed",3,7
+1574,"discrete group",2,7
+1575,"background independent",2,7
+1576,"mechanical system",2,7
+1577,"electromagnetic properties",2,7
+1578,"amoco.saclay cea.fr",2,7
+1579,"uq hat",2,7
+1580,"ansatz solution",2,7
+1581,"dimensional qed",2,7
+1582,"expanding universe",2,7
+1583,"epsilon dimensions",2,7
+1584,"binary systems",2,7
+1585,"maxwell equations",2,7
+1586,"continuum limits",2,7
+1587,"massive scalar",2,7
+1588,"magnetic screening",2,7
+1589,"fractional quantum hall",3,7
+1590,"multi matrix models",3,7
+1591,"verma modules",2,7
+1592,"soft breaking",2,7
+1593,"lagrangian description",2,7
+1594,"periodic points",2,7
+1595,"canonical transformation",2,7
+1596,"kosterlitz thouless",2,7
+1597,"line bundle",2,7
+1598,"stochastic quantization",2,7
+1599,"energy theorem",2,7
+1600,"model independent constraints",3,7
+1601,"spatial topology",2,7
+1602,"feynman diagrams",2,7
+1603,"renormalization group rg",3,7
+1604,"phenomenological applications",2,7
+1605,"a2 a1",2,7
+1606,"internal degrees",2,7
+1607,"semiclassical analysis",2,7
+1608,"non renormalizable",2,7
+1609,"free energy density",3,7
+1610,"light curves",2,7
+1611,"kazama suzuki",2,7
+1612,"coulomb gas",2,7
+1613,"number generators",2,7
+1614,"instanton like",2,7
+1615,"breathing mode",2,7
+1616,"jacobi polynomials",2,7
+1617,"spatially homogeneous",2,7
+1618,"briefly comment",2,7
+1619,"self duality",2,7
+1620,"quantum affine lie algebras",4,7
+1621,"static spherically symmetric solutions",4,7
+1622,"order unity",2,7
+1623,"delta rho",2,7
+1624,"braaten pisarski",2,7
+1625,"real part",2,7
+1626,"softly broken",2,7
+1627,"superstring derived",2,7
+1628,"matrix model independent",3,7
+1629,"leading term",2,7
+1630,"minimally coupled",2,7
+1631,"expansion around",2,7
+1632,"open question",2,7
+1633,"imaginary time",2,7
+1634,"vortex dynamics",2,7
+1635,"line bundle over",3,7
+1636,"single component",2,7
+1637,"phi4 model",2,7
+1638,"constraint equations",2,7
+1639,"heat equation",2,7
+1640,"xxz model",2,7
+1641,"anomalous magnetic moment",3,7
+1642,"spatial dimensions",2,7
+1643,"collective modes",2,7
+1644,"parity violating",2,7
+1645,"black hole entropy",3,7
+1646,"physical origin",2,7
+1647,"spontaneous symmetry",2,7
+1648,"ansatz equations",2,7
+1649,"black hole spacetimes",3,7
+1650,"leading order parameter",3,7
+1651,"consistent histories",2,7
+1652,"axial currents",2,7
+1653,"non zero cosmological constant",4,7
+1654,"supersymmetric standard model mssm",4,7
+1655,"hilbert action",2,7
+1656,"test particles",2,7
+1657,"perturbation series",2,7
+1658,"sin2 theta",2,7
+1659,"right handed",2,7
+1660,"loop effective theory",3,7
+1661,"two layer",2,7
+1662,"exponential decay",2,7
+1663,"false vacuum",2,7
+1664,"semiclassical limit",2,7
+1665,"low temperatures",2,7
+1666,"electron densities",2,7
+1667,"photon distribution",2,7
+1668,"optical potential",2,7
+1669,"nearest neighbour",2,7
+1670,"algebraically closed",2,7
+1671,"south pole",2,7
+1672,"stringent constraints",2,7
+1673,"right handed neutrino masses",4,7
+1674,"emission lines",2,7
+1675,"angular distribution",2,7
+1676,"star clusters",2,7
+1677,"ionization history",2,7
+1678,"two band",2,7
+1679,"zel dovich",2,7
+1680,"dirac sea",2,7
+1681,"gravitational lensing",2,7
+1682,"cosmic ray physics",3,7
+1683,"cosmic microwave",2,7
+1684,"theoretical uncertainty",2,7
+1685,"large scale structures",3,7
+1686,"pp collisions",2,7
+1687,"gravity waves",2,7
+1688,"growth rate",2,7
+1689,"solar system",2,7
+1690,"chaotic inflation",2,7
+1691,"bulk flow",2,7
+1692,"dark matter candidate",3,7
+1693,"cobe satellite",2,7
+1694,"nucleation rate",2,7
+1695,"electro weak",2,7
+1696,"su supergravity model",3,7
+1697,"latent heat",2,7
+1698,"gut models",2,7
+1699,"gravitational radiation",2,7
+1700,"statistical errors",2,7
+1701,"flux lines",2,7
+1702,"anonymous ftp",2,7
+1703,"lower energies",2,7
+1704,"theoretical expectations",2,7
+1705,"time behaviour",2,7
+1706,"fixed momentum",2,7
+1707,"analytic solutions",2,7
+1708,"particle production",2,7
+1709,"finite volume",2,7
+1710,"lyapunov exponents",2,7
+1711,"type ii superconductors",3,7
+1712,"staggered fermions",2,7
+1713,"quenched qcd",2,7
+1714,"ps file",2,7
+1715,"lowest energy",2,7
+1716,"partial widths",2,7
+1717,"tev region",2,7
+1718,"quantum monte carlo simulations",4,7
+1719,"four quark",2,7
+1720,"monte carlo data",3,7
+1721,"conduction electrons",2,7
+1722,"fermi liquid state",3,7
+1723,"heavy fermion",2,7
+1724,"low temperature dependence",3,7
+1725,"vector meson",2,7
+1726,"color singlet",2,7
+1727,"light fermions",2,7
+1728,"running coupling",2,7
+1729,"quark limit",2,7
+1730,"heavy flavour",2,7
+1731,"non negligible",2,7
+1732,"alphas mz",2,7
+1733,"light hadron",2,7
+1734,"sign problem",2,7
+1735,"hadrons containing",2,7
+1736,"quantum monte",2,7
+1737,"deep inelastic lepton",3,7
+1738,"meson production",2,7
+1739,"single particle hole",3,7
+1740,"heavy ion reactions",3,7
+1741,"nucleon potentials",2,7
+1742,"proton spin",2,7
+1743,"below mev",2,7
+1744,"single nucleon",2,7
+1745,"atmospheric neutrinos",2,7
+1746,"classical periodic orbits",3,7
+1747,"bottom quark",2,7
+1748,"delta resonance",2,7
+1749,"electromagnetic form factors",3,7
+1750,"decay channel",2,7
+1751,"symbolic dynamics",2,7
+1752,"periodic orbits",2,7
+1753,"fractal dimension",2,7
+1754,"nu tau decays",3,7
+1755,"singlet majoron model",3,7
+1756,"survival probability",2,7
+1757,"neutral scalars",2,7
+1758,"supersymmetry breaking parameters",3,7
+1759,"two higgs",2,7
+1760,"flavor symmetry",2,7
+1761,"heavy higgs",2,7
+1762,"leading twist",2,7
+1763,"lepton flavour",2,7
+1764,"non strange",2,7
+1765,"baryon masses",2,7
+1766,"kinematical cuts",2,7
+1767,"minimal supersymmetric extension",3,7
+1768,"alphas pi",2,7
+1769,"heavy particle",2,7
+1770,"low energy theorem",3,7
+1771,"lepton nucleon",2,7
+1772,"cp odd",2,7
+1773,"ell nu",2,7
+1774,"quark fragmentation",2,7
+1775,"current experimental",2,7
+1776,"hadron supercolliders",2,7
+1777,"large transverse momentum",3,7
+1778,"heavy quark effective lagrangian",4,7
+1779,"below tev",2,7
+1780,"liquid state",2,7
+1781,"metal insulator",2,7
+1782,"tight binding",2,7
+1783,"hubbard models",2,7
+1784,"growth kinetics",2,7
+1785,"antiferromagnetic heisenberg model",3,7
+1786,"superconducting phase",2,7
+1787,"directed polymer",2,7
+1788,"conformal factor",2,6
+1789,"schroedinger equation",2,6
+1790,"gel fand",2,6
+1791,"dynkin diagrams",2,6
+1792,"gauge field strength",3,6
+1793,"thermodynamic bethe ansatz",3,6
+1794,"kalb ramond",2,6
+1795,"positive energy theorem",3,6
+1796,"de sitter space time",4,6
+1797,"conformal turbulence",2,6
+1798,"moduli dependent",2,6
+1799,"geometric methods",2,6
+1800,"spacetime topology change",3,6
+1801,"feigin fuchs",2,6
+1802,"riemannian manifolds",2,6
+1803,"fredholm determinant",2,6
+1804,"coordinate transformations",2,6
+1805,"link invariants",2,6
+1806,"diffeomorphism group",2,6
+1807,"reduction scheme",2,6
+1808,"end point",2,6
+1809,"friedmann robertson walker",3,6
+1810,"hawking evaporation",2,6
+1811,"similarity transformation",2,6
+1812,"conformal bootstrap",2,6
+1813,"density matrices",2,6
+1814,"white noise",2,6
+1815,"scale invariance",2,6
+1816,"null vectors",2,6
+1817,"field realization",2,6
+1818,"two dimensional black hole solution",5,6
+1819,"yang baxter equations",3,6
+1820,"explicit description",2,6
+1821,"feynman path integral",3,6
+1822,"zeta functions",2,6
+1823,"building blocks",2,6
+1824,"rogers ramanujan",2,6
+1825,"uq su",2,6
+1826,"effective potentials",2,6
+1827,"italy june",2,6
+1828,"acklund transformation",2,6
+1829,"gauge group equations",3,6
+1830,"jordan wigner",2,6
+1831,"consistency condition",2,6
+1832,"boundary value problem",3,6
+1833,"large nf",2,6
+1834,"free energy momentum tensor",4,6
+1835,"path approximation",2,6
+1836,"partition functions",2,6
+1837,"boson fields",2,6
+1838,"generating function",2,6
+1839,"eight vertex",2,6
+1840,"phase shifts",2,6
+1841,"squeezed states",2,6
+1842,"projective space",2,6
+1843,"quantum mechanically",2,6
+1844,"brst quantization",2,6
+1845,"invariant partition function",3,6
+1846,"curvature term",2,6
+1847,"gauge coupling constants",3,6
+1848,"evolution operator",2,6
+1849,"stimulated emission",2,6
+1850,"askey wilson",2,6
+1851,"laplace operator",2,6
+1852,"hole solutions",2,6
+1853,"korteweg de vries",3,6
+1854,"gaussian nature",2,6
+1855,"regularization procedure",2,6
+1856,"conformal affine",2,6
+1857,"elementary particles",2,6
+1858,"see saw",2,6
+1859,"geometric interpretation",2,6
+1860,"email contact",2,6
+1861,"mechanical model",2,6
+1862,"completely integrable",2,6
+1863,"irreducible highest weight representations",4,6
+1864,"exponent beta",2,6
+1865,"quasi particle",2,6
+1866,"volume limit",2,6
+1867,"random lattices",2,6
+1868,"energy scales",2,6
+1869,"generalized coherent states",3,6
+1870,"linear differential equations",3,6
+1871,"function regularization",2,6
+1872,"electric field theory",3,6
+1873,"local lorentz invariance",3,6
+1874,"berry phases",2,6
+1875,"spin singlet",2,6
+1876,"quantum group manifold",3,6
+1877,"minisuperspace model",2,6
+1878,"two dimensional reduction",3,6
+1879,"elastic scattering amplitude",3,6
+1880,"uniform magnetic field",3,6
+1881,"string backgrounds",2,6
+1882,"feynman rules",2,6
+1883,"vector bundles",2,6
+1884,"twisted boundary conditions",3,6
+1885,"gelfand dickey",2,6
+1886,"local lorentz",2,6
+1887,"path integral representations",3,6
+1888,"covariant derivative",2,6
+1889,"topological charges",2,6
+1890,"strings moving",2,6
+1891,"parameter space time",3,6
+1892,"intermediate temperatures",2,6
+1893,"simple analytical",2,6
+1894,"topological excitations",2,6
+1895,"hartle hawking",2,6
+1896,"weyl invariance",2,6
+1897,"schwarzschild black hole",3,6
+1898,"diffusion equation",2,6
+1899,"drinfeld sokolov reduction",3,6
+1900,"conformal gauge",2,6
+1901,"naked singularity",2,6
+1902,"state potts model",3,6
+1903,"spin statistics",2,6
+1904,"non linear realization",3,6
+1905,"lorentz symmetry",2,6
+1906,"physically meaningful",2,6
+1907,"perturbations around",2,6
+1908,"quantum mechanical systems",3,6
+1909,"non local density",3,6
+1910,"frequency dependent",2,6
+1911,"thermodynamic equilibrium",2,6
+1912,"infinite volume limit",3,6
+1913,"killing vector",2,6
+1914,"stationary solutions",2,6
+1915,"open universe",2,6
+1916,"transport coefficients",2,6
+1917,"strong enough",2,6
+1918,"strong magnetic",2,6
+1919,"main features",2,6
+1920,"dirac quantization procedure",3,6
+1921,"ordered states",2,6
+1922,"maxwell theory",2,6
+1923,"renormalisation group",2,6
+1924,"short time",2,6
+1925,"off shell model",3,6
+1926,"yang mills equations",3,6
+1927,"poisson brackets",2,6
+1928,"quantum dots",2,6
+1929,"exponents agree",2,6
+1930,"mass gap",2,6
+1931,"second class",2,6
+1932,"foldy wouthuysen",2,6
+1933,"quantization scheme",2,6
+1934,"gauge fixing",2,6
+1935,"ordered phase transition",3,6
+1936,"grand canonical",2,6
+1937,"plane wave",2,6
+1938,"electromagnetic form",2,6
+1939,"hermite polynomials",2,6
+1940,"hawking temperature",2,6
+1941,"nambu goldstone",2,6
+1942,"instanton solutions",2,6
+1943,"numerical value",2,6
+1944,"non fermi",2,6
+1945,"faddeev popov",2,6
+1946,"cosmic string",2,6
+1947,"flat spacetimes",2,6
+1948,"per site",2,6
+1949,"path integral quantization",3,6
+1950,"fermion action",2,6
+1951,"calabi yau spaces",3,6
+1952,"pair production rate",3,6
+1953,"minimal set",2,6
+1954,"self avoiding walks",3,6
+1955,"infinite dimensional subspace",3,6
+1956,"extended objects",2,6
+1957,"scheme dependence",2,6
+1958,"current operator",2,6
+1959,"static spherically symmetric",3,6
+1960,"fermion number violation",3,6
+1961,"long term",2,6
+1962,"second order phase transitions",4,6
+1963,"torsion free",2,6
+1964,"coulomb interactions",2,6
+1965,"model mssm",2,6
+1966,"self couplings",2,6
+1967,"wilson coefficients",2,6
+1968,"rational curves",2,6
+1969,"histories approach",2,6
+1970,"technical details",2,6
+1971,"differential cross section",3,6
+1972,"third order",2,6
+1973,"spin correlation function",3,6
+1974,"molecular cloud",2,6
+1975,"hot spots",2,6
+1976,"ray observations",2,6
+1977,"radio emission",2,6
+1978,"cdm models",2,6
+1979,"kinetic theory",2,6
+1980,"body interaction",2,6
+1981,"bag model",2,6
+1982,"galactic disk",2,6
+1983,"rotation curve",2,6
+1984,"density profile",2,6
+1985,"gamma ray",2,6
+1986,"solar neutrino problem",3,6
+1987,"disk galaxies",2,6
+1988,"cluster expansion",2,6
+1989,"scattering surface",2,6
+1990,"event rate",2,6
+1991,"non linear regime",3,6
+1992,"accurate measurement",2,6
+1993,"cosmological parameters",2,6
+1994,"monte carlo calculation",3,6
+1995,"neutrino flux",2,6
+1996,"high energy hadronic",3,6
+1997,"dark matter component",3,6
+1998,"unified theories",2,6
+1999,"big bang nucleosynthesis",3,6
+2000,"scaling analysis",2,6
+2001,"energy momentum conservation",3,6
+2002,"approximation methods",2,6
+2003,"coupling regime",2,6
+2004,"independent constraints",2,6
+2005,"perfect fluid",2,6
+2006,"bianchi models",2,6
+2007,"extrinsic curvature",2,6
+2008,"uncertainty principle",2,6
+2009,"trapped surfaces",2,6
+2010,"arbitrarily large",2,6
+2011,"globally hyperbolic",2,6
+2012,"factorization theorem",2,6
+2013,"evolution operators",2,6
+2014,"maximum value",2,6
+2015,"time reversal",2,6
+2016,"coefficient functions",2,6
+2017,"critical slowing",2,6
+2018,"lattice sizes",2,6
+2019,"meson dominance",2,6
+2020,"running coupling constant",3,6
+2021,"numerical estimates",2,6
+2022,"detailed balance",2,6
+2023,"gluon propagator",2,6
+2024,"overline ms",2,6
+2025,"improved fermion action",3,6
+2026,"semi leptonic",2,6
+2027,"semi leptonic decays",3,6
+2028,"differential decay",2,6
+2029,"granular material",2,6
+2030,"decay constants",2,6
+2031,"energy hadronic",2,6
+2032,"scale lambda",2,6
+2033,"hadron spectrum",2,6
+2034,"pseudoscalar mesons",2,6
+2035,"response functions",2,6
+2036,"nuclear structure functions",3,6
+2037,"nuclear transparency",2,6
+2038,"nuclear shadowing",2,6
+2039,"hard scattering",2,6
+2040,"high q2",2,6
+2041,"factorial moments",2,6
+2042,"dirac brueckner",2,6
+2043,"forward scattering",2,6
+2044,"short range interactions",3,6
+2045,"chiral symmetry breaking parameters",4,6
+2046,"bjorken sum rule",3,6
+2047,"realistic nucleon",2,6
+2048,"pion exchange",2,6
+2049,"pp rightarrow",2,6
+2050,"valence quark",2,6
+2051,"like sign",2,6
+2052,"relativistic constituent quark",3,6
+2053,"response function",2,6
+2054,"single pion",2,6
+2055,"semi inclusive",2,6
+2056,"quark mass spectrum",3,6
+2057,"experimental bounds",2,6
+2058,"k0 bar",2,6
+2059,"strange quark",2,6
+2060,"tan beta decay",3,6
+2061,"non leptonic decays",3,6
+2062,"custodial su",2,6
+2063,"heavy higgs boson",3,6
+2064,"borel transform",2,6
+2065,"rare decay",2,6
+2066,"inclusive semileptonic decays",3,6
+2067,"transversely polarized",2,6
+2068,"unification scale",2,6
+2069,"gamma couplings",2,6
+2070,"dominant decay",2,6
+2071,"level crossing",2,6
+2072,"quark effective theory",3,6
+2073,"cabibbo kobayashi maskawa",3,6
+2074,"dynamical supersymmetry breaking",3,6
+2075,"fixed target",2,6
+2076,"charged lepton",2,6
+2077,"majorana neutrino",2,6
+2078,"lightest cp",2,6
+2079,"inclusive cross sections",3,6
+2080,"chargino masses",2,6
+2081,"sin2 thetaw",2,6
+2082,"next linear collider",3,6
+2083,"integrated luminosity",2,6
+2084,"disoriented chiral condensate",3,6
+2085,"solar neutrino flux",3,6
+2086,"minimal supersymmetric particles",3,6
+2087,"direct cp violation",3,6
+2088,"standard model mssm",3,6
+2089,"minimal supersymmetric standard model mssm",5,6
+2090,"soft supersymmetry breaking",3,6
+2091,"leq gev",2,6
+2092,"heisenberg antiferromagnet",2,6
+2093,"extended hubbard model",3,6
+2094,"filling factors",2,6
+2095,"haldane gap",2,6
+2096,"phase ordering",2,6
+2097,"lightly doped",2,6
+2098,"high tc superconductors",3,6
+2099,"numerical diagonalization",2,6
+2100,"repulsive interactions",2,6
+2101,"tc superconductors",2,6
+2102,"temperature superconductors",2,6
+2103,"lattice boltzmann equation",3,6
+2104,"large scale invariant",3,5
+2105,"fermionic determinant",2,5
+2106,"affine lie algebra",3,5
+2107,"simply laced lie algebras",4,5
+2108,"jones polynomial",2,5
+2109,"feynman path",2,5
+2110,"complex conjugate",2,5
+2111,"triple systems",2,5
+2112,"topologically nontrivial",2,5
+2113,"antisymmetric tensor potential",3,5
+2114,"massless scalar fields",3,5
+2115,"two dimensional black hole solutions",5,5
+2116,"nonlinear sigma model",3,5
+2117,"space time variable",3,5
+2118,"physical hilbert space",3,5
+2119,"abelian gauge field theory",4,5
+2120,"topological gravity coupled",3,5
+2121,"extended superconformal",2,5
+2122,"perturbative solution",2,5
+2123,"cotangent bundle",2,5
+2124,"loop algebras",2,5
+2125,"spectral invariants",2,5
+2126,"pacs numbers",2,5
+2127,"energy density rho",3,5
+2128,"dilogarithm identities",2,5
+2129,"equations satisfied",2,5
+2130,"compact groups",2,5
+2131,"conformal blocks",2,5
+2132,"spinodal decomposition",2,5
+2133,"supersymmetric self dual",3,5
+2134,"detailed investigation",2,5
+2135,"covariant gauges",2,5
+2136,"wznw models",2,5
+2137,"least action principle",3,5
+2138,"abelian chern simons",3,5
+2139,"black hole solution",3,5
+2140,"david distler",2,5
+2141,"superstring theories",2,5
+2142,"coleman weinberg",2,5
+2143,"improved effective theory",3,5
+2144,"self interacting scalar",3,5
+2145,"gauged wzw",2,5
+2146,"position operator",2,5
+2147,"non negative",2,5
+2148,"state potts models",3,5
+2149,"wave function describing",3,5
+2150,"nearest neighbor interactions",3,5
+2151,"spinning particles",2,5
+2152,"state potts",2,5
+2153,"topology change",2,5
+2154,"difference equation",2,5
+2155,"symplectic manifolds",2,5
+2156,"poisson structures",2,5
+2157,"extra dimensions",2,5
+2158,"bethe ansatz solution",3,5
+2159,"electric field",2,5
+2160,"calabi yau manifolds",3,5
+2161,"original version",2,5
+2162,"kadomtsev petviashvili",2,5
+2163,"three dimensional reduction",3,5
+2164,"free energies",2,5
+2165,"bianchi type",2,5
+2166,"closed expression",2,5
+2167,"generalized kontsevich model",3,5
+2168,"first chern",2,5
+2169,"dimensionally reduced",2,5
+2170,"landau ginzburg orbifolds",3,5
+2171,"random surface",2,5
+2172,"spherically symmetric solutions",3,5
+2173,"clebsch gordan coefficients",3,5
+2174,"lattice boltzmann weights",3,5
+2175,"spatially flat",2,5
+2176,"external magnetic",2,5
+2177,"lorentz invariant",2,5
+2178,"manifestly covariant",2,5
+2179,"stable fixed point",3,5
+2180,"order phase transition",3,5
+2181,"differential geometry",2,5
+2182,"chiral ring",2,5
+2183,"electromagnetic fields",2,5
+2184,"cosmological constant lambda",3,5
+2185,"euclidean path integral",3,5
+2186,"marginal operators",2,5
+2187,"first moment",2,5
+2188,"thermo field",2,5
+2189,"level statistics",2,5
+2190,"hep ph",2,5
+2191,"lie group",2,5
+2192,"chiral superfields",2,5
+2193,"einstein yang mills",3,5
+2194,"closed timelike curves",3,5
+2195,"auxiliary fields",2,5
+2196,"continued fraction",2,5
+2197,"string world",2,5
+2198,"sum over histories",3,5
+2199,"algebra containing",2,5
+2200,"thermodynamic bethe ansatz equations",4,5
+2201,"renormalization group techniques",3,5
+2202,"loop effective lagrangian",3,5
+2203,"hydrogen atom",2,5
+2204,"trivial topology",2,5
+2205,"gauged wznw",2,5
+2206,"soliton spectrum",2,5
+2207,"non polynomial",2,5
+2208,"unitary irreducible representations",3,5
+2209,"supersymmetric gauged",2,5
+2210,"affine toda theories",3,5
+2211,"flat spacetime",2,5
+2212,"gross neveu",2,5
+2213,"automorphism group",2,5
+2214,"liouville field",2,5
+2215,"universality classes",2,5
+2216,"singularity free",2,5
+2217,"brst charge",2,5
+2218,"fermi statistics",2,5
+2219,"topological landau ginzburg",3,5
+2220,"weyl algebra",2,5
+2221,"integrability properties",2,5
+2222,"algebraic formulation",2,5
+2223,"non linear differential equations",4,5
+2224,"lattice gauge invariance",3,5
+2225,"goldstone boson",2,5
+2226,"renormalization group su",3,5
+2227,"quantization procedure",2,5
+2228,"einstein yang mills theory",4,5
+2229,"momentum independent",2,5
+2230,"lecture notes",2,5
+2231,"self contained",2,5
+2232,"path integral representation",3,5
+2233,"via bosonization",2,5
+2234,"jacobi identity",2,5
+2235,"static limit",2,5
+2236,"rotational symmetry",2,5
+2237,"phase transition line",3,5
+2238,"stationary black hole",3,5
+2239,"quantum mechanical model",3,5
+2240,"finitely many",2,5
+2241,"random matrices",2,5
+2242,"postscript files",2,5
+2243,"per unit",2,5
+2244,"higher derivatives",2,5
+2245,"self energies",2,5
+2246,"normal ordering",2,5
+2247,"periodic boundary",2,5
+2248,"geometric quantization",2,5
+2249,"ultra high energy",3,5
+2250,"higher dimension",2,5
+2251,"reduced phase transition",3,5
+2252,"bogomol nyi bound",3,5
+2253,"high energy spectrum",3,5
+2254,"common belief",2,5
+2255,"causal structure",2,5
+2256,"probability distribution functions",3,5
+2257,"cp n-1",2,5
+2258,"shape invariance",2,5
+2259,"space cal",2,5
+2260,"screening mass",2,5
+2261,"matter content",2,5
+2262,"new class constraints",3,5
+2263,"asymptotically flat space",3,5
+2264,"spherical harmonics",2,5
+2265,"coset space",2,5
+2266,"volume element",2,5
+2267,"baryon number violation",3,5
+2268,"running coupling constants",3,5
+2269,"von neumann algebras",3,5
+2270,"inverse scattering",2,5
+2271,"inflationary cosmology",2,5
+2272,"perturbative calculation",2,5
+2273,"hole background",2,5
+2274,"gravitational field theories",3,5
+2275,"diff s1",2,5
+2276,"area preserving",2,5
+2277,"international conference",2,5
+2278,"harmonic analysis",2,5
+2279,"effective lagrangians",2,5
+2280,"teichm uller",2,5
+2281,"pure gauge theory",3,5
+2282,"correlation lengths",2,5
+2283,"reissner nordstr om",3,5
+2284,"analytical solution",2,5
+2285,"magnetic susceptibility",2,5
+2286,"logarithmic corrections",2,5
+2287,"integral representations",2,5
+2288,"hot qcd",2,5
+2289,"front form",2,5
+2290,"half line",2,5
+2291,"logarithmic approximation",2,5
+2292,"differential forms",2,5
+2293,"plenary talk",2,5
+2294,"su supergravity",2,5
+2295,"weak coupling constant",3,5
+2296,"normal shift",2,5
+2297,"spin glass model",3,5
+2298,"computer simulations",2,5
+2299,"exponent nu",2,5
+2300,"stable fixed",2,5
+2301,"treated exactly",2,5
+2302,"reynolds number",2,5
+2303,"ordinary differential equations",3,5
+2304,"seyfert galaxy",2,5
+2305,"globular cluster mass",3,5
+2306,"short time scale",3,5
+2307,"cosmological phase transitions",3,5
+2308,"cold dark matter cdm models",5,5
+2309,"density perturbations",2,5
+2310,"background radiation cbr",3,5
+2311,"statistical significance",2,5
+2312,"high luminosity",2,5
+2313,"slow roll",2,5
+2314,"lyman alpha",2,5
+2315,"statistical tests",2,5
+2316,"batse catalogue",2,5
+2317,"period doubling",2,5
+2318,"galaxy ngc",2,5
+2319,"radial velocity",2,5
+2320,"solar interior",2,5
+2321,"main sequence",2,5
+2322,"brown dwarfs",2,5
+2323,"optical depth",2,5
+2324,"angular scales",2,5
+2325,"metric perturbations",2,5
+2326,"relaxation rate",2,5
+2327,"peccei quinn",2,5
+2328,"molecular clouds",2,5
+2329,"jy iras redshift survey",4,5
+2330,"scattering rate",2,5
+2331,"self consistently",2,5
+2332,"halo objects",2,5
+2333,"whole sky",2,5
+2334,"ell bar",2,5
+2335,"globular clusters",2,5
+2336,"normal galaxies",2,5
+2337,"publicly available",2,5
+2338,"mach number",2,5
+2339,"sachs wolfe effect",3,5
+2340,"tully fisher",2,5
+2341,"three band",2,5
+2342,"redshift survey",2,5
+2343,"self gravitating",2,5
+2344,"weyl tensor",2,5
+2345,"frozen flow",2,5
+2346,"fluctuation spectrum",2,5
+2347,"gravitational clustering",2,5
+2348,"light element abundances",3,5
+2349,"distance scale",2,5
+2350,"wave amplitudes",2,5
+2351,"fluid equations",2,5
+2352,"measure zero",2,5
+2353,"long wave",2,5
+2354,"condensed matter",2,5
+2355,"rich clusters",2,5
+2356,"low energy spectra",3,5
+2357,"gravitational microlensing events",3,5
+2358,"percolation threshold",2,5
+2359,"computational cost",2,5
+2360,"momentum distributions",2,5
+2361,"vacuum einstein equations",3,5
+2362,"gravitational wave function",3,5
+2363,"fokker planck equation",3,5
+2364,"coupling region",2,5
+2365,"quadrupole moment",2,5
+2366,"forward backward",2,5
+2367,"finite dimensional subspace",3,5
+2368,"non resonant",2,5
+2369,"self similarity",2,5
+2370,"penetration depth",2,5
+2371,"beta decay constant",3,5
+2372,"canonical ensemble",2,5
+2373,"infinite volume",2,5
+2374,"valence quark mass",3,5
+2375,"three dimensional ising model",4,5
+2376,"triviality bound",2,5
+2377,"infinite size",2,5
+2378,"kogut susskind",2,5
+2379,"slave bosons",2,5
+2380,"hybrid monte carlo algorithm",4,5
+2381,"renormalization schemes",2,5
+2382,"free fermionic formulation",3,5
+2383,"regularization scheme",2,5
+2384,"sea quark",2,5
+2385,"high tc",2,5
+2386,"directory pub",2,5
+2387,"excitation energies",2,5
+2388,"dual superconductor",2,5
+2389,"ising models",2,5
+2390,"scattering lengths",2,5
+2391,"effective theory hqet",3,5
+2392,"elastic scattering processes",3,5
+2393,"differential cross sections",3,5
+2394,"gamow teller",2,5
+2395,"spin flavour",2,5
+2396,"proton nucleus",2,5
+2397,"relativistic heavy ion collisions",4,5
+2398,"finite range interactions",3,5
+2399,"nn potential",2,5
+2400,"boltzmann equation",2,5
+2401,"hbar omega",2,5
+2402,"long lived",2,5
+2403,"oscillator potential",2,5
+2404,"two body interaction",3,5
+2405,"inelastic scattering",2,5
+2406,"monte carlo calculations",3,5
+2407,"strong correlation",2,5
+2408,"long range correlations",3,5
+2409,"transport through",2,5
+2410,"scale structure",2,5
+2411,"higher moments",2,5
+2412,"quark mass generation",3,5
+2413,"neutrino oscillations",2,5
+2414,"heavy quark effective",3,5
+2415,"violating asymmetries",2,5
+2416,"hard thermal loops",3,5
+2417,"tau lepton",2,5
+2418,"neutral higgs boson",3,5
+2419,"strong cp violation",3,5
+2420,"violating phases",2,5
+2421,"fourth generation",2,5
+2422,"quark distributions",2,5
+2423,"lightest neutral",2,5
+2424,"spontaneous cp violation",3,5
+2425,"two photons",2,5
+2426,"supersymmetric version",2,5
+2427,"chi pm1",2,5
+2428,"damping rate",2,5
+2429,"resolved photon",2,5
+2430,"grand unification scale",3,5
+2431,"alpha alphas",2,5
+2432,"nu tau neutrinos",3,5
+2433,"lepton pair",2,5
+2434,"light higgs",2,5
+2435,"gluon fusion",2,5
+2436,"sparticle masses",2,5
+2437,"gluon distribution",2,5
+2438,"pole dominance",2,5
+2439,"bottom quarks",2,5
+2440,"charged fermion",2,5
+2441,"leading logarithmic",2,5
+2442,"cp conserving",2,5
+2443,"squark masses",2,5
+2444,"power corrections",2,5
+2445,"constituent quarks",2,5
+2446,"mass matrices",2,5
+2447,"light quark masses",3,5
+2448,"qcd sum rule",3,5
+2449,"lightest higgs boson",3,5
+2450,"renormalization group improved",3,5
+2451,"order parameter space",3,5
+2452,"rencontres de moriond",3,5
+2453,"stop mass",2,5
+2454,"multiparticle production",2,5
+2455,"soft photon",2,5
+2456,"baryons containing",2,5
+2457,"quark systems",2,5
+2458,"higher twist",2,5
+2459,"ellis jaffe",2,5
+2460,"oblique parameters",2,5
+2461,"relativistic heavy ion",3,5
+2462,"current accelerators",2,5
+2463,"universal soft supersymmetry breaking parameters",5,5
+2464,"seesaw mechanism",2,5
+2465,"critical temperature dependence",3,5
+2466,"xs gamma",2,5
+2467,"susy guts",2,5
+2468,"charm factory",2,5
+2469,"neutron electric dipole moment",4,5
+2470,"bottom quark mass",3,5
+2471,"leading order alphas3",3,5
+2472,"high temperature superconductors",3,5
+2473,"gapless excitations",2,5
+2474,"diffusion limited",2,5
+2475,"quantum antiferromagnet",2,5
+2476,"schwinger boson",2,5
+2477,"mott hubbard model",3,5
+2478,"insulator transition",2,5
+2479,"staggered magnetization",2,5
+2480,"disordered medium",2,5
+2481,"ab initio",2,5
+2482,"jahn teller",2,5
+2483,"magnetic impurities",2,5
+2484,"glass model",2,5
+2485,"random phase diagram",3,5
+2486,"charging energy",2,5
+2487,"band hubbard model",3,5
+2488,"dimensional disordered",2,5
+2489,"copper oxides",2,5
+2490,"charge degrees",2,5
+2491,"thin films",2,5
+2492,"collision operator",2,5
+2493,"cosmological phase",2,4
+2494,"vertex operator algebras",3,4
+2495,"kac moody algebras",3,4
+2496,"invariant partition functions",3,4
+2497,"matter shock",2,4
+2498,"boltzmann weights",2,4
+2499,"superconformal algebras",2,4
+2500,"supersymmetry transformations",2,4
+2501,"small perturbations around",3,4
+2502,"field realizations",2,4
+2503,"compact lie algebras",3,4
+2504,"einstein maxwell equations",3,4
+2505,"four dimensional black holes",4,4
+2506,"quantum affine lie algebra",4,4
+2507,"commutative geometry",2,4
+2508,"interacting scalar",2,4
+2509,"two body problem",3,4
+2510,"super lie algebra",3,4
+2511,"zeta function regularization",3,4
+2512,"super riemann",2,4
+2513,"generalized uncertainty principle",3,4
+2514,"schwinger dyson",2,4
+2515,"non perturbative calculations",3,4
+2516,"non critical string theory",4,4
+2517,"tangent bundle",2,4
+2518,"three point correlation functions",4,4
+2519,"matrix formalism",2,4
+2520,"ad hoc",2,4
+2521,"neutron electric",2,4
+2522,"uniform magnetic fields",3,4
+2523,"verlinde formula",2,4
+2524,"quantum hall",2,4
+2525,"area preserving diffeomorphisms",3,4
+2526,"toda field theory",3,4
+2527,"temperley lieb",2,4
+2528,"wilson loop approximation",3,4
+2529,"conformal weights",2,4
+2530,"negative cosmological constant",3,4
+2531,"2d black hole",3,4
+2532,"dimensional target space",3,4
+2533,"arbitrary riemann surfaces",3,4
+2534,"wave packet",2,4
+2535,"null killing",2,4
+2536,"loop integrals",2,4
+2537,"velocity field theory",3,4
+2538,"non critical string",3,4
+2539,"symmetry restoration",2,4
+2540,"correlation length exponent nu",4,4
+2541,"momentum tensor",2,4
+2542,"positive energy density",3,4
+2543,"functional integral over",3,4
+2544,"quantum group equations",3,4
+2545,"free energy scales",3,4
+2546,"knizhnik zamolodchikov equation",3,4
+2547,"phase space cal",3,4
+2548,"linear realization",2,4
+2549,"nonabelian gauge theory",3,4
+2550,"mills theory",2,4
+2551,"hole entropy",2,4
+2552,"piecewise linear",2,4
+2553,"closed loops",2,4
+2554,"bi hamiltonian",2,4
+2555,"spinning particle",2,4
+2556,"3d ising model",3,4
+2557,"klein gordon equation",3,4
+2558,"massless matter",2,4
+2559,"physical significance",2,4
+2560,"two dimensional dilaton gravity",4,4
+2561,"maxwell chern simons",3,4
+2562,"non zero modes",3,4
+2563,"five dimensional",2,4
+2564,"critical points",2,4
+2565,"2-d gravity coupled",3,4
+2566,"unitary minimal",2,4
+2567,"hermitian matrices",2,4
+2568,"affine toda field theories",4,4
+2569,"edge excitations",2,4
+2570,"harmonic oscillator potential",3,4
+2571,"two dimensional black hole background",5,4
+2572,"cubic lattice",2,4
+2573,"curvature tensors",2,4
+2574,"self interacting scalar field theory",5,4
+2575,"supersymmetric particle",2,4
+2576,"collective field",2,4
+2577,"two dimensional black hole evaporation",5,4
+2578,"dynamical variable",2,4
+2579,"closed bosonic string theory",4,4
+2580,"lorentz force",2,4
+2581,"lorentz group",2,4
+2582,"physical meaning",2,4
+2583,"black hole background",3,4
+2584,"gauge invariant mass",3,4
+2585,"excitation spectra",2,4
+2586,"reason why",2,4
+2587,"bv formalism",2,4
+2588,"bootstrap equations",2,4
+2589,"nonlinear schr",2,4
+2590,"completely integrable systems",3,4
+2591,"arbitrary compact",2,4
+2592,"modular group",2,4
+2593,"supersymmetric partner",2,4
+2594,"dirac quantization condition",3,4
+2595,"cartan subalgebra",2,4
+2596,"arbitrary compact groups",3,4
+2597,"spectral functions",2,4
+2598,"class constraints",2,4
+2599,"de sitter space",3,4
+2600,"lattice spacing",2,4
+2601,"space time evolution",3,4
+2602,"mass matrix model",3,4
+2603,"general covariance",2,4
+2604,"symplectic structure",2,4
+2605,"self interacting",2,4
+2606,"gauge invariance under",3,4
+2607,"special values",2,4
+2608,"non trivial topology",3,4
+2609,"harmonic oscillators",2,4
+2610,"newton wigner",2,4
+2611,"electric fields",2,4
+2612,"two dimensional ising",3,4
+2613,"plane wave functions",3,4
+2614,"dimensional target",2,4
+2615,"multi matrix",2,4
+2616,"scalar field phi",3,4
+2617,"neveu schwarz",2,4
+2618,"nonlinear schr odinger",3,4
+2619,"anomaly free fermion",3,4
+2620,"noncommutative geometry",2,4
+2621,"renormalization scheme dependence",3,4
+2622,"quantum brownian motion",3,4
+2623,"electron green functions",3,4
+2624,"relativistic quantum mechanical",3,4
+2625,"intersection numbers",2,4
+2626,"chiral gauged",2,4
+2627,"manifests itself",2,4
+2628,"super lie",2,4
+2629,"large scale free",3,4
+2630,"group flow",2,4
+2631,"spin content",2,4
+2632,"two loop integrals",3,4
+2633,"point correlators",2,4
+2634,"external electromagnetic",2,4
+2635,"magnetic flux tubes",3,4
+2636,"fixed angle",2,4
+2637,"free fermionic",2,4
+2638,"integral formula",2,4
+2639,"difference equations",2,4
+2640,"theta pi",2,4
+2641,"analytic expression",2,4
+2642,"susy breaking parameters",3,4
+2643,"weakly first order",3,4
+2644,"casimir energy",2,4
+2645,"batalin vilkovisky bv",3,4
+2646,"energy condition",2,4
+2647,"schwinger dyson equations",3,4
+2648,"gauge symmetry breaking",3,4
+2649,"time ordered",2,4
+2650,"random walks",2,4
+2651,"super yang mills",3,4
+2652,"lattice gauge coupling",3,4
+2653,"pull back",2,4
+2654,"unified description",2,4
+2655,"friedman robertson walker",3,4
+2656,"boundary value",2,4
+2657,"toy models",2,4
+2658,"vacuum einstein",2,4
+2659,"hypergeometric functions",2,4
+2660,"simple lie",2,4
+2661,"uniform magnetic",2,4
+2662,"strong coupling constants",3,4
+2663,"phase transition occurs",3,4
+2664,"non minimal models",3,4
+2665,"body problem",2,4
+2666,"hidden sector",2,4
+2667,"blow up",2,4
+2668,"two sided",2,4
+2669,"light higgs boson",3,4
+2670,"non relativistic particle",3,4
+2671,"dynamical behavior",2,4
+2672,"non conservation",2,4
+2673,"many body problem",3,4
+2674,"non abelian gauge theories",4,4
+2675,"moderate values",2,4
+2676,"abelian gauge fields",3,4
+2677,"susy breaking",2,4
+2678,"photon distribution function",3,4
+2679,"dimensional reduction",2,4
+2680,"pseudo differential",2,4
+2681,"unique solution",2,4
+2682,"four dimensional dilaton",3,4
+2683,"constructive interference",2,4
+2684,"random fields",2,4
+2685,"electromagnetic field theory",3,4
+2686,"stable against",2,4
+2687,"asymptotically free energy",3,4
+2688,"long wavelength limit",3,4
+2689,"linear combinations",2,4
+2690,"field phi",2,4
+2691,"dynamical systems accepting",3,4
+2692,"predictive power",2,4
+2693,"simply connected",2,4
+2694,"k3 surface",2,4
+2695,"planck equation",2,4
+2696,"density parameter",2,4
+2697,"angular correlation function",3,4
+2698,"gamma ray observations",3,4
+2699,"baryonic dark matter",3,4
+2700,"spectral index",2,4
+2701,"energy density fluctuations",3,4
+2702,"time delay",2,4
+2703,"compact halo objects",3,4
+2704,"baryon density",2,4
+2705,"redshift surveys",2,4
+2706,"strange matter",2,4
+2707,"galactic center",2,4
+2708,"globular cluster",2,4
+2709,"probability distribution function",3,4
+2710,"high velocity",2,4
+2711,"cross correlation",2,4
+2712,"compton scattering",2,4
+2713,"iras galaxies",2,4
+2714,"density parameter omega",3,4
+2715,"large scale factor",3,4
+2716,"multiple scattering",2,4
+2717,"parameter omega",2,4
+2718,"inflaton potential",2,4
+2719,"galaxy clustering",2,4
+2720,"simplest version",2,4
+2721,"initial condition",2,4
+2722,"gravitating system",2,4
+2723,"coupling constant lambda",3,4
+2724,"cold dark",2,4
+2725,"long time scales",3,4
+2726,"maximum likelihood analysis",3,4
+2727,"matter component",2,4
+2728,"density waves",2,4
+2729,"cobe dmr",2,4
+2730,"mass per",2,4
+2731,"two body simulations",3,4
+2732,"abell clusters",2,4
+2733,"nonlinear evolution equations",3,4
+2734,"interface tension",2,4
+2735,"observational constraints",2,4
+2736,"self gravitating system",3,4
+2737,"double differential cross sections",4,4
+2738,"quadrupole anisotropy",2,4
+2739,"postscript file",2,4
+2740,"continuity equation",2,4
+2741,"rho parameter",2,4
+2742,"nonlinear sigma",2,4
+2743,"model incorporating",2,4
+2744,"many particle creation",3,4
+2745,"right handed neutrino problem",4,4
+2746,"computer simulation",2,4
+2747,"strong indications",2,4
+2748,"white dwarfs",2,4
+2749,"light element",2,4
+2750,"density matrix model",3,4
+2751,"gauge field configurations",3,4
+2752,"two loop approximation",3,4
+2753,"canonical quantization program",3,4
+2754,"functional integral representation",3,4
+2755,"vlasov equation",2,4
+2756,"gr qc",2,4
+2757,"chern simons number",3,4
+2758,"thin wall",2,4
+2759,"degenerate metrics",2,4
+2760,"continuous time",2,4
+2761,"critical temperature tc",3,4
+2762,"lp spaces",2,4
+2763,"simple cubic",2,4
+2764,"static quark antiquark",3,4
+2765,"coherence length",2,4
+2766,"potts models",2,4
+2767,"series expansions",2,4
+2768,"turned off",2,4
+2769,"spin correlation length",3,4
+2770,"nielsen ninomiya theorem",3,4
+2771,"light pseudoscalar",2,4
+2772,"spectral densities",2,4
+2773,"connection machine",2,4
+2774,"short ranged",2,4
+2775,"pion decay constant",3,4
+2776,"time series",2,4
+2777,"higgs mass mh",3,4
+2778,"strong correlation functions",3,4
+2779,"number violation",2,4
+2780,"strange quark mass",3,4
+2781,"isgur wise function xi",4,4
+2782,"relativistic heavy",2,4
+2783,"spin wave function",3,4
+2784,"chemical equilibrium",2,4
+2785,"double beta",2,4
+2786,"c.m energy",2,4
+2787,"nn potentials",2,4
+2788,"realistic nucleon interaction",3,4
+2789,"nucleon system",2,4
+2790,"parity violating asymmetry",3,4
+2791,"constituent quark",2,4
+2792,"antiproton proton decay",3,4
+2793,"neutron halo",2,4
+2794,"neutrino scattering",2,4
+2795,"nuclear shell model",3,4
+2796,"constant lambda",2,4
+2797,"sigma omega",2,4
+2798,"nn interaction",2,4
+2799,"ultrarelativistic heavy ion collisions",4,4
+2800,"high energy density",3,4
+2801,"nuclear physics",2,4
+2802,"color transparency ct",3,4
+2803,"ans atze",2,4
+2804,"relativistic mean field theory",4,4
+2805,"highly non linear",3,4
+2806,"inclusive processes",2,4
+2807,"antiproton proton",2,4
+2808,"linear response theory",3,4
+2809,"boson pairs",2,4
+2810,"constituent quark mass",3,4
+2811,"parity conserving",2,4
+2812,"partial decay width",3,4
+2813,"periodic orbit",2,4
+2814,"new universality",2,4
+2815,"ww gamma collisions",3,4
+2816,"heavy quark pairs",3,4
+2817,"hot dark matter component",4,4
+2818,"electroweak symmetry breaking parameters",4,4
+2819,"strong cp",2,4
+2820,"supersymmetric grand unification",3,4
+2821,"lepton pair production",3,4
+2822,"electric dipole moment",3,4
+2823,"fermion pair",2,4
+2824,"energy momentum distribution",3,4
+2825,"cosmological bound",2,4
+2826,"electroweak phase space",3,4
+2827,"higgs boson masses",3,4
+2828,"anomalous ww gamma collisions",4,4
+2829,"su xu",2,4
+2830,"neutrinoless double beta decay",4,4
+2831,"psi gamma",2,4
+2832,"chiral lagrangian approach",3,4
+2833,"elastic scattering amplitudes",3,4
+2834,"gravitino mass",2,4
+2835,"breaking sector",2,4
+2836,"flipped su supergravity model",4,4
+2837,"leading logarithm approximation",3,4
+2838,"unstable particles",2,4
+2839,"superconducting phase transition",3,4
+2840,"electron proton",2,4
+2841,"deep inelastic scattering processes",4,4
+2842,"short distance expansion",3,4
+2843,"oblique corrections",2,4
+2844,"gauge boson",2,4
+2845,"model independent determination",3,4
+2846,"heavy quark fragmentation",3,4
+2847,"altarelli parisi evolution equations",4,4
+2848,"large transverse momenta",3,4
+2849,"non leptonic",2,4
+2850,"quark gluon condensate",3,4
+2851,"longitudinally polarized",2,4
+2852,"electroweak phase transition",3,4
+2853,"charged higgs boson",3,4
+2854,"light gluinos",2,4
+2855,"jet cross section",3,4
+2856,"experimental limits",2,4
+2857,"rare decay rate",3,4
+2858,"mixing parameter space",3,4
+2859,"precision tests",2,4
+2860,"flipped su",2,4
+2861,"left handed",2,4
+2862,"box diagrams",2,4
+2863,"rightarrow ell",2,4
+2864,"vector boson couplings",3,4
+2865,"spin flavor symmetries",3,4
+2866,"grand unified theories",3,4
+2867,"near threshold corrections",3,4
+2868,"mit bag model",3,4
+2869,"bottom hadrons",2,4
+2870,"hard scattering processes",3,4
+2871,"extended technicolor",2,4
+2872,"altarelli parisi",2,4
+2873,"super kamiokande",2,4
+2874,"bjorken sum rules",3,4
+2875,"left right handed quarks",4,4
+2876,"ckm matrix models",3,4
+2877,"nc expansion",2,4
+2878,"flipped su xu",3,4
+2879,"dipole moment",2,4
+2880,"spin flavor symmetry",3,4
+2881,"gamma mode",2,4
+2882,"baryon states",2,4
+2883,"quark pairs",2,4
+2884,"triple vector boson",3,4
+2885,"leptoquark production",2,4
+2886,"neutron electric dipole moments",4,4
+2887,"kobayashi maskawa matrix model",4,4
+2888,"vector boson masses",3,4
+2889,"inclusive semileptonic",2,4
+2890,"cp violating",2,4
+2891,"self organized criticality",3,4
+2892,"disordered phase transition",3,4
+2893,"disordered phase",2,4
+2894,"energy gap",2,4
+2895,"low energy gap",3,4
+2896,"valence bond",2,4
+2897,"quantum wires",2,4
+2898,"fermi liquid theory",3,4
+2899,"superconducting phase diagram",3,4
+2900,"spinless fermions",2,4
+2901,"cooper pairs",2,4
+2902,"bose glass",2,4
+2903,"spin glass",2,4
+2904,"quantum dot",2,4
+2905,"integer quantum hall",3,4
+2906,"antiferromagnetic heisenberg chain",3,4
+2907,"temperature tc",2,4
+2908,"electron green",2,4
+2909,"three band hubbard model",4,4
+2910,"self organized",2,4
+2911,"string world line",3,3
+2912,"qcd sum over",3,3
+2913,"supersymmetric self duality",3,3
+2914,"2d quantum group",3,3
+2915,"modular group su",3,3
+2916,"shock wave",2,3
+2917,"supersymmetric quantum gravity",3,3
+2918,"centrally extended poincar",3,3
+2919,"super virasoro algebra",3,3
+2920,"kazakov migdal model",3,3
+2921,"higher orders",2,3
+2922,"gauged wzw models",3,3
+2923,"geometrical meaning",2,3
+2924,"size scaling limit",3,3
+2925,"complex valued functions",3,3
+2926,"ising spins",2,3
+2927,"four point correlators",3,3
+2928,"cosmological constant curvature",3,3
+2929,"maxwell chern simons term",4,3
+2930,"bondi mass",2,3
+2931,"semi classical limit",3,3
+2932,"asymptotically flat space time",4,3
+2933,"asymptotically flat spacetimes",3,3
+2934,"renormalization group flow equations",4,3
+2935,"deformation parameter family",3,3
+2936,"generalized kdv hierarchies",3,3
+2937,"pseudo differential operators",3,3
+2938,"enveloping algebra",2,3
+2939,"massless scalar field theory",4,3
+2940,"dimension four dimensional",3,3
+2941,"non linear sigma model",4,3
+2942,"mass per unit length",4,3
+2943,"four dimensional reduction",3,3
+2944,"fractional superstrings",2,3
+2945,"dilatonic black hole",3,3
+2946,"dilaton field theory",3,3
+2947,"modular invariance",2,3
+2948,"gluon field theory",3,3
+2949,"w3 string",2,3
+2950,"gauge transformations",2,3
+2951,"cosmological phase space",3,3
+2952,"string propagation",2,3
+2953,"spectrum generating algebra",3,3
+2954,"small scale factor",3,3
+2955,"pair correlation",2,3
+2956,"higher order cal",3,3
+2957,"time evolution operators",3,3
+2958,"cosmic strings moving",3,3
+2959,"schwarzschild black holes",3,3
+2960,"three dimensional black",3,3
+2961,"supersymmetric self consistent",3,3
+2962,"dual yang mills",3,3
+2963,"four dimensional ising model",4,3
+2964,"unbroken gauge theory",3,3
+2965,"mass per unit",3,3
+2966,"duality transformation",2,3
+2967,"dimensional black hole",3,3
+2968,"self interacting scalar field",4,3
+2969,"simple scaling",2,3
+2970,"dimensional dilaton",2,3
+2971,"finite difference equation",3,3
+2972,"sinh gordon model",3,3
+2973,"conformal matter sector",3,3
+2974,"first order phase transition line",5,3
+2975,"zeta function regularization procedure",4,3
+2976,"non gaussian nature",3,3
+2977,"low temperature series",3,3
+2978,"positive energy flux",3,3
+2979,"killing vector fields",3,3
+2980,"2d ising",2,3
+2981,"exactly solvable lattice",3,3
+2982,"matter shock wave",3,3
+2983,"dilatonic black hole background",4,3
+2984,"bosonic string world sheet",4,3
+2985,"external gauge theory",3,3
+2986,"elementary particle physics",3,3
+2987,"coulomb gauge",2,3
+2988,"einstein gravity coupled",3,3
+2989,"strong magnetic fields",3,3
+2990,"bosonic string",2,3
+2991,"conformal affine lie algebras",4,3
+2992,"moduli space cal",3,3
+2993,"abelian higgs mass",3,3
+2994,"time evolution equation",3,3
+2995,"simple cubic lattice",3,3
+2996,"mass matrix models",3,3
+2997,"shape invariant potentials",3,3
+2998,"3d ising spin",3,3
+2999,"dilaton field phi",3,3
+3000,"slowly varying",2,3
+3001,"sufficient conditions",2,3
+3002,"modular invariant",2,3
+3003,"irreducible highest weight",3,3
+3004,"coset conformal field",3,3
+3005,"sigma model independent",3,3
+3006,"scalar product",2,3
+3007,"stationary black hole entropy",4,3
+3008,"supersymmetric yang mills",3,3
+3009,"lie group manifold",3,3
+3010,"riemann hilbert",2,3
+3011,"self avoiding",2,3
+3012,"finite difference operators",3,3
+3013,"schwarzschild black hole background",4,3
+3014,"two higgs systems",3,3
+3015,"rational conformal affine",3,3
+3016,"topological landau ginzburg theories",4,3
+3017,"non relativistic corrections",3,3
+3018,"qualitatively similar",2,3
+3019,"corner transfer matrix",3,3
+3020,"supersymmetric self",2,3
+3021,"internal space",2,3
+3022,"corner transfer",2,3
+3023,"hilbert space time",3,3
+3024,"single layer",2,3
+3025,"nonlinear sigma term",3,3
+3026,"first order phase",3,3
+3027,"lie algebraic",2,3
+3028,"two dimensional black holes",4,3
+3029,"odd symplectic",2,3
+3030,"asymptotic expansions",2,3
+3031,"schwinger model independent",3,3
+3032,"sine gordon equation",3,3
+3033,"four fermion mass",3,3
+3034,"brst operator algebras",3,3
+3035,"sinh gordon",2,3
+3036,"central extensions",2,3
+3037,"abelian gauge theory",3,3
+3038,"operator valued",2,3
+3039,"extremal black hole",3,3
+3040,"poisson structure functions",3,3
+3041,"dimensional electron gas",3,3
+3042,"non zero temperature",3,3
+3043,"antifield formalism",2,3
+3044,"exponent eta",2,3
+3045,"body potentials",2,3
+3046,"standard model predicts",3,3
+3047,"non hermitian",2,3
+3048,"multi higgs mass",3,3
+3049,"particle moving",2,3
+3050,"centrally extended",2,3
+3051,"infinite dimensional ising model",4,3
+3052,"abelian gauge theories",3,3
+3053,"scale invariant under",3,3
+3054,"fermionic string theory",3,3
+3055,"axial vector fields",3,3
+3056,"reversal invariance",2,3
+3057,"perturbative unification",2,3
+3058,"uq a2 a1",3,3
+3059,"landau levels",2,3
+3060,"non linear sigma models",4,3
+3061,"massive vector fields",3,3
+3062,"non zero curvature",3,3
+3063,"extrinsic curvature term",3,3
+3064,"weight representations",2,3
+3065,"integer quantum",2,3
+3066,"large nc limit",3,3
+3067,"free massive",2,3
+3068,"dual yang mills theory",4,3
+3069,"group techniques",2,3
+3070,"differential cross over",3,3
+3071,"simple analytic",2,3
+3072,"linear differential calculi",3,3
+3073,"path integral formula",3,3
+3074,"simple lie algebra",3,3
+3075,"explicit forms",2,3
+3076,"spectrum generating",2,3
+3077,"self consistent description",3,3
+3078,"differential calculi",2,3
+3079,"riemann sphere",2,3
+3080,"fractional quantum",2,3
+3081,"fundamental representations",2,3
+3082,"scaling form factor",3,3
+3083,"length exponent nu",3,3
+3084,"four quark mass",3,3
+3085,"sums over",2,3
+3086,"integral formulation",2,3
+3087,"einstein hilbert",2,3
+3088,"second class constraints",3,3
+3089,"path integration",2,3
+3090,"reduced phase space time",4,3
+3091,"time scale factor",3,3
+3092,"free energy spectrum",3,3
+3093,"unit cell",2,3
+3094,"manifest itself",2,3
+3095,"scalar curvature term",3,3
+3096,"gauge coupling constant",3,3
+3097,"weak coupling regime",3,3
+3098,"linear differential",2,3
+3099,"zeroth order",2,3
+3100,"non linear sigma",3,3
+3101,"scalar field theories",3,3
+3102,"low energy scales",3,3
+3103,"non critical point",3,3
+3104,"lowest energy spectrum",3,3
+3105,"gaussian initial state",3,3
+3106,"knizhnik zamolodchikov",2,3
+3107,"three body problem",3,3
+3108,"supersymmetric self energy",3,3
+3109,"generalized hypergeometric functions",3,3
+3110,"low energy condition",3,3
+3111,"belgrade yugoslavia",2,3
+3112,"danube workshop june",3,3
+3113,"non simply",2,3
+3114,"finite volume limit",3,3
+3115,"positive energy spectrum",3,3
+3116,"external gauge field",3,3
+3117,"higgs systems",2,3
+3118,"reduced density",2,3
+3119,"quantum group techniques",3,3
+3120,"flat minkowski space",3,3
+3121,"postscript figures available",3,3
+3122,"iii international conference",3,3
+3123,"alushta ukraine june",3,3
+3124,"long ranged",2,3
+3125,"tau functions",2,3
+3126,"superstring vacua",2,3
+3127,"classical periodic",2,3
+3128,"order phase transitions",3,3
+3129,"equivariant cohomology",2,3
+3130,"real time dependent",3,3
+3131,"highly non local",3,3
+3132,"calabi yau threefolds",3,3
+3133,"projective space cal",3,3
+3134,"codimension two",2,3
+3135,"generalized hypergeometric",2,3
+3136,"phase transition amplitude",3,3
+3137,"scale free energy",3,3
+3138,"line emission lines",3,3
+3139,"extended inflation",2,3
+3140,"strong magnetic field theory",4,3
+3141,"small angular scales",3,3
+3142,"spectral density perturbations",3,3
+3143,"majorana mass",2,3
+3144,"interacting scalar field",3,3
+3145,"standard cold",2,3
+3146,"hot dark matter",3,3
+3147,"cold dark matter component",4,3
+3148,"strange quark matter",3,3
+3149,"angular correlations",2,3
+3150,"distance indicator",2,3
+3151,"many body simulations",3,3
+3152,"primordial density perturbations",3,3
+3153,"cdm model",2,3
+3154,"power laws",2,3
+3155,"dark matter halo",3,3
+3156,"redshift space",2,3
+3157,"three point correlation",3,3
+3158,"function xi",2,3
+3159,"standard big bang nucleosynthesis",4,3
+3160,"optically thick",2,3
+3161,"high velocity field",3,3
+3162,"angular scale",2,3
+3163,"standard cold dark matter",4,3
+3164,"hubble constant",2,3
+3165,"peculiar velocity field",3,3
+3166,"cluster monte carlo simulations",4,3
+3167,"iras redshift",2,3
+3168,"radial velocity field",3,3
+3169,"time scales",2,3
+3170,"lower end point",3,3
+3171,"baryonic dark",2,3
+3172,"energy density profile",3,3
+3173,"scale free parameters",3,3
+3174,"long time evolution",3,3
+3175,"cmb anisotropies",2,3
+3176,"large scale structure function",4,3
+3177,"spectral density fluctuations",3,3
+3178,"supersymmetric grand unified theories",4,3
+3179,"standard solar",2,3
+3180,"cold dark matter cdm",4,3
+3181,"angular momentum distribution",3,3
+3182,"first order parameter space",4,3
+3183,"scalar field configurations",3,3
+3184,"galactic plane",2,3
+3185,"gaussian initial",2,3
+3186,"dissipative processes",2,3
+3187,"first order phase space",4,3
+3188,"closed timelike",2,3
+3189,"einstein yang mills equations",4,3
+3190,"semiclassical quantization",2,3
+3191,"relativistic particle hole",3,3
+3192,"critical phenomena",2,3
+3193,"cylindrically symmetric",2,3
+3194,"thermal vacuum",2,3
+3195,"operator ordering",2,3
+3196,"spatial infinity",2,3
+3197,"degree scales",2,3
+3198,"non relativistic quantum",3,3
+3199,"numerical integration",2,3
+3200,"negative curvature",2,3
+3201,"relative importance",2,3
+3202,"semi classical solutions",3,3
+3203,"transfer matrix formalism",3,3
+3204,"necessary condition",2,3
+3205,"opening angle",2,3
+3206,"short proof",2,3
+3207,"lattice qcd predictions",3,3
+3208,"maximal abelian",2,3
+3209,"lattice qcd corrections",3,3
+3210,"broken phase",2,3
+3211,"yukawa coupling region",3,3
+3212,"temperature series expansions",3,3
+3213,"confined phase",2,3
+3214,"vacuum structure function",3,3
+3215,"lattice gauge field theory",4,3
+3216,"two loop level",3,3
+3217,"critical temperature series expansions",4,3
+3218,"four fermion systems",3,3
+3219,"autocorrelation time",2,3
+3220,"leading logarithmic corrections",3,3
+3221,"non universal scaling",3,3
+3222,"finite size scaling relations",4,3
+3223,"kaon decays",2,3
+3224,"hadronic matrix model",3,3
+3225,"postscript figures",2,3
+3226,"loop diagrams containing",3,3
+3227,"two dimensional regularization scheme",4,3
+3228,"lattice qcd vacuum",3,3
+3229,"critical exponents agree",3,3
+3230,"mass ratios",2,3
+3231,"quark gluon fields",3,3
+3232,"two higgs sector",3,3
+3233,"lowest landau",2,3
+3234,"massive schwinger dyson equation",4,3
+3235,"lower end",2,3
+3236,"spontaneously broken phase",3,3
+3237,"high quality",2,3
+3238,"binding energies",2,3
+3239,"low momentum transfer",3,3
+3240,"brueckner hartree approximation",3,3
+3241,"hartree approximation scheme",3,3
+3242,"many body interaction",3,3
+3243,"linear response function",3,3
+3244,"event rates",2,3
+3245,"hadron collider energies",3,3
+3246,"auxiliary field",2,3
+3247,"angular momenta",2,3
+3248,"soft gluon",2,3
+3249,"invariant mass distribution",3,3
+3250,"momentum transfers",2,3
+3251,"effective lagrangian description",3,3
+3252,"inelastic electron",2,3
+3253,"nucleus collisions",2,3
+3254,"nucleon interactions",2,3
+3255,"free path",2,3
+3256,"spin wave vector",3,3
+3257,"drell yan process",3,3
+3258,"many particle hole",3,3
+3259,"soft pion",2,3
+3260,"long time series",3,3
+3261,"short time scales",3,3
+3262,"dynamical system size",3,3
+3263,"axial vector mesons",3,3
+3264,"weak axial vector",3,3
+3265,"proton spin singlet",3,3
+3266,"photon fusion",2,3
+3267,"natural explanation",2,3
+3268,"hyperfine splitting",2,3
+3269,"heavy quark systems",3,3
+3270,"handed neutrino oscillations",3,3
+3271,"yukawa coupling constant",3,3
+3272,"intermediate mass generation",3,3
+3273,"fall off",2,3
+3274,"rightarrow ell bar nu",4,3
+3275,"neutralino relic density",3,3
+3276,"pion compton scattering amplitudes",4,3
+3277,"nonleptonic decays",2,3
+3278,"effective lagrangian approach",3,3
+3279,"higher order parameter",3,3
+3280,"charged fermion mass matrices",4,3
+3281,"axial charge",2,3
+3282,"renormalisation group improved",3,3
+3283,"lightest higgs mass",3,3
+3284,"fermion mass matrices",3,3
+3285,"perturbative qcd predictions",3,3
+3286,"supersymmetric standard model independent",4,3
+3287,"heavy particle production",3,3
+3288,"leptonic decay",2,3
+3289,"leading order cal",3,3
+3290,"heavy quark gluon",3,3
+3291,"higgs particle production",3,3
+3292,"massive vector boson",3,3
+3293,"next linear colliders",3,3
+3294,"leptonic sector",2,3
+3295,"vector meson dominance",3,3
+3296,"solar neutrino mass",3,3
+3297,"squark mass",2,3
+3298,"bottom quark effective",3,3
+3299,"high energy theorem",3,3
+3300,"polarized proton collisions",3,3
+3301,"hidden local",2,3
+3302,"low energy theorems",3,3
+3303,"scaling violations",2,3
+3304,"hard thermal",2,3
+3305,"quark gluon propagator",3,3
+3306,"neutral higgs",2,3
+3307,"pion compton",2,3
+3308,"forward backward asymmetry",3,3
+3309,"minimal supersymmetric grand unification",4,3
+3310,"ep collisions",2,3
+3311,"minimal supersymmetric standard",3,3
+3312,"light stop mass",3,3
+3313,"charmed mesons",2,3
+3314,"quark effective theory hqet",4,3
+3315,"deep inelastic electron proton",4,3
+3316,"ww gamma",2,3
+3317,"lepton number violation",3,3
+3318,"atmospheric neutrino",2,3
+3319,"flavor symmetry breaking",3,3
+3320,"tau rightarrow",2,3
+3321,"third generation",2,3
+3322,"horizontal symmetries",2,3
+3323,"quark mass matrix",3,3
+3324,"quark mass splittings",3,3
+3325,"semileptonic decay amplitudes",3,3
+3326,"heavy leptons",2,3
+3327,"neutralino relic",2,3
+3328,"light gluino",2,3
+3329,"quark gluon distribution",3,3
+3330,"electroweak radiative correction",3,3
+3331,"quark gluon distribution function",4,3
+3332,"extended technicolor models",3,3
+3333,"higgs mass mh gev",4,3
+3334,"anomalous ww gamma couplings",4,3
+3335,"decay widths",2,3
+3336,"monte carlo techniques",3,3
+3337,"invisibly decaying",2,3
+3338,"composite scalar",2,3
+3339,"linear colliders waikoloa hawaii april",5,3
+3340,"high pt",2,3
+3341,"many particle physics",3,3
+3342,"tau neutrinos",2,3
+3343,"hot gauge theories",3,3
+3344,"grand unified theory",3,3
+3345,"two body nonleptonic decays",4,3
+3346,"higher spin dependent",3,3
+3347,"hadronic form factors",3,3
+3348,"electromagnetic form factor",3,3
+3349,"longitudinally polarized proton",3,3
+3350,"mass splittings",2,3
+3351,"tau charm factory",3,3
+3352,"tau neutrino",2,3
+3353,"higgs scalars",2,3
+3354,"colliders waikoloa hawaii april",4,3
+3355,"direct numerical",2,3
+3356,"universal soft",2,3
+3357,"quark mass matrices",3,3
+3358,"jet production via",3,3
+3359,"dominant decay modes",3,3
+3360,"analytical expressions",2,3
+3361,"spin wave functions",3,3
+3362,"breaking mechanism",2,3
+3363,"linear collider energies",3,3
+3364,"ultra relativistic heavy ion collisions",5,3
+3365,"pseudo goldstone bosons",3,3
+3366,"anomaly free energy",3,3
+3367,"perturbative qcd corrections",3,3
+3368,"liquid crystals",2,3
+3369,"impurity scattering",2,3
+3370,"correlation length xi",3,3
+3371,"next nearest neighbor interactions",4,3
+3372,"bose gas",2,3
+3373,"heisenberg chain",2,3
+3374,"spectral weight",2,3
+3375,"three dimensional electron",3,3
+3376,"antiferromagnetic heisenberg antiferromagnet",3,3
+3377,"long range coulomb interactions",4,3
+3378,"reaction diffusion equation",3,3
+3379,"electron phonon",2,3
+3380,"landau equation",2,3
+3381,"disorder strength",2,3
+3382,"rotational invariance",2,3
+3383,"superconducting state",2,3
+3384,"weak interaction strength",3,3
+3385,"kosterlitz thouless transition",3,3
+3386,"long range coulomb interaction",4,3
+3387,"zero temperature anisotropy",3,3
+3388,"next nearest neighbor",3,3
+3389,"magnetic field strength",3,3
+3390,"finite size scaling behavior",4,3
+3391,"antiferromagnetic heisenberg",2,3
+3392,"correlated electrons",2,3
+3393,"per unit cell",3,3
+3394,"length exponent",2,3
+3395,"lattice gas automata",3,3
+3396,"hole solution",2,2
+3397,"2d dilaton field theory",4,2
+3398,"simplicial quantum",2,2
+3399,"lorentz transformations",2,2
+3400,"compact lie",2,2
+3401,"coset construction",2,2
+3402,"gauge potentials",2,2
+3403,"axion field",2,2
+3404,"five dimensional black",3,2
+3405,"fractional superstring",2,2
+3406,"ten dimensional",2,2
+3407,"rotating black hole",3,2
+3408,"laughlin states",2,2
+3409,"density matrix models",3,2
+3410,"rigid string theory",3,2
+3411,"uq a2",2,2
+3412,"elementary excitations",2,2
+3413,"uniform magnetic field theory",4,2
+3414,"chiral gauged wzw",3,2
+3415,"light cone gauge",3,2
+3416,"compact qed",2,2
+3417,"conformal field strength",3,2
+3418,"charged black hole",3,2
+3419,"brst invariant",2,2
+3420,"dilatonic black holes",3,2
+3421,"rigid string",2,2
+3422,"tachyon field theory",3,2
+3423,"verma module",2,2
+3424,"non zero momentum",3,2
+3425,"wznw action",2,2
+3426,"weyl group",2,2
+3427,"dirac operator product",3,2
+3428,"topological sigma",2,2
+3429,"kontsevich model",2,2
+3430,"topological yang",2,2
+3431,"non perturbative solution",3,2
+3432,"enveloping algebras",2,2
+3433,"fermionic string",2,2
+3434,"gauge group techniques",3,2
+3435,"line integrals",2,2
+3436,"semi simple lie algebra",4,2
+3437,"lie superalgebra",2,2
+3438,"gauge field phi",3,2
+3439,"avoiding walks",2,2
+3440,"topological sigma models",3,2
+3441,"light cone gauge field",4,2
+3442,"boson self",2,2
+3443,"infrared fixed",2,2
+3444,"conformal anomaly",2,2
+3445,"affine lie",2,2
+3446,"field redefinitions",2,2
+3447,"njl model",2,2
+3448,"renormalization group flows",3,2
+3449,"charged black holes",3,2
+3450,"full quantum gravity",3,2
+3451,"relativistic quantum group",3,2
+3452,"arbitrary riemann",2,2
+3453,"wilson lines",2,2
+3454,"stringy black hole",3,2
+3455,"leading order phase",3,2
+3456,"nonabelian gauge",2,2
+3457,"residual gauge",2,2
+3458,"non perturbatively",2,2
+3459,"ordinary differential",2,2
+3460,"knot theory",2,2
+3461,"abelian gauge groups",3,2
+3462,"conformal gauge field theory",4,2
+3463,"topological yang mills",3,2
+3464,"landau gauge theory",3,2
+3465,"pure gauge",2,2
+3466,"distance expansion",2,2
+3467,"four dimensional black",3,2
+3468,"generalized uncertainty",2,2
+3469,"front field",2,2
+3470,"interacting scalar field theory",4,2
+3471,"negative cosmological",2,2
+3472,"fermi level",2,2
+3473,"abelian toda",2,2
+3474,"extended poincar",2,2
+3475,"hilbert spaces",2,2
+3476,"black hole formation",3,2
+3477,"partial differential",2,2
+3478,"conformal affine lie algebra",4,2
+3479,"toda lattice",2,2
+3480,"dimensional hypercubic",2,2
+3481,"temporal gauge field",3,2
+3482,"galactic nuclei",2,2
+3483,"non local galaxy",3,2
+3484,"active galactic",2,2
+3485,"autocorrelation function",2,2
+3486,"cluster mass",2,2
+3487,"gravitational microlensing",2,2
+3488,"iras redshift space distortions",4,2
+3489,"radio sources",2,2
+3490,"high energy flux",3,2
+3491,"gamma ray burst",3,2
+3492,"space distortions",2,2
+3493,"column density",2,2
+3494,"standard cdm",2,2
+3495,"primordial density",2,2
+3496,"ray emission",2,2
+3497,"dark matter cdm models",4,2
+3498,"optically thin",2,2
+3499,"velocity field",2,2
+3500,"maximum likelihood",2,2
+3501,"momentum conservation",2,2
+3502,"late type",2,2
+3503,"local galaxy",2,2
+3504,"hole formation",2,2
+3505,"flux line",2,2
+3506,"cobe normalization",2,2
+3507,"total energy theorem",3,2
+3508,"density fluctuation",2,2
+3509,"microlensing events",2,2
+3510,"gamma rays",2,2
+3511,"time scale structure",3,2
+3512,"over histories",2,2
+3513,"time asymmetry",2,2
+3514,"space time behaviour",3,2
+3515,"ashtekar formulation",2,2
+3516,"dirac neutrino",2,2
+3517,"diffeomorphism invariance",2,2
+3518,"density contrast",2,2
+3519,"energy loss",2,2
+3520,"negative curvature singularity",3,2
+3521,"spherically symmetric spacetimes",3,2
+3522,"langevin equations",2,2
+3523,"dimensional black hole solution",4,2
+3524,"dimensional black",2,2
+3525,"killing vectors",2,2
+3526,"interacting scalar fields",3,2
+3527,"absolutely continuous",2,2
+3528,"dimensional subspace",2,2
+3529,"tension sigma",2,2
+3530,"static quark confinement",3,2
+3531,"landau gauge invariant",3,2
+3532,"space time dependence",3,2
+3533,"non abelian gauge fields",4,2
+3534,"lattice gauge fields",3,2
+3535,"available via",2,2
+3536,"temperature series",2,2
+3537,"four fermion operators",3,2
+3538,"gluon fields",2,2
+3539,"neutrino problem",2,2
+3540,"adjoint higgs",2,2
+3541,"external magnetic field theory",4,2
+3542,"mq corrections",2,2
+3543,"scaling laws",2,2
+3544,"quark mass splitting",3,2
+3545,"internal quark masses",3,2
+3546,"mass shell model",3,2
+3547,"ultra relativistic",2,2
+3548,"brueckner hartree",2,2
+3549,"first excited",2,2
+3550,"response theory",2,2
+3551,"mean free energy",3,2
+3552,"intermediate energies",2,2
+3553,"free energy momentum",3,2
+3554,"improved effective",2,2
+3555,"liquid theory",2,2
+3556,"exchange currents",2,2
+3557,"charge radii",2,2
+3558,"double differential",2,2
+3559,"disoriented chiral",2,2
+3560,"field strengths",2,2
+3561,"product expansion",2,2
+3562,"double layer",2,2
+3563,"non zero frequency",3,2
+3564,"realistic superstring",2,2
+3565,"model sm",2,2
+3566,"direct cp",2,2
+3567,"heavy quark condensate",3,2
+3568,"right handed neutrinos",3,2
+3569,"transverse momenta",2,2
+3570,"right handed neutrino oscillations",4,2
+3571,"leading logarithm",2,2
+3572,"bottom quark gluon",3,2
+3573,"unknown parameters",2,2
+3574,"horizontal symmetry",2,2
+3575,"zero cosmological",2,2
+3576,"supersymmetric grand",2,2
+3577,"non strange quark",3,2
+3578,"lattice gauge field",3,2
+3579,"supersymmetric grand unified",3,2
+3580,"improved effective hamiltonian",3,2
+3581,"improved effective potential",3,2
+3582,"ckm matrix model",3,2
+3583,"cabibbo kobayashi",2,2
+3584,"maskawa matrix model",3,2
+3585,"polarized proton",2,2
+3586,"charged higgs mass",3,2
+3587,"relativistic constituent",2,2
+3588,"scattering processes like",3,2
+3589,"mean free",2,2
+3590,"energy momentum independent",3,2
+3591,"technicolor models",2,2
+3592,"neutrino mass matrices",3,2
+3593,"heavy quark searches",3,2
+3594,"singlet majoron",2,2
+3595,"jona lasinio",2,2
+3596,"higgs mass scales",3,2
+3597,"coupling unification",2,2
+3598,"forward scattering amplitudes",3,2
+3599,"transverse momentum distribution function",4,2
+3600,"field theory hqet",3,2
+3601,"light stop",2,2
+3602,"handed neutrinos",2,2
+3603,"majoron models",2,2
+3604,"two loop diagrams",3,2
+3605,"precision electroweak",2,2
+3606,"self energy theorem",3,2
+3607,"gluino mass",2,2
+3608,"few tev",2,2
+3609,"nu tau lepton",3,2
+3610,"self consistent treatment",3,2
+3611,"quark mass ratios",3,2
+3612,"ww scattering",2,2
+3613,"nu tau neutrino mass",4,2
+3614,"ckm matrix",2,2
+3615,"heavy quark limit",3,2
+3616,"flavor symmetries",2,2
+3617,"low energy momentum",3,2
+3618,"diagrams containing",2,2
+3619,"gluon emission",2,2
+3620,"anomalous magnetic field",3,2
+3621,"self energy momentum",3,2
+3622,"independent determination",2,2
+3623,"dynamical exponent",2,2
+3624,"scaling relation",2,2
+3625,"high energy gap",3,2
+3626,"unstable periodic",2,2
+3627,"anderson lattice",2,2
+3628,"landau ginzburg models",3,2
+3629,"long time behaviour",3,2
+3630,"kondo problem",2,2
+3631,"relaxation time",2,2
+3632,"low temperature superconductors",3,2
+3633,"coulomb repulsion",2,2
+3634,"superconductor insulator",2,2
+3635,"universal scaling behavior",3,2
+3636,"universal scaling limit",3,2
+3637,"carlo algorithm",2,2
+3638,"gas automata",2,2
+3639,"world line",2,1
+3640,"affine toda",2,1
+3641,"two dimensional black hole formation",5,1
+3642,"gauged wess zumino",3,1
+3643,"affine kac",2,1
+3644,"tachyon field",2,1
+3645,"coset conformal",2,1
+3646,"generalized kdv",2,1
+3647,"supergravity erice",2,1
+3648,"soft supersymmetry",2,1
+3649,"supersymmetric self dual yang",4,1
+3650,"effective actions",2,1
+3651,"taylor series",2,1
+3652,"modular invariant partition",3,1
+3653,"universal covering",2,1
+3654,"quantization program",2,1
+3655,"baxter equations",2,1
+3656,"phase spaces",2,1
+3657,"finite thickness",2,1
+3658,"dimensional sphere",2,1
+3659,"gordon model",2,1
+3660,"flat minkowski",2,1
+3661,"einstein yang",2,1
+3662,"mills theories",2,1
+3663,"baxter equation",2,1
+3664,"unbroken gauge",2,1
+3665,"vilkovisky formalism",2,1
+3666,"wznw theory",2,1
+3667,"zamolodchikov equation",2,1
+3668,"supersymmetric yang",2,1
+3669,"2-d gravity",2,1
+3670,"conformal field theoretic",3,1
+3671,"zamolodchikov equations",2,1
+3672,"poisson lie",2,1
+3673,"negative cosmological phase",3,1
+3674,"generating algebra",2,1
+3675,"reissner nordstr",2,1
+3676,"temporal gauge",2,1
+3677,"physical hilbert",2,1
+3678,"sokolov reduction",2,1
+3679,"clebsch gordan",2,1
+3680,"rational conformal",2,1
+3681,"toda theory",2,1
+3682,"intertwining operators",2,1
+3683,"toda field",2,1
+3684,"internal space time",3,1
+3685,"space time evolution equation",4,1
+3686,"systems accepting",2,1
+3687,"organized criticality",2,1
+3688,"chern class",2,1
+3689,"higher rank",2,1
+3690,"gamma ray burst sources",4,1
+3691,"ray background",2,1
+3692,"magellanic cloud",2,1
+3693,"sachs wolfe",2,1
+3694,"saw mechanism",2,1
+3695,"large magellanic",2,1
+3696,"mixed dark matter",3,1
+3697,"ultra high",2,1
+3698,"background cmb",2,1
+3699,"interacting scalar curvature",3,1
+3700,"highly non",2,1
+3701,"dark matter cdm",3,1
+3702,"accretion disks",2,1
+3703,"pair correlation functions",3,1
+3704,"wavelength limit",2,1
+3705,"wise function",2,1
+3706,"small angular",2,1
+3707,"element abundances",2,1
+3708,"preserving diffeomorphisms",2,1
+3709,"loop representations",2,1
+3710,"standard big bang",3,1
+3711,"cp invariance",2,1
+3712,"broken phase transition",3,1
+3713,"background cmb anisotropy",3,1
+3714,"late time",2,1
+3715,"symmetric spacetimes",2,1
+3716,"stationary black",2,1
+3717,"dewitt equation",2,1
+3718,"statistical mechanical",2,1
+3719,"dimensional black hole entropy",4,1
+3720,"pure gravity",2,1
+3721,"standard big",2,1
+3722,"timelike curves",2,1
+3723,"hole evaporation",2,1
+3724,"differential equations satisfied",3,1
+3725,"unit length",2,1
+3726,"continuous phase",2,1
+3727,"hybrid monte carlo",3,1
+3728,"euclidean path",2,1
+3729,"abelian projection",2,1
+3730,"deconfined phase",2,1
+3731,"nielsen ninomiya",2,1
+3732,"pure gauge field",3,1
+3733,"two dimensional regularization",3,1
+3734,"dynamical exponent nu",3,1
+3735,"lattice qcd sum",3,1
+3736,"landau gauge",2,1
+3737,"scaling form factors",3,1
+3738,"dynamical staggered",2,1
+3739,"residual gauge theory",3,1
+3740,"higher order phase transition",4,1
+3741,"chiral condensate",2,1
+3742,"carlo techniques",2,1
+3743,"3d ising",2,1
+3744,"bjorken sum",2,1
+3745,"reversal symmetry",2,1
+3746,"transparency ct",2,1
+3747,"polarized he",2,1
+3748,"ultra relativistic heavy ion",4,1
+3749,"organized critical",2,1
+3750,"mechanical systems",2,1
+3751,"length xi",2,1
+3752,"spatial correlation",2,1
+3753,"parton distribution",2,1
+3754,"wigner function",2,1
+3755,"higgs mass matrix model",4,1
+3756,"symmetry breaking parameters",3,1
+3757,"gauge singlet",2,1
+3758,"quark self",2,1
+3759,"next linear",2,1
+3760,"neutrinoless double",2,1
+3761,"dirac neutrino masses",3,1
+3762,"gluon condensate",2,1
+3763,"strange quark gluon",3,1
+3764,"relic density",2,1
+3765,"cp nonconservation",2,1
+3766,"ward takahashi",2,1
+3767,"two higgs bosons",3,1
+3768,"dimensional regularization",2,1
+3769,"non perturbative calculation",3,1
+3770,"thermal loops",2,1
+3771,"anomalous ww gamma",3,1
+3772,"handed neutrino problem",3,1
+3773,"standard model incorporating",3,1
+3774,"mit bag",2,1
+3775,"squark mass spectrum",3,1
+3776,"solar neutrino oscillations",3,1
+3777,"universal soft supersymmetry",3,1
+3778,"strongly interacting scalar",3,1
+3779,"left right handed neutrino",4,1
+3780,"handed quarks",2,1
+3781,"hadronic form",2,1
+3782,"higgs particles",2,1
+3783,"handed neutrino mass",3,1
+3784,"tau charm",2,1
+3785,"hadronic matter",2,1
+3786,"higgs searches",2,1
+3787,"parisi evolution",2,1
+3788,"linear colliders waikoloa hawaii",4,1
+3789,"vacuum expectation",2,1
+3790,"matter candidate",2,1
+3791,"gauge group improved",3,1
+3792,"neutral higgs mass",3,1
+3793,"quark searches",2,1
+3794,"gluon field",2,1
+3795,"ww gamma couplings",3,1
+3796,"axial vector meson",3,1
+3797,"de moriond",2,1
+3798,"discrete symmetry breaking",3,1
+3799,"hawaii april",2,1
+3800,"spontaneous cp",2,1
+3801,"loop effective potentials",3,1
+3802,"quark mass matrix model",4,1
+3803,"anomalous magnetic",2,1
+3804,"tevatron collider",2,1
+3805,"decaying higgs",2,1
+3806,"quark effective potential",3,1
+3807,"waikoloa hawaii april",3,1
+3808,"high energy scales",3,1
+3809,"anomalous ww",2,1
+3810,"disoriented chiral symmetry",3,1
+3811,"inelastic lepton",2,1
+3812,"williams approximation",2,1
+3813,"qcd sum",2,1
+3814,"electroweak phase",2,1
+3815,"scale anisotropies",2,1
+3816,"light front field theory",4,1
+3817,"lightest higgs",2,1
+3818,"least action",2,1
+3819,"negative energy theorem",3,1
+3820,"non trivially",2,1
+3821,"quark mass scales",3,1
+3822,"pair production mechanism",3,1
+3823,"nu tau neutrino masses",4,1
+3824,"mixed dark",2,1
+3825,"soft gluon plasma",3,1
+3826,"improved fermion",2,1
+3827,"non abelian higgs",3,1
+3828,"two higgs boson masses",4,1
+3829,"gaugino condensation",2,1
+3830,"order alphas3",2,1
+3831,"neutrino deficit",2,1
+3832,"scale structures",2,1
+3833,"carlo simulations",2,1
+3834,"ordered phase",2,1
+3835,"carlo calculation",2,1
+3836,"time averaged",2,1
+3837,"weak axial",2,1
+3838,"continuous phase transitions",3,1
+3839,"range correlations",2,1
+3840,"twisted boundary",2,1
+3841,"carlo calculations",2,1
+3842,"squeezed state",2,1
+3843,"stress energy",2,1
+3844,"next nearest",2,1
+3845,"liquid behavior",2,1
+3846,"glass phase",2,1
+3847,"cluster monte carlo",3,1
+3848,"non conserved",2,1
+3849,"elementary particle",2,1
+3850,"simons theory",2,1
+3851,"many particle excitations",3,1
+3852,"hall regime",2,1
+3853,"critical behaviour",2,1
+3854,"ising spin",2,1
+3855,"mott hubbard",2,1
+3856,"dipole moments",2,1
+3857,"data sets",2,1
