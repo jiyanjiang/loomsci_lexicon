@@ -1,0 +1,56 @@
+# ============================================================
+# loomsci_lexicon 配置文件（示例/空版）
+#
+# 使用方法：
+#   1. 复制本文件为 config.yaml（cp config.example.yaml config.yaml）
+#   2. 按你的环境填写下面各字段（API key 可留空，核心流程无需 key）
+#   3. 不要将 config.yaml 提交到仓库（已在 .gitignore 中排除）
+# ============================================================
+
+# ---------- 数据路径 ----------
+# arXiv 事实层 parquet（Hive 按年分区：{papers_dir}/year=YYYY/*.parquet）
+# 每行必须含列：arxiv_id, title, abstract
+# 仓库自带前 5 年（1991-1995）于 data/parquet/papers/；若需全量，
+# 获取方式见 docs/parquet_format.md（从 Kaggle Cornell-University/arxiv 快照导出）
+papers_dir: data/parquet/papers
+
+# scan 产物目录（学术短语词典 by_year，可留空由程序自动生成）
+scan_dir: data/by_year
+
+# ---------- 标注路径（默认即可用）----------
+# 标注产物（raw / normalized 两个输出目录）
+annotation_raw: data/annotation/raw
+annotation_norm: data/annotation/normalized
+
+# 单复数/缩写跟随归一化表（随仓库提供，通常无需改动）
+number_normalize: data/number_normalize.csv
+abbrev_follow: data/abbrev_follow.csv
+
+# ---------- 词典与白名单（通常无需改动）----------
+# 学术短语词典（G/R 计算依赖 data/cumulative/lexicon_*.csv）
+lexicon_dir: data/cumulative
+# LLM 单 token 白名单（标注可选依赖；无则标注只用多词短语）
+arxiv_terms_dir: data/arxiv_terms
+# 手动白名单 / 后置黑名单（随仓库提供）
+manual_whitelist: data/whitelist_manual.txt
+blacklist_manual: data/blacklist_manual.txt
+
+# ---------- 可视化与检索（web 层，通常无需改动）----------
+# 三图产物输出目录（visualize.py 输出）
+visual_dir: data/visual
+# 全年图产物（FocusView 画廊读取；默认与 visualize 输出同目录）
+visual_full_dir: data/visual
+# 预印本检索库（BM25 FTS，可选——README 说明如何构建；留空则检索功能关闭）
+fts_db: ""
+# 领域归一源库（build_category_map.py 一次性重建用；留空则由环境变量 SCI365_SOURCE_DB 提供）
+category_map_source_db: ""
+
+# ---------- API key（可选，仅 LLM 审核/噪音提取环节需要）----------
+# 本项目的核心流程（scan → 标注 → 可视化 → G/R）不依赖 LLM；
+# 仅「LLM 盘点筛选 / 噪音信号审核 / 深度报告」环节需要 DeepSeek key。
+deepseek_api_key: ""
+deepseek_base_url: https://api.deepseek.com/chat/completions
+deepseek_model: deepseek-v4-pro
+
+# ---------- Web 服务（可选）----------
+web_port: 5010
