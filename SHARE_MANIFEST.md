@@ -52,6 +52,7 @@
 | `data/number_normalize.csv` / `abbrev_follow.csv` | singular/plural & abbreviation tables |
 | `data/whitelist_manual.txt` / `blacklist_manual.txt` | manual whitelist/blacklist |
 | `data/arxiv_terms/single_tok_keep_final.txt` | LLM single-token whitelist |
+| `data/arxiv_terms/LLM_arxiv_multi_tokens_pub.csv` | LLM multi-token whitelist (29,979 terms, always loaded) |
 | `data/stop/` | scan stopword tables (required by scan) |
 
 ---
@@ -144,6 +145,7 @@ python web/explore.py --port 5010           # interactive web
 | `data/number_normalize.csv` / `abbrev_follow.csv` | 单复数/缩写归一表 |
 | `data/whitelist_manual.txt` / `blacklist_manual.txt` | 手工白名单/黑名单 |
 | `data/arxiv_terms/single_tok_keep_final.txt` | LLM 单 token 白名单 |
+| `data/arxiv_terms/LLM_arxiv_multi_tokens_pub.csv` | LLM 多 token 白名单（29,979 词，始终读入）|
 | `data/stop/` | scan 停用词表（scan 必读）|
 
 ---
