@@ -1,0 +1,6 @@
+duckdb>=1.0.0
+numpy>=1.24.0
+flask>=3.0.0
+pyvis>=0.3.2
+matplotlib>=3.7.0
+requests>=2.31.0
