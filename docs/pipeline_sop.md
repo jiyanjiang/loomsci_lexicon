@@ -108,9 +108,10 @@ it's assembled from 6 layers, added in this order:
 
 ```
 Layer 1  scan terms          the multi-word dictionary from step 1 (the base)
-Layer 2  LLM single-token    data/arxiv_terms/single_tok_keep_final.txt
+Layer 2  LLM single-token    (optional) data/arxiv_terms/single_tok_keep_final.txt
                              (high-value single words scan missed, e.g. `qubit`)
-Layer 3  LLM multi-token     (optional) term lists from LLM review
+Layer 3  LLM multi-token     data/arxiv_terms/LLM_arxiv_multi_tokens_pub.csv
+                             (merged from LLM review, 29,979 multi-word terms — always loaded)
 Layer 4  manual whitelist    data/whitelist_manual.txt (terms a human rescued)
 Layer 5  override whitelist  data/stop/whitelist_override.txt
                              (FORCED add — tagged even if not in the dictionary,
@@ -371,9 +372,10 @@ python scripts/scan_year.py --year 1986-1991
 
 ```
 第 1 层  scan 术语          第 1 步的多词词典（基础）
-第 2 层  LLM 单词白名单    data/arxiv_terms/single_tok_keep_final.txt
+第 2 层  LLM 单词白名单    （可选）data/arxiv_terms/single_tok_keep_final.txt
                            （救回 scan 漏掉的高价值单词，如 `qubit`）
-第 3 层  LLM 多词白名单    （可选）LLM 审阅产出的术语表
+第 3 层  LLM 多词白名单    data/arxiv_terms/LLM_arxiv_multi_tokens_pub.csv
+                           （LLM 审阅合并，29,979 个多词词条——始终读入）
 第 4 层  手工白名单         data/whitelist_manual.txt（人工复核救回的概念）
 第 5 层  override 白名单    data/stop/whitelist_override.txt
                            （强制加——即使词典里没有也照常标注，
