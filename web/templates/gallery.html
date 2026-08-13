@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- FocusView 2.0 · 封闭版本（FROZEN 2026-08-11）· 新开发走 PaperExplore 3.0 独立模板 -->
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visualize the Science: arXiv {{ year_min }}-{{ year_max }}</title>
+<style>
+  body { font-family: -apple-system, "PingFang SC", sans-serif; margin: 0;
+         background: #fafafa; color: #222; }
+  header { background: linear-gradient(135deg, #1a237e, #283593);
+           color: #fff; padding: 28px 40px; display: flex; align-items: center; }
+  header h1 { margin: 0; font-size: 24px; }
+  header p { margin: 6px 0 0; opacity: .85; font-size: 14px; }
+  .head-right { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+  .head-btn { height: 30px; padding: 0 14px; border: 1px solid rgba(255,255,255,.35);
+              border-radius: 6px; background: transparent; color: #fff; font-size: 13px;
+              cursor: pointer; text-decoration: none; display: inline-flex;
+              align-items: center; }
+  .head-btn:hover { background: rgba(255,255,255,.12); }
+  .head-btn.active { background: rgba(255,255,255,.22); border-color: #fff; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 20px; }
+  .year-card { background: #fff; border: 1px solid #e0e0e0;
+               border-radius: 8px; padding: 16px 20px; margin-bottom: 14px;
+               display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .year { font-size: 20px; font-weight: 700; min-width: 70px; color: #1a237e; }
+  .theme { font-size: 14px; color: #555; min-width: 180px; max-width: 220px;
+           line-height: 1.4; }
+  .params { font-family: Menlo, monospace; font-size: 13px; color: #555;
+            background: #f5f5f5; padding: 6px 10px; border-radius: 4px; }
+  .params b { color: #b71c1c; }
+  .links a { display: inline-block; margin-right: 10px; color: #1565c0;
+             text-decoration: none; font-size: 14px; }
+  .links a:hover { text-decoration: underline; }
+  .links .none { color: #bbb; font-size: 13px; }
+  .pending { color: #e65100; font-size: 12px; }
+  .focus { margin-left: auto; display: flex; gap: 6px; align-items: center; }
+  .focus input { width: 220px; padding: 6px 8px; border: 1px solid #ccc;
+                 border-radius: 4px; font-size: 13px; }
+  .focus button { padding: 6px 12px; border: none; border-radius: 4px;
+                  background: #1a237e; color: #fff; cursor: pointer; font-size: 13px; }
+  .focus button:hover { background: #283593; }
+  #modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.6);
+           z-index: 100; justify-content: center; align-items: center; }
+  #modal.show { display: flex; }
+  #modal .box { background: #fff; border-radius: 8px; padding: 20px;
+                max-width: 90vw; max-height: 90vh; overflow: auto; }
+  #modal iframe { width: 85vw; height: 80vh; border: none; border-radius: 4px; }
+  .tip { font-size: 12px; color: #888; margin-top: 4px; }
+  footer { text-align: center; color: #999; font-size: 12px;
+           padding: 20px; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Visualize the Science: arXiv {{ year_min }}-{{ year_max }}</h1>
+    <p>学术短语共现网络 · 静态 / 速度 / 加速度 · 焦点图 | 参数见
+       <code>docs/visualization_params.md</code></p>
+  </div>
+  <div class="head-right">
+    <a class="head-btn active" href="/list">List</a>
+    <a class="head-btn" href="/explore">Explore</a>
+    <a class="head-btn" href="/distance">Distance</a>
+  </div>
+</header>
+<div class="wrap">
+  {% for y in years %}
+  {% set r = reg[y ~ ''] %}
+  <div class="year-card">
+    <div class="year">{{ y }}</div>
+    <div class="theme">{{ r.theme }}</div>
+    <div class="params">
+      e={{ r.e }} &nbsp; w_cs={{ r.w_cs }}
+    </div>
+    <div class="links">
+      {% if r.static %}<a href="/visual/static/{{ r.static }}">静态</a>
+      {% else %}<span class="none">静态（未生成）</span>{% endif %}
+      {% if r.speed %}<a href="/visual/speed/{{ r.speed }}">速度</a>
+      {% else %}<span class="none">速度（未生成）</span>{% endif %}
+      {% if r.accel %}<a href="/visual/accel/{{ r.accel }}">加速度</a>
+      {% else %}<span class="none">加速度（未生成）</span>{% endif %}
+    </div>
+    <div class="focus">
+      <input id="f-{{ y }}" placeholder="焦点词 a b c, e f d（≤5）">
+      <button onclick="doFocus({{ y }})">焦点图</button>
+    </div>
+    <div class="focus-result" id="fr-{{ y }}"></div>
+  </div>
+  {% endfor %}
+  <p class="tip">焦点图：输入逗号分隔的焦点短语（如
+     <code>string theory, black hole</code>），生成该年以焦点词为中心的邻域子图，即时内嵌展示。</p>
+</div>
+<footer>
+  Visualize the Science · loomsci_lexicon · {{ year_min }}-{{ year_max }}
+  <div class="footnote" style="font-size:12px;color:#999;margin-top:8px">
+    所有图的边数上限为 Top {{ top_n }}（即最多 {{ top_n }} 条边，再多肉眼难以分辨）。
+    焦点图通过每行输入框生成，反映你的个人研究兴趣。
+  </div>
+</footer>
+
+<script>
+async function doFocus(y) {
+  const inp = document.getElementById('f-' + y);
+  const focus = inp.value.trim();
+  if (!focus) { alert('请输入焦点词'); return; }
+  const btn = inp.nextElementSibling;
+  const old = btn.textContent;
+  btn.textContent = '生成中…'; btn.disabled = true;
+  try {
+    const r = await fetch('/focus', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({year: y, focus: focus})
+    });
+    const d = await r.json();
+    if (d.ok) {
+      const box = document.getElementById('fr-' + y);
+      const labels = {static: '静态', speed: '速度', accel: '加速度'};
+      const order = ['static', 'speed', 'accel'];
+      let cells = '';
+      for (const m of order) {
+        if (d.files && d.files[m]) {
+          cells +=
+            '<div style="flex:1;min-width:280px">' +
+            '<div style="font-size:12px;color:#888;margin-bottom:6px">' + labels[m] +
+            '<a href="/focus/' + d.files[m] + '" target="_blank" ' +
+            'style="float:right;color:#1565c0">新窗口打开</a></div>' +
+            '<iframe src="/focus/' + d.files[m] + '" style="width:100%;height:420px;' +
+            'border:none;border-radius:4px"></iframe></div>';
+        }
+      }
+      box.innerHTML =
+        '<div style="margin-top:10px;border:1px solid #e0e0e0;border-radius:6px;' +
+        'background:#fafafa;padding:8px">' +
+        '<div style="font-size:12px;color:#888;margin-bottom:8px">焦点图 ' +
+        d.focus + '（' + d.year + '）—— ' +
+        (d.files ? Object.keys(d.files).map(m => labels[m]).join(' · ') : '') + '</div>' +
+        '<div style="display:flex;gap:10px;flex-wrap:wrap">' + cells + '</div></div>';
+      box.scrollIntoView({behavior: 'smooth', block: 'nearest'});
+    } else {
+      alert('生成失败: ' + (d.error || '未知错误'));
+    }
+  } catch (e) { alert('请求失败: ' + e); }
+  finally { btn.textContent = old; btn.disabled = false; }
+}
+</script>
+</body>
+</html>

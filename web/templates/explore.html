@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<!-- PaperExplore 3.0 · 可视化搜索（年份 2000-2025 / 当年 + All Years / 中英双语） -->
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PaperExplore · Visualization Search</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; font-family: -apple-system, "PingFang SC", sans-serif;
+               background: #f5f6fa; color: #222; }
+  header { height: 56px; display: flex; align-items: center; padding: 0 20px;
+           background: linear-gradient(135deg, #0d2137, #16324f); color: #fff; }
+  header h1 { font-size: 18px; }
+  header .sub { font-size: 12px; opacity: .78; margin-left: 14px; }
+  .head-right { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+  .head-btn { height: 30px; padding: 0 14px; border: 1px solid rgba(255,255,255,.35);
+              border-radius: 6px; background: transparent; color: #fff; font-size: 13px;
+              cursor: pointer; }
+  .head-btn:hover { background: rgba(255,255,255,.12); }
+  .head-btn.active { background: rgba(255,255,255,.22); border-color: #fff; }
+  .controls { min-height: 56px; display: flex; align-items: center; gap: 10px;
+              padding: 8px 16px; background: #fff; border-bottom: 1px solid #e4e7ee; flex-wrap: wrap; }
+  .controls select { height: 34px; padding: 0 8px; border: 1px solid #ccd2de;
+              border-radius: 6px; font-size: 14px; background: #fff; }
+  .controls input[type=text] { flex: 0 1 380px; min-width: 200px; height: 34px; padding: 0 12px;
+              border: 1px solid #ccd2de; border-radius: 6px; font-size: 14px; }
+  .controls .gen-btn { height: 34px; padding: 0 18px; border: none; border-radius: 6px;
+              background: #1565c0; color: #fff; font-size: 14px; cursor: pointer; }
+  .controls .gen-btn:disabled { opacity: .5; cursor: wait; }
+  .mode-switch { display: flex; gap: 4px; }
+  .mode-switch .mbtn { height: 30px; padding: 0 13px; border: 1px solid #ccd2de;
+              border-radius: 6px; background: #fff; color: #444; font-size: 13px; cursor: pointer; }
+  .mode-switch .mbtn.active { background: #1565c0; color: #fff; border-color: #1565c0; }
+  .search-p { border-color: #7b1fa2 !important; color: #7b1fa2 !important; font-weight: 600; }
+  .search-p:hover { background: #f3e5f5 !important; }
+  .search-f { border-color: #1565c0 !important; color: #1565c0 !important; font-weight: 600; }
+  .search-f:hover { background: #e8f0fe !important; }
+  .search-r { border-color: #ef6c00 !important; color: #ef6c00 !important; font-weight: 600; }
+  .search-r:hover { background: #fff3e0 !important; }
+  .main { display: flex; height: calc(100% - 112px); }
+  .left { flex: 0 0 60%; position: relative; padding: 10px; }
+  .left iframe { width: 100%; height: 100%; border: 1px solid #e4e7ee;
+                 border-radius: 8px; background: #fff; }
+  .right { flex: 1; display: flex; flex-direction: column; border-left: 1px solid #e4e7ee;
+           background: #fff; min-width: 0; overflow: hidden; }
+  .panel-head { padding: 12px 18px; border-bottom: 1px solid #eef0f5; }
+  .scope-switch { display: flex; gap: 6px; margin-bottom: 10px; }
+  .scope-switch .sbtn { height: 28px; padding: 0 14px; border: 1px solid #ccd2de;
+              border-radius: 6px; background: #fff; color: #444; font-size: 13px; cursor: pointer; }
+  .scope-switch .sbtn.active { background: #2e7d32; color: #fff; border-color: #2e7d32; }
+  /* 档位按钮（概念对/FTS/RBO）：橙色高亮，与时间选择（绿色）区分（2026-08-13）*/
+  .scope-switch .retr-btn.active { background: #ef6c00; color: #fff; border-color: #ef6c00; }
+  .panel-head .sel { font-size: 15px; font-weight: 600; word-break: break-all; }
+  .panel-head .meta { font-size: 12px; color: #8892a6; margin-top: 4px; }
+  .list { flex: 1; overflow-y: auto; padding: 8px 12px; min-height: 0; }
+  .item { padding: 10px 12px; border-radius: 8px; border-bottom: 1px solid #f2f4f8; }
+  .item:hover { background: #f0f4fa; }
+  .item .t { font-size: 13.5px; color: #1565c0; line-height: 1.45; font-weight: 500; }
+  .item .t a { color: #1565c0; text-decoration: none; }
+  .item .t a:hover { text-decoration: underline; }
+  .item .m { font-size: 11.5px; color: #8892a6; margin-top: 4px; }
+  .item .s { font-size: 11px; color: #b0711a; margin-top: 3px; }
+  .item .ab { font-size: 12px; color: #444; margin-top: 6px; line-height: 1.55; }
+  .item .ab .toggle { color: #1565c0; cursor: pointer; font-size: 12px; margin-left: 4px;
+              background: none; border: none; padding: 0; }
+  .empty { padding: 30px 18px; color: #8892a6; font-size: 13px; text-align: center; line-height: 1.9; }
+  .warn-bar { padding: 8px 14px; margin: 0 12px 8px; border-radius: 8px;
+              font-size: 12.5px; line-height: 1.6; }
+  .warn-bar.warn { background: #fff8e1; color: #8a6d00; border: 1px solid #f0dfa8; }
+  .warn-bar.info { background: #e8f0fe; color: #1565c0; border: 1px solid #d0e0f5; }
+  .loading-box { display: flex; align-items: center; gap: 12px; padding: 26px 18px;
+                 color: #8892a6; font-size: 13.5px; }
+  .loading-box .spin { width: 22px; height: 22px; border: 3px solid #e0e6f0;
+                 border-top-color: #1565c0; border-radius: 50%; animation: rot 0.8s linear infinite; flex-shrink: 0; }
+  @keyframes rot { to { transform: rotate(360deg); } }
+  .pair-box { padding: 8px 18px; border-bottom: 1px solid #eef0f5; background: #fafbfe;
+              flex: 1; overflow-y: auto; min-height: 0; display: flex; flex-direction: column; }
+  .pair-box .pb-title { font-size: 12.5px; font-weight: 600; color: #444; margin-bottom: 6px; }
+  .pair-box .pb-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pair-chip { font-size: 11.5px; padding: 3px 9px; border-radius: 12px; background: #e8f0fe;
+               color: #1565c0; cursor: pointer; border: 1px solid #d0e0f5; }
+  .pair-chip:hover { background: #d5e6fb; }
+  .bridge-chip { background: #fef3e0; color: #b0711a; border-color: #f5e2bc; }
+  .bridge-chip:hover { background: #fce8c9; }
+  .pager { display: flex; align-items: center; justify-content: center; gap: 12px;
+           padding: 10px; border-top: 1px solid #eef0f5; font-size: 13px; color: #444; }
+  .pager button { height: 28px; padding: 0 12px; border: 1px solid #ccd2de;
+           border-radius: 6px; background: #fff; cursor: pointer; }
+  .pager button:disabled { opacity: .4; cursor: default; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <span>PaperExplore</span>
+    <span class="sub" id="hdSub" data-i18n="hdSub"></span>
+    <span class="sub" id="dataNote" data-i18n="dataNote"></span>
+  </div>
+  <div class="head-right">
+    <button class="head-btn" onclick="location.href='/distance'">Distance</button>
+    <button class="head-btn" id="listBtn" onclick="location.href='/list'">List</button>
+    <button class="head-btn" id="langCn" onclick="setLang('zh')">CN</button>
+    <button class="head-btn" id="langEn" onclick="setLang('en')">EN</button>
+  </div>
+</header>
+
+<div class="controls">
+  <select id="yearSel"></select>
+  <input id="focus" type="text" data-i18n-ph="focusPh">
+  <button class="gen-btn" id="genBtn" data-i18n="genBtn" onclick="genFocus()"></button>
+  <div class="mode-switch" id="modeSwitch">
+    <button class="mbtn active" data-mode="static" data-i18n="modeStatic" onclick="switchMode('static')"></button>
+    <button class="mbtn" data-mode="speed" data-i18n="modeSpeed" onclick="switchMode('speed')"></button>
+    <button class="mbtn" data-mode="accel" data-i18n="modeAccel" onclick="switchMode('accel')"></button>
+  </div>
+  <span style="width:12px"></span>
+  <button class="mbtn search-p" id="recBtn" data-i18n="recSearch" onclick="runSearch('rec')"></button>
+  <button class="mbtn search-f" id="rboBtn" data-i18n="ftsSearch" onclick="runSearch('fts')"></button>
+  <button class="mbtn search-r" id="rboToggle" data-i18n="rboMatch" onclick="runSearch('rbo')"></button>
+</div>
+
+<div class="main">
+  <div class="left">
+    <iframe id="focusFrame" src="about:blank"></iframe>
+  </div>
+  <div class="right">
+    <div class="panel-head">
+      <div class="scope-switch">
+        <button class="sbtn active" id="scopeThisBtn" onclick="setScope('this_year')"></button>
+        <button class="sbtn" id="scopeAllBtn" data-i18n="scopeAll" onclick="setScope('all')"></button>
+        <span style="width:10px"></span>
+        <button class="sbtn retr-btn active" id="retrRecBtn" data-i18n="retrRec" onclick="setRetrieval('rec')"></button>
+        <button class="sbtn retr-btn" id="retrFtsBtn" data-i18n="retrFts" onclick="setRetrieval('fts')"></button>
+        <button class="sbtn retr-btn" id="retrRboBtn" data-i18n="retrRbo" onclick="setRetrieval('rbo')"></button>
+      </div>
+      <div class="sel" id="selTitle" data-i18n="selNone"></div>
+      <div class="meta" id="selMeta" data-i18n="selMetaDefault"></div>
+    </div>
+    <div class="pair-box" id="pairBox" style="display:none">
+      <div class="pb-title" id="pairTitle"></div>
+      <div class="pb-grid" id="pairGrid"></div>
+    </div>
+    <div class="list" id="paperList"></div>
+    <div class="pager" id="pager" style="display:none">
+      <button id="prevBtn" data-i18n="prev" onclick="goPage(-1)"></button>
+      <span id="pageInfo"></span>
+      <button id="nextBtn" data-i18n="next" onclick="goPage(1)"></button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ---------------- i18n 字典（中英一一对应）----------------
+const I18N = {
+  zh: {
+    hdSub: '可视化搜索：点击图中节点/边 → 右侧预印本（FTS 相关度）',
+    dataNote: '数据来源：arXiv {{ year_min }}-{{ year_max }}',
+    yearSel: '年份', focusPh: '焦点词（逗号分隔，≤5 个）',
+    genBtn: '生成焦点图', genIng: '生成中…',
+    modeStatic: '静态', modeSpeed: '速度', modeAccel: '加速度',
+    scopeThis: '当年', scopeAll: 'All Years',
+    retrRec: '概念对', retrFts: 'FTS搜索', retrRbo: 'RBO匹配',
+    rboPh: '搜索：自然语言或短语（≤5）', recSearch: 'LLM+概念对', ftsSearch: 'LLM+FTS', rboMatch: 'LLM+RBO',
+    rboRunIng: 'RBO 检索中…', rboPhrases: '编排短语：', cacheHit: '✓ 缓存命中（跳过 LLM 调用）',
+    loading_phrases: ['正在理解你的查询…', '正在匹配语义邻近的概念…', '正在计算 RBO 相关度…', '正在为你排序结果…'],
+    pairTitleAb: '概念组合 · AB 对（直接共现）', pairTitleBridge: 'A-C-B 桥接（1 度关联）',
+    selNone: '未选中',
+    selMetaDefault: '点击左侧图中的节点或边，此处列出相关预印本（FTS 相关度降序）',
+    selMetaYear: 'FTS 相关度降序',
+    selMetaRbo: 'RBO 语义相关度降序',
+    selMetaRec: '焦点推荐·概念组合', recHint: '焦点推荐只出概念组合；想看论文请切换 FTS搜索 或 RBO匹配',
+    emptyHint1: '← 先在左侧输入焦点词生成焦点图',
+    emptyHint2: '再点击图中的 节点（单个概念）或 边（概念组合）',
+    noResult: '该查询无结果',
+    authors: '作者', date: '日期', score: 'FTS', rboScore: 'RBO',
+    expand: '展开', collapse: '收起',
+    pageInfo: '第 {p} / {pages} 页 · 共 {total} 篇',
+    prev: '上一页', next: '下一页',
+    genFail: '生成失败', reqFail: '请求失败',
+  },
+  en: {
+    hdSub: 'Visualization search: click node/edge in graph → preprints (FTS relevance)',
+    dataNote: 'Data: arXiv {{ year_min }}-{{ year_max }}',
+    yearSel: 'Year', focusPh: 'Focus phrases (comma-separated, ≤5)',
+    genBtn: 'Generate Focus Graph', genIng: 'Generating…',
+    modeStatic: 'Static', modeSpeed: 'Speed', modeAccel: 'Acceleration',
+    scopeThis: 'This Year', scopeAll: 'All Years',
+    retrRec: 'Pairs', retrFts: 'FTS Search', retrRbo: 'RBO Match',
+    rboPh: 'Search: NL or phrases (≤5)', recSearch: 'LLM+Pairs', ftsSearch: 'LLM+FTS', rboMatch: 'LLM+RBO',
+    rboRunIng: 'RBO searching…', rboPhrases: 'Phrases: ', cacheHit: '✓ Cache hit (LLM skipped)',
+    loading_phrases: ['Understanding your query…', 'Matching semantically-close concepts…', 'Computing RBO relevance…', 'Ranking results for you…'],
+    pairTitleAb: 'Concept pairs · AB (co-occur)', pairTitleBridge: 'A-C-B bridges (1-hop)',
+    selNone: 'Nothing selected',
+    selMetaDefault: 'Click a node or edge in the graph to list related preprints (FTS score desc)',
+    selMetaYear: 'FTS relevance descending',
+    selMetaRbo: 'RBO semantic relevance descending',
+    selMetaRec: 'Focus Rec · concept pairs', recHint: 'Focus rec shows concept pairs only; switch to FTS Search or RBO Match for papers',
+    emptyHint1: '← First generate the focus graph on the left',
+    emptyHint2: 'Then click a node (single concept) or edge (concept pair)',
+    noResult: 'No results for this query',
+    authors: 'Authors', date: 'Date', score: 'FTS', rboScore: 'RBO',
+    expand: 'Expand', collapse: 'Collapse',
+    pageInfo: 'Page {p} / {pages} · {total} papers',
+    prev: 'Prev', next: 'Next',
+    genFail: 'Generation failed', reqFail: 'Request failed',
+  }
+};
+const ABS_MAX = 256;   // 摘要默认截断字数（用户确认 256）
+let LANG = detectLang();
+function detectLang() {
+  const saved = localStorage.getItem('pe_lang');
+  if (saved === 'zh' || saved === 'en') return saved;
+  return (navigator.language || '').toLowerCase().startsWith('zh') ? 'zh' : 'en';
+}
+function T(k) { return (I18N[LANG] && I18N[LANG][k]) != null ? I18N[LANG][k] : k; }
+function setLang(l) {
+  LANG = l; localStorage.setItem('pe_lang', l);
+  document.documentElement.lang = l;
+  applyI18n();
+  renderList(lastItems, lastTotal);   // 重渲染列表文案
+  if (state) fetchPapers(state.page); // 刷新 meta/分页文案
+}
+function applyI18n() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    el.textContent = T(el.dataset.i18n);
+  });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+    el.placeholder = T(el.dataset.i18nPh);
+  });
+  document.getElementById('langCn').classList.toggle('active', LANG === 'zh');
+  document.getElementById('langEn').classList.toggle('active', LANG === 'en');
+}
+
+// ---------------- 状态 ----------------
+let YEAR = {{ latest_year }};
+let SCOPE = 'this_year';
+let RETRIEVAL = 'fts';   // 'fts' | 'rbo'  右侧检索档位
+let files = {};          // {static, speed, accel}
+let curMode = 'static';
+let state = null;        // {phrase, phrase2, page, pages}
+let lastItems = [], lastTotal = 0;
+let rboState = null;     // {query, phrases, mode}
+
+// 年份下拉 {{ year_sel_min }}-{{ year_max }}（缺省 latest_year = 最新完整全年）
+(function initYearSel() {
+  const sel = document.getElementById('yearSel');
+  for (let y = {{ year_max }}; y >= {{ year_sel_min }}; y--) {
+    const o = document.createElement('option');
+    o.value = y; o.textContent = y;
+    if (y === YEAR) o.selected = true;
+    sel.appendChild(o);
+  }
+  sel.addEventListener('change', () => {
+    YEAR = parseInt(sel.value, 10);
+    files = {};
+    // 更新"YYYY 当年"动态文案
+    document.getElementById('scopeThisBtn').textContent =
+      (LANG === 'zh' ? YEAR + ' 当年' : 'Year ' + YEAR);
+    // 组合搜索（2026-08-13）：切年份后重置页码，用当前档重新执行（带新年份）
+    if (rboState) rboState.page = 1;
+    const v = document.getElementById('focus').value.trim();
+    if (v && RETRIEVAL) { runSearch(RETRIEVAL); return; }
+    clearPanel();
+    applyI18n();
+  });
+})();
+
+function escapeHtml(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g,
+    c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+// 标准短语列表判定：纯英文逗号串（如 "surface code, transmon"）
+// NL（中文/自然语言）→ 走概念对降级（用户 2026-08-13 设计）
+function isPhraseList(v) {
+  return /^[A-Za-z0-9\s\-,.:'()]+$/.test(v);
+}
+
+// 生成焦点图。NL 输入时智能降级（用户 2026-08-13）：
+//   ① 自动运行概念对搜索 → 右侧显示整个概念对列表
+//   ② 自动取首个 AB 对 → 左侧生成焦点图
+async function genFocus() {
+  const v = document.getElementById('focus').value.trim();
+  if (!v) { showError(T('focusPh')); return; }
+  const btn = document.getElementById('genBtn');
+  btn.disabled = true; const oldTxt = btn.textContent; btn.textContent = T('genIng');
+  try {
+    // NL 降级：非标准短语列表 → 概念对搜索 + 首个 AB 焦点图
+    if (!isPhraseList(v)) {
+      const yearVal = (SCOPE === 'all') ? 'all' : YEAR;
+      const r = await fetch('/search/recommend?query=' + encodeURIComponent(v) +
+                            '&top=50&years=' + yearVal);
+      const d = await r.json();
+      if (!d.ok || !d.pairs || !d.pairs.length) {
+        showError(T('genFail') + ': ' + (d.error || '无概念对结果'));
+        return;
+      }
+      // 右侧显示整个概念对列表
+      RETRIEVAL = 'rec';
+      document.getElementById('retrRecBtn').classList.toggle('active', true);
+      document.getElementById('retrFtsBtn').classList.toggle('active', false);
+      document.getElementById('retrRboBtn').classList.toggle('active', false);
+      rboState = {query: v, phrases: d.phrases || [], mode: d.mode || '', engine: 'rec'};
+      renderRec(d);
+      // 取首个 AB 对 → 左侧生成焦点图
+      const ab = d.pairs[0];
+      document.getElementById('focus').value = ab.a + ', ' + ab.b;
+      return genFocus();   // 递归：用标准短语再生成焦点图
+    }
+    const r = await fetch('/explore/focus', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({year: YEAR, focus: v})
+    });
+    const d = await r.json();
+    if (!d.ok) { showError(T('genFail') + ': ' + (d.error || '')); return; }
+    files = d.files || {};
+    if (files[curMode]) {
+      document.getElementById('focusFrame').src = '/focus_v3/' + files[curMode];
+    } else if (files.static) {
+      switchMode('static');
+    }
+  } catch (e) { showError(T('reqFail') + ': ' + e); }
+  finally { btn.disabled = false; btn.textContent = oldTxt; }
+}
+
+function switchMode(m) {
+  curMode = m;
+  document.querySelectorAll('.mbtn').forEach(b =>
+    b.classList.toggle('active', b.dataset.mode === m));
+  if (files[m]) document.getElementById('focusFrame').src = '/focus_v3/' + files[m];
+}
+
+function setScope(s) {
+  SCOPE = s;
+  // 动态文案：当年 → "YYYY当年"（聚焦提示）
+  document.getElementById('scopeThisBtn').textContent =
+    (LANG === 'zh' ? YEAR + ' 当年' : 'Year ' + YEAR);
+  document.getElementById('scopeThisBtn').classList.toggle('active', s === 'this_year');
+  document.getElementById('scopeAllBtn').classList.toggle('active', s === 'all');
+  // 组合搜索（2026-08-13）：时间 × 档位。若 focus 有查询 → 重置页码后用当前档重新执行
+  if (rboState) rboState.page = 1;
+  const v = document.getElementById('focus').value.trim();
+  if (v && RETRIEVAL) { runSearch(RETRIEVAL); return; }
+  if (state) { state.page = 1; fetchPapers(1); }
+}
+
+// 右侧检索档位（2026-08-13 定稿）：概念对 / FTS搜索 / RBO匹配 三档
+// 用户点下方按钮切换：若 focus 有查询 → 重新执行该档；否则仅切换高亮
+// 注意：runSearch 内部也会调本函数设置高亮，用 _setRetrievalOnly 参数避免递归
+let _runningSearch = false;
+function setRetrieval(m) {
+  RETRIEVAL = m;
+  document.getElementById('retrRecBtn').classList.toggle('active', m === 'rec');
+  document.getElementById('retrFtsBtn').classList.toggle('active', m === 'fts');
+  document.getElementById('retrRboBtn').classList.toggle('active', m === 'rbo');
+  if (_runningSearch) return;   // 由 runSearch 内部调用 → 只设高亮，不重新执行
+  const v = document.getElementById('focus').value.trim();
+  if (v) { runSearch(m); return; }
+  if (m === 'fts') {
+    if (state) { state.page = 1; fetchPapers(1); }
+    else clearPanel();
+  } else {
+    renderRboEmpty();
+  }
+}
+
+// 统一搜索：左侧 focus 框 = 唯一查询入口（用户 2026-08-13 定稿）
+//   三档：LLM焦点推荐(rec) / LLM+FTS搜索(fts) / LLM+RBO匹配(rbo)
+//   - rec：只出概念组合（AB/桥接），不输出论文列表
+//   - fts/rbo：纯论文列表（+ 得分）
+// 用户输入若是「纯英文逗号串」（如 surface code(s), transmon）→ 后端跳过 LLM 直接用
+async function runSearch(engine) {
+  engine = engine || 'fts';
+  const v = document.getElementById('focus').value.trim();
+  if (!v) { showError(T('focusPh')); return; }
+  _runningSearch = true;
+  try { setRetrieval(engine); } finally { _runningSearch = false; }
+  const loadTimer = showLoading();  // 加载动画（spin + 文案轮播）
+  try {
+    const yearVal = (SCOPE === 'all') ? 'all' : YEAR;
+    let url;
+    if (engine === 'rec') {
+      url = '/search/recommend?query=' + encodeURIComponent(v) + '&top=50&years=' + yearVal;
+    } else if (engine === 'fts') {
+      // FTS 支持翻页（2026-08-13：恢复分页）+ 时间（all/具体年）
+      const p = (rboState && rboState.engine === 'fts') ? (rboState.page || 1) : 1;
+      url = '/search/fts?query=' + encodeURIComponent(v) + '&page=' + p + '&per=10&year=' + yearVal;
+    } else {
+      url = '/search/rbo?query=' + encodeURIComponent(v) + '&top=30&years=' + yearVal;
+    }
+    const r = await fetch(url);
+    const d = await r.json();
+    hideLoading(loadTimer);
+    if (!d.ok) { showError(T('genFail') + ': ' + (d.error || '')); return; }
+    rboState = {query: v, phrases: d.phrases || [], mode: d.mode || '', engine: engine,
+                page: d.page || 1, pages: d.pages || 1, total: d.total || 0};
+    if (engine === 'rec') renderRec(d);
+    else if (engine === 'rbo') renderRbo(d);
+    else renderFts(d);
+  } catch (e) { hideLoading(null); showError(T('reqFail') + ': ' + e); }
+}
+// 兼容旧按钮入口
+function runRbo() { runSearch('rbo'); }
+
+// 右侧区域错误显示（2026-08-13：不用 alert 弹窗，就地展示在结果区）
+function showError(msg) {
+  document.getElementById('pairBox').style.display = 'none';
+  const box = document.getElementById('paperList');
+  box.innerHTML = '<div class="warn-bar warn">' + escapeHtml(msg) + '</div>' +
+    '<div class="empty">' + T('noResult') + '</div>';
+  document.getElementById('pager').style.display = 'none';
+}
+
+// 加载动画：右侧面板显示 spin + 轮播文案（对齐 api.loomsci.com 交互）
+function showLoading() {
+  const box = document.getElementById('paperList');
+  const phrases = T('loading_phrases');
+  let i = 0;
+  box.innerHTML = '<div class="loading-box"><span class="spin"></span><span id="loadPh">' +
+    escapeHtml(phrases[0]) + '</span></div>';
+  const timer = setInterval(() => {
+    i = (i + 1) % phrases.length;
+    const el = document.getElementById('loadPh');
+    if (el) el.textContent = phrases[i];
+  }, 1600);
+  return timer;
+}
+function hideLoading(timer) {
+  if (timer) clearInterval(timer);
+}
+
+function renderRboEmpty() {
+  document.getElementById('pairBox').style.display = 'none';
+  const box = document.getElementById('paperList');
+  box.innerHTML = '<div class="empty">' + T('rboPh') + '</div>';
+}
+
+// LLM 短语 + 匹配质量标记（C1：诚实告知，防「会白高兴」）
+// ✓ 精确命中 / ~ 形态归并 / ✗ 无命中
+function phraseChips(phraseStatus) {
+  if (!phraseStatus || !phraseStatus.length) return '';
+  const mark = {exact: '<span style="color:#2e7d32">✓</span>',
+                loose: '<span style="color:#b0711a">~</span>',
+                missing: '<span style="color:#c62828">✗</span>'};
+  return '<div class="meta" style="margin-bottom:6px">' +
+    (phraseStatus || []).map(s =>
+      (mark[s.status] || '') + ' ' + escapeHtml(s.phrase) +
+      (s.loose_candidate ? ' → ' + escapeHtml(s.loose_candidate) : '')
+    ).join(' &nbsp; ') + '</div>';
+}
+
+// 缓存命中标记（B2：mode=='cache' → 跳过 LLM 调用）
+function cacheHitMark(d) {
+  if (!d || !d.cache_hit) return '';
+  return '<div class="warn-bar info" style="margin-bottom:6px">' + T('cacheHit') + '</div>';
+}
+
+// 警告条（C2：无精确命中/部分命中时诚实告知，不误导）
+function renderWarnings(d) {
+  const warns = d.warnings || [];
+  if (!warns.length) return '';
+  return warns.map(w =>
+    `<div class="warn-bar ${w.level === 'info' ? 'info' : 'warn'}">${escapeHtml(w.message)}</div>`
+  ).join('');
+}
+
+// FTS 主检索结果渲染（统一 schema）
+function renderFts(d) {
+  document.getElementById('pairBox').style.display = 'none';
+  document.getElementById('paperList').style.display = 'block';
+  document.getElementById('selTitle').textContent =
+    T('rboPhrases') + (d.phrases || []).join(' , ');
+  document.getElementById('selMeta').innerHTML =
+    cacheHitMark(d) +
+    phraseChips(d.phrase_status) +
+    (d.year || '') + ' · FTS(BM25) · ' + d.n_results + ' 篇' +
+    (d.index_note ? '<br><span style="color:#8892a6;font-size:11px">' + escapeHtml(d.index_note) + '</span>' : '');
+  const items = d.results || [];
+  const box = document.getElementById('paperList');
+  if (!items.length) {
+    box.innerHTML = renderWarnings(d) +
+      '<div class="empty">' + T('noResult') + '</div>';
+  } else {
+    box.innerHTML = renderWarnings(d) + items.map((it, idx) => {
+      const absFull = escapeHtml(it.abstract || '');
+      const absShort = absFull.length > ABS_MAX ? absFull.slice(0, ABS_MAX) + '…' : absFull;
+      const needToggle = absFull.length > ABS_MAX;
+      return `<div class="item">
+        <div class="t"><a href="https://arxiv.org/abs/${encodeURIComponent(it.arxiv_id)}"
+            target="_blank" rel="noopener">${escapeHtml(it.title || it.arxiv_id)}</a></div>
+        <div class="m">${escapeHtml(it.authors || '')} · ${escapeHtml(it.year || '')} · arXiv:${escapeHtml(it.arxiv_id)}</div>
+        <div class="s">FTS: ${it.score != null ? it.score.toFixed(2) : '-'} · hits: ${(it.hit_phrases || []).map(h => h.query_phrase).join(' + ')}</div>
+        <div class="ab"><span id="abs-${idx}" data-full="${absFull}">${absShort}</span>
+          ${needToggle ? `<button class="toggle" id="tg-${idx}" onclick="toggleAbs(${idx})">${T('expand')}</button>` : ''}
+        </div>
+      </div>`;
+    }).join('');
+  }
+  // FTS 支持翻页（2026-08-13 恢复）
+  const pg = rboState ? (rboState.page || 1) : 1;
+  const pgs = rboState ? (rboState.pages || 1) : 1;
+  const tot = rboState ? (rboState.total || d.n_results || 0) : (d.n_results || 0);
+  document.getElementById('pageInfo').textContent =
+    T('pageInfo').replace('{p}', pg).replace('{pages}', pgs).replace('{total}', tot);
+  const pager = document.getElementById('pager');
+  pager.style.display = tot ? 'flex' : 'none';
+  document.getElementById('prevBtn').disabled = pg <= 1;
+  document.getElementById('nextBtn').disabled = pg >= pgs;
+}
+
+// FTS 翻页（2026-08-13 恢复）
+function ftsGoPage(delta) {
+  if (!rboState || rboState.engine !== 'fts') return;
+  const np = (rboState.page || 1) + delta;
+  if (np < 1 || np > (rboState.pages || 1)) return;
+  rboState.page = np;
+  runSearch('fts');
+}
+
+// 焦点推荐渲染：只出概念组合（AB/桥接），不输出论文列表
+function renderRec(d) {
+  document.getElementById('selTitle').textContent =
+    T('rboPhrases') + (d.phrases || []).join(' , ');
+  document.getElementById('selMeta').innerHTML =
+    cacheHitMark(d) +
+    phraseChips(d.phrase_status) +
+    (d.years === 'all' ? T('scopeAll') : String(d.years)) + ' · ' + T('selMetaRec') +
+    ' · ' + (d.n_papers || 0) + ' 篇相关' +
+    (d.index_note ? '<br><span style="color:#8892a6;font-size:11px">' + escapeHtml(d.index_note) + '</span>' : '');
+  // 概念组合区（AB 对 / A-C-B 桥接）—— 默认折叠 Top 5，可展开全部
+  const pbox = document.getElementById('pairBox');
+  const pgrid = document.getElementById('pairGrid');
+  const pairs = d.pairs || [], bridges = d.bridges || [];
+  const SHOW = 5;
+  let chips = '';
+  const pairAll = pairs.slice(0, 50).map(p =>
+    `<span class="pair-chip" onclick="rboChipClick('${escapeHtml(p.a)}','${escapeHtml(p.b)}')" title="共现 ${p.weight} 篇">${escapeHtml(p.a)} × ${escapeHtml(p.b)} <small>${p.weight}</small></span>`
+  );
+  const bridgeAll = bridges.slice(0, 50).map(b =>
+    `<span class="pair-chip bridge-chip" onclick="rboChipClick('${escapeHtml(b.a)}','${escapeHtml(b.b)}')" title="A-C-B 1度关联">${escapeHtml(b.a)} — ${escapeHtml(b.c)} — ${escapeHtml(b.b)}</span>`
+  );
+  if (pairs.length) {
+    chips += '<div class="pb-title">' + T('pairTitleAb') + '（A=查询短语）</div><div class="pb-grid" id="abGrid">' +
+      pairAll.slice(0, SHOW).join('') + '</div>';
+    if (pairAll.length > SHOW) chips += '<button class="toggle" onclick="expandPairs()" id="abMore">' + T('expand') + ' (' + pairAll.length + ')</button>';
+  }
+  if (bridges.length) {
+    chips += '<div class="pb-title" style="margin-top:8px">' + T('pairTitleBridge') + '（A=查询短语）</div><div class="pb-grid" id="brGrid">' +
+      bridgeAll.slice(0, SHOW).join('') + '</div>';
+    if (bridgeAll.length > SHOW) chips += '<button class="toggle" onclick="expandBridges()" id="brMore">' + T('expand') + ' (' + bridgeAll.length + ')</button>';
+  }
+  window.__rboPairs = pairAll; window.__rboBridges = bridgeAll;
+  pgrid.innerHTML = chips;
+  pbox.style.display = (pairs.length || bridges.length) ? 'block' : 'none';
+  // 三档对等（2026-08-13）：概念对档 pairBox 填满右侧（flex:1 滚动），
+  // 与 FTS/RBO 档的 paperList 同构，不留空白；论文列表区隐藏
+  const box = document.getElementById('paperList');
+  box.style.display = 'none';
+  pbox.style.display = 'flex';
+  document.getElementById('pageInfo').textContent = '';
+  document.getElementById('pager').style.display = 'none';
+}
+
+// RBO 匹配渲染：纯论文列表（三档对等，pairBox 隐藏、paperList 填满）
+function renderRbo(d) {
+  document.getElementById('pairBox').style.display = 'none';
+  document.getElementById('paperList').style.display = 'block';
+  document.getElementById('selTitle').textContent =
+    T('rboPhrases') + (d.phrases || []).join(' , ');
+  document.getElementById('selMeta').innerHTML =
+    cacheHitMark(d) +
+    phraseChips(d.phrase_status) +
+    (d.years === 'all' ? T('scopeAll') : String(d.years)) + ' · ' + T('selMetaRbo') +
+    ' · ' + d.n_results + ' 篇' +
+    (d.index_note ? '<br><span style="color:#8892a6;font-size:11px">' + escapeHtml(d.index_note) + '</span>' : '');
+  const items = d.results || [];
+  const box = document.getElementById('paperList');
+  if (!items.length) {
+    box.innerHTML = renderWarnings(d) + '<div class="empty">' + T('noResult') + '</div>';
+  } else {
+    box.innerHTML = renderWarnings(d) + items.map((it, idx) => {
+      const absFull = escapeHtml(it.abstract || '');
+      const absShort = absFull.length > ABS_MAX ? absFull.slice(0, ABS_MAX) + '…' : absFull;
+      const needToggle = absFull.length > ABS_MAX;
+      const hits = (it.hit_phrases || []).map(h => h.query_phrase).join(' + ');
+      return `<div class="item">
+        <div class="t"><a href="https://arxiv.org/abs/${encodeURIComponent(it.arxiv_id)}"
+            target="_blank" rel="noopener">${escapeHtml(it.title || it.arxiv_id)}</a></div>
+        <div class="m">${escapeHtml(it.authors || '')} · ${escapeHtml(it.year || '')} · arXiv:${escapeHtml(it.arxiv_id)} · hits: ${hits}</div>
+        <div class="s">${T('rboScore')}: ${it.score != null ? it.score.toFixed(3) : '-'}</div>
+        <div class="ab"><span id="abs-${idx}" data-full="${absFull}">${absShort}</span>
+          ${needToggle ? `<button class="toggle" id="tg-${idx}" onclick="toggleAbs(${idx})">${T('expand')}</button>` : ''}
+        </div>
+      </div>`;
+    }).join('');
+  }
+  document.getElementById('pageInfo').textContent = '';
+  document.getElementById('pager').style.display = 'none';
+}
+
+// 点击概念组合 → 填入焦点图搜索框并生成（联动）
+function rboChipClick(a, b) {
+  document.getElementById('focus').value = a + ', ' + b;
+  genFocus();
+}
+
+// 展开全部概念组合（折叠默认 Top 5，用户可看更多）
+function expandPairs() {
+  const g = document.getElementById('abGrid');
+  if (g && window.__rboPairs) g.innerHTML = window.__rboPairs.join('');
+  const m = document.getElementById('abMore'); if (m) m.style.display = 'none';
+}
+function expandBridges() {
+  const g = document.getElementById('brGrid');
+  if (g && window.__rboBridges) g.innerHTML = window.__rboBridges.join('');
+  const m = document.getElementById('brMore'); if (m) m.style.display = 'none';
+}
+
+function loadPapers(phrase, phrase2) {
+  state = {phrase, phrase2, page: 1, pages: 0};
+  // 修复（2026-08-13）：点击节点/边 → FTS 视图，必须显示 paperList、隐藏 pairBox
+  // 否则在概念对档（paperList 被隐藏）时 FTS 结果渲染但不可见 → "完全空白"
+  // 同时更新 focus 框为当前点击短语（用户 2026-08-13 批评"参数写死"：
+  // 切档/后续操作必须基于当前边，而非旧的 focus 值）
+  // 并清除 rboState（节点/边点击切换为纯 /focus/papers 模式，翻页走 state）
+  document.getElementById('focus').value = phrase2 ? phrase + ', ' + phrase2 : phrase;
+  rboState = null;
+  document.getElementById('pairBox').style.display = 'none';
+  document.getElementById('paperList').style.display = 'block';
+  document.getElementById('selTitle').textContent = phrase2
+    ? phrase + ' × ' + phrase2 : phrase;
+  document.getElementById('selMeta').textContent =
+    (SCOPE === 'all' ? T('scopeAll') : YEAR) + ' · ' + T('selMetaYear');
+  fetchPapers(1);
+}
+
+async function fetchPapers(page) {
+  const p = state.phrase, p2 = state.phrase2;
+  let url = `/focus/papers?scope=${SCOPE}&year=${YEAR}&phrase=${encodeURIComponent(p)}&page=${page}&per=30`;
+  if (p2) url += '&phrase2=' + encodeURIComponent(p2);
+  try {
+    const r = await fetch(url);
+    const d = await r.json();
+    state.pages = d.pages || 0; state.page = d.page || 1;
+    lastItems = d.items || []; lastTotal = d.total || 0;
+    renderList(lastItems, lastTotal);
+  } catch (e) { alert(T('reqFail') + ': ' + e); }
+}
+
+function renderList(items, total) {
+  const box = document.getElementById('paperList');
+  if (!items.length) {
+    box.innerHTML = '<div class="empty">' + T('noResult') + '</div>';
+  } else {
+    box.innerHTML = items.map((it, idx) => {
+      const absFull = escapeHtml(it.abstract || '');
+      const absShort = absFull.length > ABS_MAX
+        ? absFull.slice(0, ABS_MAX) + '…' : absFull;
+      const needToggle = absFull.length > ABS_MAX;
+      return `<div class="item">
+        <div class="t"><a href="https://arxiv.org/abs/${encodeURIComponent(it.arxiv_id)}"
+            target="_blank" rel="noopener">${escapeHtml(it.title)}</a></div>
+        <div class="m">${escapeHtml(it.authors || '')} · ${escapeHtml(it.date || '')} · arXiv:${escapeHtml(it.arxiv_id)}</div>
+        <div class="s">${T('score')}: ${it.score != null ? it.score.toFixed(2) : '-'}</div>
+        <div class="ab"><span id="abs-${idx}" data-full="${absFull}">${absShort}</span>
+          ${needToggle ? `<button class="toggle" id="tg-${idx}" onclick="toggleAbs(${idx})">${T('expand')}</button>` : ''}
+        </div>
+      </div>`;
+    }).join('');
+  }
+  const curPage = state ? state.page : 1;
+  const curPages = state ? state.pages : 0;
+  document.getElementById('pageInfo').textContent =
+    T('pageInfo').replace('{p}', curPage).replace('{pages}', curPages)
+      .replace('{total}', total);
+  document.getElementById('prevBtn').disabled = !state || curPage <= 1;
+  document.getElementById('nextBtn').disabled = !state || curPage >= curPages;
+  document.getElementById('pager').style.display = total ? 'flex' : 'none';
+}
+
+function toggleAbs(idx) {
+  const span = document.getElementById('abs-' + idx);
+  const btn = document.getElementById('tg-' + idx);
+  const full = span.dataset.full;
+  if (span.textContent === full) {
+    span.textContent = full.length > ABS_MAX ? full.slice(0, ABS_MAX) + '…' : full;
+    btn.textContent = T('expand');
+  } else {
+    span.textContent = full;
+    btn.textContent = T('collapse');
+  }
+}
+
+function goPage(delta) {
+  // FTS 档（runSearch 产生）→ ftsGoPage；节点/边点击（/focus/papers）→ fetchPapers
+  if (rboState && rboState.engine === 'fts') { ftsGoPage(delta); return; }
+  const np = (state.page || 1) + delta;
+  if (np < 1 || np > (state.pages || 1)) return;
+  fetchPapers(np);
+}
+
+function clearPanel() {
+  state = null; lastItems = []; lastTotal = 0;
+  rboState = null;
+  document.getElementById('pairBox').style.display = 'none';
+  document.getElementById('paperList').style.display = 'block';
+  document.getElementById('selTitle').textContent = T('selNone');
+  document.getElementById('selMeta').textContent = T('selMetaDefault');
+  document.getElementById('paperList').innerHTML =
+    `<div class="empty">${T('emptyHint1')}<br>${T('emptyHint2')}</div>`;
+  document.getElementById('pager').style.display = 'none';
+}
+
+// iframe 内焦点图点击 → 父页面接收 → 自动切回 FTS → 调 /focus/papers
+// B1（2026-08-13）：点击节点/边自动切回 FTS 档（保留原有 FTS 自动启动体验）
+window.addEventListener('message', function(ev) {
+  const d = ev.data;
+  if (!d || d.type !== 'focus-click') return;
+  if (d.kind === 'blank') { clearPanel(); return; }
+  // 左侧→右侧：点击节点/边 → FTS 搜索（节点=单短语，边=短语对）
+  // 直接切 FTS 高亮 + loadPapers（不走 setRetrieval 的重新查询，避免用 focus 整串）
+  RETRIEVAL = 'fts';
+  document.getElementById('retrRecBtn').classList.toggle('active', false);
+  document.getElementById('retrFtsBtn').classList.toggle('active', true);
+  document.getElementById('retrRboBtn').classList.toggle('active', false);
+  if (d.kind === 'node') loadPapers(d.phrase, null);
+  else if (d.kind === 'edge') loadPapers(d.phrase, d.phrase2);
+});
+
+// 回车提交（焦点词输入框）
+document.getElementById('focus').addEventListener('keydown', function(ev) {
+  if (ev.key === 'Enter') genFocus();
+});
+
+// 初始渲染
+document.getElementById('focus').value = 'transmon, surface code';
+document.getElementById('scopeThisBtn').textContent =
+  (LANG === 'zh' ? YEAR + ' 当年' : 'Year ' + YEAR);
+applyI18n();
+clearPanel();
+</script>
+</body>
+</html>
