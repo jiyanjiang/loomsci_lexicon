@@ -2,15 +2,16 @@
 
 > **Diachronic, holistic, cross-disciplinary understanding of science — built from the full arXiv corpus.**
 
+
+**Project Title: Effective Conductance in Diachronic Academic-Phrase Networks for Predicting Research Directions**
+
 ---
 
 ## English (EN)
 
-### 0. Contact
+### 0. Project
 
 - **Website**: https://LoomSci.com
-- **Email**: qiji.list@gmail.com
-- **WeChat**: ianwest
 
 ---
 
@@ -230,12 +231,12 @@ in `config.yaml`. No key is hard-coded anywhere.
 
 > **从全量 arXiv 到科学的宏观理解：历时、整体、跨学科的科学可视化与演化分析。**
 
+**项目名称：历时学术短语网络的有效电导与新研究方向预判**
 
-### 0. 联系方式
+
+### 0. 项目
 
 - **网站**：https://LoomSci.com
-- **邮箱**：qiji.list@gmail.com
-- **微信**：ianwest
 
 ---
 
@@ -430,3 +431,58 @@ G/R）与 FTS / RBO 检索均无需任何 key。key 经 `key_loader.py` 从环�
 - 随机种子固定，LLM 映射表版本锁定。
 - `docs/pipeline_sop.md` 逐步记录了每个阶段的命令。
 - scan 步骤可逐字节复现已发布词典（θ=0.3, freq_min=5, t_merge=3, max_merge_len=6）。
+
+---
+
+## 9. G(AB,t) 科学方向涌现预测模块（v20 并入，2026-08-15）
+
+> 从 arXiv 共现网络预测"未直连概念对的未来直连"。完整复现见
+> **`docs/sci_predict_reproduce.md`**。
+
+### 9.1 一句话原理
+
+概念网络 = 电路板：节点 = 学术短语，共现 = 导线；A-B 从未直连（无导线），
+但经 A-C-B 间接路径仍有**有效电导 G(AB)**（欧姆定律 + 并联原理）。
+
+**双信号（2026-08-15 用户确认，2000 案例验证）**：
+1. **G 水平**：G(AB) 越大 → 直连预期越强（间接连接密度 = 距离近）。
+   2015 回测 G 降序 Top100 命中 9.0%（基线 4.3%，≈2 倍）
+2. **G 波动 CV（std/mean）**：G 小时若涨落大 → 直连预期比无涨落强
+   （连接在重构 = 正在酝酿）。控制 G_mean 后 AUC 0.687（G<20 档, p=0.0001）
+
+**噪声对照（决定性）**：CV 与 G_mean 正相关（rho=+0.135），不遵循 1/√N 泊松
+指纹——G 是聚合电导非原始计数，涨落机制不同。CV 确认为真实信号
+（曾因疑受 1/√N 混淆降级为待验证，2026-08-15 检验后推翻，恢复为确认信号）。
+
+### 9.2 脚本清单（`scripts/sci_*.py`）
+
+| 脚本 | 作用 | 复现 |
+|---|---|---|
+| `sci_seeds_balanced.py` | 147 平衡 seed（arXiv 47 类，AI 5%） | §1 |
+| `sci_rw_sampler.py` | 两跳采样 + 2015 回测 | §2 |
+| `sci_backtest_2016.py` | 历史回测（真前验） | §3 |
+| `sci_g_series_fast.py` | 快速 G(AB,t) 序列（库函数） | §5 |
+| `sci_predict2026_v3.py` | 2026 预判 Top 100 | §4 |
+| `sci_llm_filter_2026.py` | LLM 筛选 50 + 三挡点评 | §6 |
+| `sci_gplots_50.py` | 50 图 + 形态分类 | §7 |
+| `sci_rank_experiment.py` | 2000 案例排序法则实验 | §8 |
+| `sci_rank_figs.py` | 排序实验图（全英文） | §8 |
+| `sci_backtest_fair.py` | 对等回测（随机对照组） | §8 |
+
+### 9.3 关键结果（数据已含于 `data/sci/discovery/`）
+
+- **2015 回测命中率 5.8%**（2016-2025 直连且增长）vs 随机基线 3%
+- **双信号确认（2000 案例，2026-08-15）**：
+  - G 水平：G(2015) 降序 Top100 命中 **9.0%**（基线 4.3%，≈2 倍）——右尾效应
+  - G 波动 CV：控制 G_mean 后仍显著（G<20 档 AUC 0.687, p=0.0001）
+  - CV 噪声对照：与 G_mean 正相关（rho=+0.135），不遵循 1/√N 泊松指纹
+- **两跳强度 I 弱-中(5-40)最优**：强桥(>40)是旧热点（Top100 仅 1.5%，反向）
+- **2026 预判**：Top 50 三挡 = 看好 20 / 中立 24 / 不看好 4（AI 系仅 16%）
+
+### 9.4 版本演进
+
+```
+v17 (08-13) 主库分享包（19 脚本）
+v18 (08-15) G 预测探索包（7 脚本，独立）
+v20 (08-15) 干净合并版：v17 主库 + v18 G 预测，共用基建，无过程文件
+```
