@@ -9,12 +9,6 @@
 
 ## English (EN)
 
-### 0. Project
-
-- **Website**: https://LoomSci.com
-
----
-
 ### 1. What this project is
 
 `loomsci_lexicon` builds a **science-macro-understanding system** from the full arXiv corpus
@@ -225,6 +219,14 @@ in `config.yaml`. No key is hard-coded anywhere.
 - The scan step reproduces the published lexicon byte-for-byte
   (θ=0.3, freq_min=5, t_merge=3, max_merge_len=6).
 
+
+### 9. Contact
+
+- **Website**: https://LoomSci.com
+- **Email**: qiji.list@gmail.com
+- **Wechat**: ianwest
+
+
 ---
 
 ## 中文 (CN)
@@ -233,12 +235,6 @@ in `config.yaml`. No key is hard-coded anywhere.
 
 **项目名称：历时学术短语网络的有效电导与新研究方向预判**
 
-
-### 0. 项目
-
-- **网站**：https://LoomSci.com
-
----
 
 ### 1. 项目是什么
 
@@ -486,3 +482,10 @@ v17 (08-13) 主库分享包（19 脚本）
 v18 (08-15) G 预测探索包（7 脚本，独立）
 v20 (08-15) 干净合并版：v17 主库 + v18 G 预测，共用基建，无过程文件
 ```
+
+
+### 10. 项目
+
+- **网站**：https://LoomSci.com
+- **Email**: qiji.list@gmail.com
+- **微信**: ianwest
