@@ -181,3 +181,16 @@ python web/explore.py --port 5010           # 交互
 
 > **画廊（/list）说明**：逐年网络图与 `data/visual/registry.csv`（画廊索引）是生成产物——
 > 按上面循环运行一次 `visualize.py` + `build_visual_registry.py` 后，画廊即可用。
+
+---
+
+## 2. G 预测模块（v20 并入）
+
+> v18 的 G(AB,t) 科学方向涌现预测模块，干净并入（无 `__pycache__`/`.DS_Store`）。
+
+| 类别 | 文件 |
+|---|---|
+| 脚本 | `sci_seeds_balanced.py` `sci_rw_sampler.py` `sci_backtest_2016.py` `sci_backtest_fair.py` `sci_g_series_fast.py` `sci_predict2026_v3.py` `sci_llm_filter_2026.py` `sci_gplots_50.py` `sci_rank_experiment.py` `sci_rank_figs.py` |
+| 数据 | `data/sci/discovery/randomwalk/{seeds_balanced.json,rank_2000.json,backtest_fair_2015.json,rankfigs/*}` `data/sci/discovery/backtest/backtest_2016.json` `data/sci/discovery/predict2026/{gseries_2025_sorted,selected50,verdicts,gfigs_stats}.json` `data/sci/discovery/predict2026/gfigs/*.png`(50) `gfigs_50.html` |
+| 文档 | `docs/sci_predict_reproduce.md`（完整复现指南）`docs/SCI_G_PREDICT_RECORD_20260814.md` `docs/SCI_DISCOVERY_STUDY_PLAN_20260814.md` `docs/SCI_WECHAT_POST_20260815.md` |
+| 共用基建 | `config.py` `key_loader.py` `dns_patch.py` `phrase_forms.py`（与主链共用） |
