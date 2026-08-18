@@ -484,7 +484,12 @@ v20 (08-15) 干净合并版：v17 主库 + v18 G 预测，共用基建，无过�
 ```
 
 
-### 10. 项目
+### 10. 重现报告
+
+- [Windows Core i7 16G](https://github.com/jiyanjiang/loomsci_lexicon/blob/main/docs/reproduction_report.md) 基于Qoder + DeepSeek v4 flash, 48小时
+
+
+### 11. 项目
 
 - **通俗解释**: [学术短语网络中的有效电导](https://jiyanjiang.github.io/share/4fe6b427.html)
 - **网站**：https://LoomSci.com
