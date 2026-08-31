@@ -230,9 +230,11 @@ in `config.yaml`. No key is hard-coded anywhere.
 - **Independently reproduced on Windows**: `docs/reproduction_report.md` documents a
   from-scratch rebuild with artifact cross-checks. All 9 defects it reported are fixed
   in **v21 (2026-08-31)** — see §9 of that report for the merge log.
-- **Not shipped (platform limit)**: `data/category_map.duckdb` (149MB) exceeds GitHub's
-  100MB per-file cap. Rebuild it with `scripts/build_category_map.py`. Missing it is
-  safe — `web/explore.py` degrades gracefully (domain normalisation off).
+- **`data/category_map.duckdb`** (142MB) exceeds GitHub's 100MB per-file cap, so it ships
+  **compressed**: `data/category_map.duckdb.tar.gz` (23MB). Unpack once —
+  `tar xzf data/category_map.duckdb.tar.gz -C data/` — and domain normalisation is on.
+  Leave it packed and everything still runs; only domain normalisation is off
+  (`web/explore.py` degrades gracefully).
 
 
 ### 9. Contact
@@ -452,9 +454,10 @@ G/R）与 FTS / RBO 检索均无需任何 key。key 经 `key_loader.py` 从环�
 - scan 步骤可逐字节复现已发布词典（θ=0.3, freq_min=5, t_merge=3, max_merge_len=6）。
 - **Windows 独立复现**：`docs/reproduction_report.md` 记录了从零重建全链路并交叉核对产物的
   全过程；其报告的 9 项缺陷已在 **v21（2026-08-31）** 全部修复，收编明细见该报告 §9。
-- **不随包（平台限制）**：`data/category_map.duckdb`（149MB）超过 GitHub 单文件 100MB 上限，
-  可用 `scripts/build_category_map.py` 重建；缺失是安全的 —— `web/explore.py` 会自动降级
-  （关闭领域归一，不崩溃）。
+- **`data/category_map.duckdb`**（142MB）超过 GitHub 单文件 100MB 上限，故**随包提供压缩版**
+  `data/category_map.duckdb.tar.gz`（23MB）。解压一次即可启用领域归一：
+  `tar xzf data/category_map.duckdb.tar.gz -C data/`。
+  不解压也能跑通全链路，仅关闭领域归一（`web/explore.py` 优雅降级，不崩溃）。
 
 ---
 

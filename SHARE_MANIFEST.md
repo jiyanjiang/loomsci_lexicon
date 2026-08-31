@@ -75,6 +75,7 @@
 | `data/arxiv_terms/single_tok_keep_final.txt` | LLM single-token whitelist |
 | `data/arxiv_terms/LLM_arxiv_multi_tokens_pub.csv` | LLM multi-token whitelist (29,979 terms, always loaded) |
 | `data/stop/` | scan stopword tables (required by scan) |
+| `data/category_map.duckdb.tar.gz` | domain-normalisation DB, compressed (23MB → unpacks to 142MB) |
 
 ---
 
@@ -86,8 +87,8 @@ The following are generated at runtime / build time, so they are **not** shipped
 |---|---|
 | BM25 index | `python scripts/build_fts_from_parquet.py --years 1991-1995` |
 | Network graphs + gallery index | see §3 |
-| `data/category_map.duckdb` (optional) | `python scripts/build_category_map.py` — needs a source DB with an arXiv `categories` column (set `category_map_source_db` in `config.yaml`, or env `SCI365_SOURCE_DB`). **Not shipped: 149MB, above GitHub's 100MB per-file cap.** Missing it is safe — `web/explore.py` degrades gracefully (domain normalisation off). |
 | `data/binary_gmax_*.json` (optional) | `python scripts/build_binary_gmax.py`. A 1.6KB snapshot **is** shipped; rebuild only if you extend the year range. |
+| `data/category_map.duckdb` (optional) | **Shipped compressed** — see the data table below; unpack once with `tar xzf data/category_map.duckdb.tar.gz -C data/`. To rebuild from your own source DB instead: `python scripts/build_category_map.py` (needs a DB with an arXiv `categories` column; set `category_map_source_db` or env `SCI365_SOURCE_DB`). |
 
 ---
 
@@ -189,6 +190,7 @@ python web/explore.py --port 5010           # interactive web
 | `data/arxiv_terms/single_tok_keep_final.txt` | LLM 单 token 白名单 |
 | `data/arxiv_terms/LLM_arxiv_multi_tokens_pub.csv` | LLM 多 token 白名单（29,979 词，始终读入）|
 | `data/stop/` | scan 停用词表（scan 必读）|
+| `data/category_map.duckdb.tar.gz` | 领域归一库压缩版（23MB，解压后 142MB）|
 
 ---
 
@@ -200,8 +202,8 @@ python web/explore.py --port 5010           # interactive web
 |---|---|
 | BM25 检索库 | `python scripts/build_fts_from_parquet.py --years 1991-1995` |
 | 网络图 + 画廊索引 | 见 §三 |
-| `data/category_map.duckdb`（可选）| `python scripts/build_category_map.py` —— 需带 arXiv `categories` 列的源库（在 `config.yaml` 配 `category_map_source_db`，或设环境变量 `SCI365_SOURCE_DB`）。**不随包：149MB，超 GitHub 单文件 100MB 上限。** 缺失是安全的 —— `web/explore.py` 自动降级（关闭领域归一，不崩溃）。|
 | `data/binary_gmax_*.json`（可选）| `python scripts/build_binary_gmax.py`。1.6KB 的快照**已随包**，仅扩展年份时才需重建。|
+| `data/category_map.duckdb`（可选）| **随包提供压缩版** —— 见下方数据表，解压一次即可：`tar xzf data/category_map.duckdb.tar.gz -C data/`。若要从自己的源库重建：`python scripts/build_category_map.py`（需带 arXiv `categories` 列的库，配 `category_map_source_db` 或环境变量 `SCI365_SOURCE_DB`）。|
 
 ---
 
