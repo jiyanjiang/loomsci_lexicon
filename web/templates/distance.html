@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!-- /distance：概念距离 G(AB,t) 交互折线（前瞻验证工具） -->
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PaperExplore · 概念距离 G(AB)</title>
+<script src="/static/chartjs/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "PingFang SC", sans-serif; background: #f5f6fa; color: #222; }
+  header { height: 52px; display: flex; align-items: center; justify-content: space-between;
+           padding: 0 20px; background: linear-gradient(135deg, #0d2137, #16324f); color: #fff; }
+  header h1 { font-size: 17px; }
+  .head-right { display: flex; gap: 8px; }
+  .head-btn { height: 28px; padding: 0 12px; border: 1px solid rgba(255,255,255,.35);
+              border-radius: 6px; background: transparent; color: #fff; font-size: 12px; cursor: pointer; }
+  .head-btn:hover { background: rgba(255,255,255,.12); }
+  .wrap { max-width: 1000px; margin: 20px auto; padding: 0 16px; }
+  .card { background: #fff; border: 1px solid #e4e7ee; border-radius: 10px; padding: 18px; margin-bottom: 16px; }
+  .card h3 { font-size: 14px; margin-bottom: 12px; color: #1a237e; }
+  .form-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .form-row label { font-size: 13px; color: #555; }
+  .form-row input { height: 32px; padding: 0 10px; border: 1px solid #ccd2de; border-radius: 6px; font-size: 13px; }
+  .form-row input[type=text] { width: 180px; }
+  .form-row input[type=number] { width: 84px; }
+  .form-row button { height: 32px; padding: 0 18px; border: none; border-radius: 6px;
+                     background: #1565c0; color: #fff; font-size: 13px; cursor: pointer; }
+  .form-row button:disabled { opacity: .5; }
+  .chart-box { position: relative; height: 400px; }
+  .th-control { display: flex; align-items: center; gap: 8px; margin-top: 10px; font-size: 12px; color: #555; }
+  .th-control input { width: 120px; }
+  .legend { margin-top: 8px; font-size: 12px; color: #888; line-height: 1.7; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin: 4px 4px 0 0; }
+  .badge.warn { background: #fff3e0; color: #e65100; }
+  .badge.ok { background: #e8f5e9; color: #2e7d32; }
+  .badge.info { background: #e3f2fd; color: #1565c0; }
+  .pairs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .pair-chip { padding: 4px 10px; border: 1px solid #ccd2de; border-radius: 14px; font-size: 12px;
+               cursor: pointer; color: #444; background: #fff; }
+  .pair-chip:hover { background: #e3f2fd; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Concept Distance · G(AB) 时间演化</h1>
+  <div class="head-right">
+    <button class="head-btn" onclick="location.href='/explore'">Explore</button>
+    <button class="head-btn" onclick="location.href='/list'">List</button>
+  </div>
+</header>
+<div class="wrap">
+  <div class="card">
+    <h3>输入概念对（计算有效电导 G(AB) 随时间的演化，G 突破阈值 = 即将碰撞预警）</h3>
+    <div class="form-row">
+      <label>概念 A</label><input type="text" id="A" placeholder="如 black hole">
+      <label>概念 B</label><input type="text" id="B" placeholder="如 gravitational wave">
+      <label>观察窗口起始年</label><input type="number" id="y0" value="{{ year_max|int - 10 }}" min="{{ year_min }}" max="{{ year_max|int - 1 }}">
+      <label>观察年数</label>
+      <select id="y1" style="width:90px">
+        <option value="1">1 年</option>
+        <option value="2">2 年</option>
+        <option value="3" selected>3 年（对标）</option>
+      </select>
+      <button id="calcBtn" onclick="calc()">计算</button>
+    </div>
+    <div class="pairs" id="quickPairs">
+      <span class="badge info">快速示例：</span>
+      <button class="pair-chip" onclick="quick('black hole','gravitational wave')">黑洞×引力波(2015)</button>
+      <button class="pair-chip" onclick="quick('transformer','attention mechanism')">Transformer×Attention(2017)</button>
+      <button class="pair-chip" onclick="quick('tensor network','quantum computing')">张量网络×量子计算(2016)</button>
+      <button class="pair-chip" onclick="quick('exoplanet','habitable zone')">系外行星×宜居带(2005)</button>
+      <button class="pair-chip" onclick="quick('graphene','topological insulator')">石墨烯×拓扑绝缘体(2010)</button>
+    </div>
+  </div>
+  <div class="card">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+      <h3 id="chartTitle" style="margin:0;font-size:14px;color:#1a237e;">等输入后计算</h3>
+      <span style="margin-left:auto;font-size:13px;white-space:nowrap">
+        <button class="mbtn" id="vG" onclick="setView('G')" style="background:#1565c0;color:#fff;border:none;padding:4px 12px;border-radius:4px;cursor:pointer">G · 关联度</button>
+        <button class="mbtn" id="vR" onclick="setView('R')" style="background:#fff;color:#444;border:1px solid #ccd2de;padding:4px 12px;border-radius:4px;cursor:pointer">R · 有效距离</button>
+      </span>
+    </div>
+    <div class="chart-box"><canvas id="chart"></canvas></div>
+    <div id="infoBar" style="margin-top:8px;font-size:12.5px;color:#444;background:#f5f7fb;border:1px solid #e0e6ef;border-radius:6px;padding:8px 12px;line-height:1.7">
+      输入概念后显示：观察窗口 / 领域分组 / g_last / 阈值预警
+    </div>
+    <div class="th-control">
+      <label>阈值参考线：</label>
+      <input type="range" id="thSlider" min="0" max="100" value="50" oninput="updateThreshold(this.value)">
+      <span id="thVal">0.50</span>
+    </div>
+    <div id="badges"></div>
+    <div class="legend">
+      <b>规范用语：</b>
+      <b>G（电导 / 关联度）</b>：越大越好，当年最强=1（结果归一，跨年可比）。
+      <b>R（电阻 / 有效距离）= 1/G</b>：越小越好，越接近 1 = 越"挨着"，R 很大 = 距离很远。
+      <br>判读：G 上升（R 下降）= 概念间耦合增强 → 突破阈值且持续 = 碰撞预警；骤降 = 退潮。
+      阈值默认 = 历史 G 的 90 分位（可拖动）。
+    </div>
+  </div>
+</div>
+<script>
+let chart = null;
+let gData = []; let years = [];
+let windowYears = [];
+let VIEW = 'G';   // G=电导, R=距离(1/G)
+
+function quick(a, b) {
+  document.getElementById('A').value = a;
+  document.getElementById('B').value = b;
+  calc();
+}
+
+async function calc() {
+  const A = document.getElementById('A').value.trim();
+  const B = document.getElementById('B').value.trim();
+  const y0 = document.getElementById('y0').value;
+  const y1 = document.getElementById('y1').value;
+  if (!A || !B) { alert('请输入两个概念词'); return; }
+  const btn = document.getElementById('calcBtn');
+  btn.disabled = true; btn.textContent = '计算中…';
+  try {
+    const r = await fetch(`/distance/api?A=${encodeURIComponent(A)}&B=${encodeURIComponent(B)}&window_begin=${y0}&window_years=${y1}`);
+    const d = await r.json();
+    if (!d.ok) { alert(d.error || '失败'); return; }
+    years = d.years; gData = d.G; windowYears = d.window || [];
+    document.getElementById('chartTitle').textContent = `${d.A} × ${d.B} 时间演化`;
+    // 二分归一 + 窗口 + 预警信息
+    const win = windowYears.length ? `${windowYears[0]}-${windowYears[windowYears.length-1]}` : '—';
+    const grp = d.group === 'cs' ? 'CS 域' : (d.group === 'non-cs' ? '非 CS 域' : '跨域/未知');
+    const alertStr = d.alert ? '⚠ 触发碰撞预警' : '未触发预警';
+    const hits = (d.cs_hits != null) ? ` · 策展命中 cs=${d.cs_hits}/非cs=${d.non_hits}` : '';
+    // A+B 透明展示：实际使用的学术短语（方便复核）
+    const mt = d.matched_terms || {};
+    const mtA = mt.A ? `A: ${mt.A.variant || '无'}${mt.A.dict_term ? ' ←词典' + mt.A.dict_term : ''}` : '';
+    const mtB = mt.B ? `B: ${mt.B.variant || '无'}${mt.B.dict_term ? ' ←词典' + mt.B.dict_term : ''}` : '';
+    document.getElementById('infoBar').innerHTML =
+      `观察窗口 <b>${win}</b> · 领域分组 <b>${grp}</b>${hits} · ` +
+      `g_last=<b>${d.g_last_raw}</b> · g_norm=<b>${d.g_norm}</b> · ` +
+      `<b style="color:${d.alert ? '#e65100' : '#2e7d32'}">${alertStr}</b><br>` +
+      `<span style="color:#556">学术短语：${mtA} ｜ ${mtB}</span><br>` +
+      `<span style="color:#8892a6">注：观察窗口=训练期(默认2015-2017)，策展=按cs/非cs共现命中数选组，阈值0.5=达到历史峰值一半</span>`;
+    render(d);
+  } catch (e) { alert('请求失败: ' + e); }
+  finally { btn.disabled = false; btn.textContent = '计算'; }
+}
+
+function setView(v) {
+  VIEW = v;
+  document.getElementById('vG').style.background = v === 'G' ? '#1565c0' : '#fff';
+  document.getElementById('vG').style.color = v === 'G' ? '#fff' : '#444';
+  document.getElementById('vR').style.background = v === 'R' ? '#1565c0' : '#fff';
+  document.getElementById('vR').style.color = v === 'R' ? '#fff' : '#444';
+  if (chart) render({A: lastA, B: lastB, threshold: lastTh});
+}
+let lastA = '', lastB = '', lastTh = 0.5;
+
+function render(d) {
+  lastA = d.A; lastB = d.B; lastTh = d.threshold;
+  // R = 1/G（距离，越大越远，越接近 1=挨着）；G=0（无路径）→ R=Inf
+  const data = VIEW === 'R'
+    ? gData.map(v => v == null || v <= 0 ? null : 1 / v)
+    : gData;
+  const finite = data.filter(v => v != null);
+  const maxV = Math.max(1, ...finite);
+  const th = VIEW === 'R' ? (d.threshold > 0 ? 1 / d.threshold : 2) : d.threshold;
+  document.getElementById('thSlider').max = Math.ceil(maxV * 100);
+  document.getElementById('thSlider').value = Math.round(Math.min(th, maxV) / maxV * 100);
+  document.getElementById('thVal').textContent = th.toFixed(2);
+  if (chart) chart.destroy();
+  const yLabel = VIEW === 'R' ? 'R = 1/G (概念距离，越小越近)' : 'G (有效电导，越大越近)';
+  chart = new Chart(document.getElementById('chart'), {
+    type: 'line',
+    data: {
+      labels: years.map(String),
+      datasets: [{
+        label: VIEW === 'R' ? `R(${d.A} × ${d.B})` : `G(${d.A} × ${d.B})`,
+        data: data,
+        borderColor: '#1565c0', backgroundColor: 'rgba(21,101,192,.12)',
+        borderWidth: 2, tension: .25, pointRadius: 3, fill: true,
+        spanGaps: false,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      scales: { y: { title: { display: true, text: yLabel } },
+                x: { title: { display: true, text: '年份' } } },
+      plugins: {
+        tooltip: { callbacks: { label: (c) => c.parsed.y != null
+          ? (VIEW === 'R' ? `R=${c.parsed.y.toFixed(3)}` : `G=${c.parsed.y.toFixed(3)}`) : '缺失' } }
+      }
+    }
+  });
+  addThresholdLine(th);
+  judge(th);
+}
+
+function addThresholdLine(th) {
+  chart.options.plugins.annotation = undefined; // 简化：阈值线用额外 dataset
+  const idx = chart.data.datasets.findIndex(ds => ds.label === '阈值');
+  if (idx >= 0) chart.data.datasets.splice(idx, 1);
+  chart.data.datasets.push({
+    label: '阈值', data: years.map(() => th),
+    borderColor: '#e65100', borderDash: [6, 4], borderWidth: 1.5,
+    pointRadius: 0, fill: false, spanGaps: true,
+  });
+  chart.update();
+}
+
+function updateThreshold(v) {
+  const th = v / 100;
+  document.getElementById('thVal').textContent = th.toFixed(2);
+  if (chart) { addThresholdLine(th); judge(th); }
+}
+
+function judge(th) {
+  const box = document.getElementById('badges');
+  const finite = gData.map((g, i) => [years[i], g]).filter(([, g]) => g != null);
+  if (finite.length < 3) { box.innerHTML = '<span class="badge info">数据不足，无法判读趋势</span>'; return; }
+  const last3 = finite.slice(-3);
+  const vals = last3.map(([, g]) => g);
+  const aboveTh = vals.filter(g => g >= th).length;
+  const rising = vals[2] > vals[0];
+  let html = '';
+  html += `<span class="badge ${aboveTh >= 2 ? 'warn' : 'ok'}">${aboveTh >= 2 ? '⚠ 近3年已突破阈值' : '未突破阈值'}</span>`;
+  html += `<span class="badge ${rising ? 'warn' : 'ok'}">${rising ? '↑ 近3年上升' : '↓ 未上升'}</span>`;
+  const last = vals[2];
+  html += `<span class="badge info">当前 G=${last.toFixed(3)}${aboveTh >= 2 && rising ? ' → 碰撞预警' : ''}</span>`;
+  box.innerHTML = html;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "project": "loomsci_lexicon",
+  "version": "0.1.0",
+  "description": "Diachronic lexicon of academic phrases from arXiv preprints",
+  "coverage": {
+    "start_year": 1986,
+    "end_year": 2025,
+    "founding_period": {"label": "1986-1991", "note": "arXiv founded 1991; 1986-1991 merged (387 papers) as Year 0", "first_year": 1986},
+    "empty_year": 1987
+  },
+  "source": "arXiv metadata snapshot (title + abstract only)",
+  "scan_parameters": {
+    "theta": 0.3,
+    "freq_min": 5,
+    "t_merge": 3,
+    "max_iter": 10,
+    "max_merge_len": 6,
+    "n_keywords_per_paper": 50,
+    "tokenizer": "pipeline2/tokenizer.py v1.0.0 (faithful copy in scripts/tokenizer.py)"
+  },
+  "stop_word_files": {
+    "stop1": {"file": "data/stop/stop_list_1tok_dynB_v1.txt", "sha256": "93e04110f40b418f191d83308b4148ac82d7d6636dfff584fb681950fa7916d3"},
+    "stop2": {"file": "data/stop/stop_list_2tok_simple1000_v2.txt", "sha256": "65a38a62efc34a69dea59ea26adb8d93c1afe28f518369d7bdb878ba338660f9"},
+    "stop3": {"file": "data/stop/stop_list_3tok_v2.txt", "sha256": "39997d063c0d808c0ad102058dbf9d3c10febe943ef6b46232096b9a185abd4c"}
+  },
+  "blacklist": {
+    "file": "data/stop/blacklist_manual.txt",
+    "sha256": "b666f069943c8fab4e9c31dc08e66933270a5700b97aa129599562d1e716cd65",
+    "note": "Post-hoc curated blacklist (2 entries). Purely STOP-based reproduction is possible with BLACKLIST_FILE disabled."
+  },
+  "verification": {
+    "note": "Published scanner reproduces production pipeline2 output byte-for-byte (verified on 2025: 189,611 terms, identical iter/merge numbers)."
+  },
+  "generated_at": "2026-08-09"
+}

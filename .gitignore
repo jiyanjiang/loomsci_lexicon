@@ -1,0 +1,145 @@
+# ============================================================
+# loomsci_lexicon .gitignore — 系统级分享边界
+#
+# 设计原则：
+#   1. 只定义「不分享」——不删除任何文件（保留本地完整工作区）
+#   2. 分享的 parquet 数据 = 前 5 年（1991-1995），其余年份一律排除
+#   3. internal/ 目录 = 内部工具与产物，绝不分享（生图、T3 竞赛、私有脚本等）
+#   4. 所有 API key / 个人配置一律排除
+# ============================================================
+
+# ---------- 敏感信息（绝不分享）----------
+config.yaml                       # 本地真实配置（含 API key 与个人路径）
+api-key.txt                       # 明文 key 文件（历史遗留）
+*.key
+*.pem
+.fernet_key
+
+# ---------- 内部工具 / 私有脚本 / 竞赛材料（绝不分享）----------
+internal/                         # 内部目录：生图、竞赛、私有脚本
+scripts/gen_headpic*.py           # 生图脚本（含 ARK key 常量，不分享）
+scripts/predict_*.py              # 报告生成系列（内部使用）
+scripts/review_*.py               # 评审脚本（内部使用）
+scripts/ai4r_*.py                 # AI4R 竞赛脚本（内部使用）
+scripts/write_ai4r_deepseek.py
+scripts/stage_review_v4pro.py
+scripts/fetch_real_papers.py      # 真实论文抓取（含 API 调用细节）
+scripts/judge_phrases.py          # LLM 判读（内部）
+
+# ---------- 环境 ----------
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# ---------- 数据（分享边界：只分享前 5 年 1991-1995）----------
+# parquet 事实层：全量在本地，分享仅 1991-1995（约 3.3 万篇）
+data/parquet/papers/year=1986/
+data/parquet/papers/year=1988/
+data/parquet/papers/year=1989/
+data/parquet/papers/year=1990/
+data/parquet/papers/year=1996/
+data/parquet/papers/year=1997/
+data/parquet/papers/year=1998/
+data/parquet/papers/year=1999/
+data/parquet/papers/year=2000/
+data/parquet/papers/year=2001/
+data/parquet/papers/year=2002/
+data/parquet/papers/year=2003/
+data/parquet/papers/year=2004/
+data/parquet/papers/year=2005/
+data/parquet/papers/year=2006/
+data/parquet/papers/year=2007/
+data/parquet/papers/year=2008/
+data/parquet/papers/year=2009/
+data/parquet/papers/year=2010/
+data/parquet/papers/year=2011/
+data/parquet/papers/year=2012/
+data/parquet/papers/year=2013/
+data/parquet/papers/year=2014/
+data/parquet/papers/year=2015/
+data/parquet/papers/year=2016/
+data/parquet/papers/year=2017/
+data/parquet/papers/year=2018/
+data/parquet/papers/year=2019/
+data/parquet/papers/year=2020/
+data/parquet/papers/year=2021/
+data/parquet/papers/year=2022/
+data/parquet/papers/year=2023/
+data/parquet/papers/year=2024/
+data/parquet/papers/year=2025/
+
+# 派生数据产物：raw/normalized 分享前 5 年（1991-1995），1996+ 排除
+data/annotation/raw/year=1996/
+data/annotation/raw/year=1997/
+data/annotation/raw/year=1998/
+data/annotation/raw/year=1999/
+data/annotation/raw/year=2000/
+data/annotation/raw/year=2001/
+data/annotation/raw/year=2002/
+data/annotation/raw/year=2003/
+data/annotation/raw/year=2004/
+data/annotation/raw/year=2005/
+data/annotation/raw/year=2006/
+data/annotation/raw/year=2007/
+data/annotation/raw/year=2008/
+data/annotation/raw/year=2009/
+data/annotation/raw/year=2010/
+data/annotation/raw/year=2011/
+data/annotation/raw/year=2012/
+data/annotation/raw/year=2013/
+data/annotation/raw/year=2014/
+data/annotation/raw/year=2015/
+data/annotation/raw/year=2016/
+data/annotation/raw/year=2017/
+data/annotation/raw/year=2018/
+data/annotation/raw/year=2019/
+data/annotation/raw/year=2020/
+data/annotation/raw/year=2021/
+data/annotation/raw/year=2022/
+data/annotation/raw/year=2023/
+data/annotation/raw/year=2024/
+data/annotation/raw/year=2025/
+data/annotation/normalized/year=1996/
+data/annotation/normalized/year=1997/
+data/annotation/normalized/year=1998/
+data/annotation/normalized/year=1999/
+data/annotation/normalized/year=2000/
+data/annotation/normalized/year=2001/
+data/annotation/normalized/year=2002/
+data/annotation/normalized/year=2003/
+data/annotation/normalized/year=2004/
+data/annotation/normalized/year=2005/
+data/annotation/normalized/year=2006/
+data/annotation/normalized/year=2007/
+data/annotation/normalized/year=2008/
+data/annotation/normalized/year=2009/
+data/annotation/normalized/year=2010/
+data/annotation/normalized/year=2011/
+data/annotation/normalized/year=2012/
+data/annotation/normalized/year=2013/
+data/annotation/normalized/year=2014/
+data/annotation/normalized/year=2015/
+data/annotation/normalized/year=2016/
+data/annotation/normalized/year=2017/
+data/annotation/normalized/year=2018/
+data/annotation/normalized/year=2019/
+data/annotation/normalized/year=2020/
+data/annotation/normalized/year=2021/
+data/annotation/normalized/year=2022/
+data/annotation/normalized/year=2023/
+data/annotation/normalized/year=2024/
+data/annotation/normalized/year=2025/
+
+# ---------- 数据库 / 可视化产物 / 日志 ----------
+data/fts.duckdb
+data/fts.duckdb.new.duckdb
+data/visual/
+data/distance_plots/
+*.duckdb
+*.duckdb.wal
+*.log
+
+# ---------- 其他 ----------
+*.html.tmp
