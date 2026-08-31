@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G 排序法则实验 · 2000 案例 · 2015→2026-2025</title>
+<style>
+body { font-family:-apple-system,"PingFang SC",sans-serif; max-width:1200px; margin:0 auto; padding:20px; background:#fafafa; }
+h1 { border-bottom:3px solid #1f77b4; padding-bottom:8px; }
+h2 { color:#1f77b4; margin-top:34px; }
+.panel { background:#fff; border:1px solid #e0e0e0; border-radius:10px; padding:16px; margin:16px 0; }
+.key { color:#c62828; font-weight:bold; } .find { color:#2e7d32; font-weight:bold; }
+img { max-width:100%; border:1px solid #eee; border-radius:8px; }
+table { border-collapse:collapse; margin:10px 0; width:100%; }
+th,td { border:1px solid #ddd; padding:6px 10px; font-size:13px; }
+th { background:#e3f2fd; }
+.warn { background:#fff8e1; border-left:4px solid #f9a825; padding:10px 14px; font-size:13px; }
+</style>
+</head>
+<body>
+<h1>G 排序法则实验 · 2000 案例</h1>
+<p><b>实验</b>：2015 时刻两跳采样 2000 未直连对 → 多种 G 排序法则降序 → 2016-2025 命中率（直连且增长：后段峰值≥5 且后段>前段）</p>
+
+<div class="panel"><h2>1. 核心图：多种排序法则 × 降序分桶命中率</h2>
+<img src="figs/rules_buckets.png">
+<div class="warn"><b>读法</b>：同一排序法则下，排名越靠前命中率越高 = 该法则有"排名判别力"。图中 <b>G(2015)、G 均值、G 峰值、尾部斜率</b> 四条线都从 7-9%（Top100）滑向 ~4%（2000 名）；而 <b>两跳强度 I 完全反向</b>（Top200 只有 1.5%，越靠后反而越高）——I 高是"旧热点"，不是"将直连"。</div>
+</div>
+
+<div class="panel"><h2>2. 细粒度单调性（每 100 名）</h2>
+<img src="figs/fine_gradient.png">
+<p><b>G(2015) 当年值</b>：Top100 命中 9% → 101-200 5% → 201-500 3%（基本符合你的预期 8/3/2/1），但 1000-2000 名不再下降（~4%）。<b>G 峰值</b>：Top100 命中 9.5%，梯度更陡。</p>
+<div class="warn"><b>诚实解读</b>：梯度只出现在"最前面"（Top100-200），后半段平坦。这符合直觉——G 高是"将要直连"的<b>充分条件</b>（前置信号），但 G 低不代表"不会直连"（低频对也可能因随机碰撞直连）。所以是"右侧翘起"，不是"全区间单调"。</div>
+</div>
+
+<div class="panel"><h2>3. 各特征判别力（AUC）</h2>
+<img src="figs/feat_auc.png">
+<table>
+<tr><th>特征</th><th>AUC</th><th>p</th><th>判定</th></tr>
+<tr><td><b>G 波动性 CV</b></td><td>0.612</td><td>0.0002</td><td class="find">唯一显著（p<0.001）</td></tr>
+<tr><td>G 峰值 / G 峰高</td><td>0.548</td><td>0.066</td><td>边缘（0.05<p<0.1）</td></tr>
+<tr><td>线性增长 R²</td><td>0.533</td><td>0.151</td><td>弱</td></tr>
+<tr><td>G(2015) / G 均值 / 尾部斜率</td><td>0.51-0.52</td><td>&gt;0.2</td><td>无</td></tr>
+<tr><td>两跳强度 I</td><td>0.399</td><td>&gt;0.9</td><td class="key">反向（I 高反而不命中）</td></tr>
+</table>
+</div>
+
+<div class="panel"><h2>4. G 波动 CV 分布（命中 vs 未命中）</h2>
+<img src="figs/cv_dist.png">
+<p class="find"><b>发现</b>：命中对的 CV 明显右移（med 0.75 vs 0.55），p=0.0002。<b>但注意</b>——此前我们已承认 CV 受 1/√N 泊松噪声混淆，这个显著性是"真实信号"还是"小 N 涨落"仍需随机基线对照（这是下一步实验）。</p>
+</div>
+
+<div class="panel"><h2>5. 命中案例 G 序列形状</h2>
+<img src="figs/hit_examples.png">
+<p>6 个命中对（2016-2025 直连且增长）的 G(2010-2015) 序列。可见多种形态：持续上升（ML×LHC 类）、峰后回稳、波动。形状本身不唯一——说明"形状"不是决定性信号，G 水平与 CV 才是。</p>
+</div>
+
+<div class="panel"><h2>结论</h2>
+<table>
+<tr><th>排序法则</th><th>Top100 命中</th><th>判别力</th><th>评价</th></tr>
+<tr><td><b>G 峰值</b></td><td>9.5%</td><td>AUC 0.548</td><td class="find">右尾强、全区间弱</td></tr>
+<tr><td><b>G(2015) 当年值</b></td><td>9.0%</td><td>AUC 0.519</td><td class="find">符合预期 8%</td></tr>
+<tr><td>尾部斜率</td><td>9.5%</td><td>AUC 0.513</td><td>右尾强</td></tr>
+<tr><td><b>G 波动 CV</b></td><td>6.0%</td><td>AUC 0.612</td><td class="find">唯一显著，但需排除 1/√N</td></tr>
+<tr><td>两跳强度 I</td><td>1.5%</td><td>AUC 0.399</td><td class="key">反向，不可用于排序</td></tr>
+</table>
+<div class="warn"><b>综合判断</b>：① G 水平（当年值/峰值/斜率）在<b>最右尾有真实判别力</b>（Top100 命中 9%，≈2 倍基线），符合你的预期曲线前段；② 全区间无单调（后半段平坦）——G 是"充分条件"非"必要条件"；③ <b>G 波动 CV 是唯一统计显著的特征</b>，但受 1/√N 混淆，需随机基线对照才能定论；④ 两跳强度 I 不可用于排序（反向）。</div>
+</div>
+
+</body></html>

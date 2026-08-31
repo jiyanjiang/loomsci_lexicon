@@ -1,0 +1,737 @@
+[
+ {
+  "field": "astro-physics",
+  "phrase": "magnetic field(s)",
+  "freq": 824
+ },
+ {
+  "field": "astro-physics",
+  "phrase": "star formation",
+  "freq": 749
+ },
+ {
+  "field": "astro-physics",
+  "phrase": "milky way",
+  "freq": 626
+ },
+ {
+  "field": "astro-physics",
+  "phrase": "light curve(s)",
+  "freq": 620
+ },
+ {
+  "field": "cond-mat-strongly-correlated",
+  "phrase": "superconductivity",
+  "freq": 425
+ },
+ {
+  "field": "cond-mat-strongly-correlated",
+  "phrase": "ground state(s)",
+  "freq": 366
+ },
+ {
+  "field": "cond-mat-strongly-correlated",
+  "phrase": "phase diagram(s)",
+  "freq": 319
+ },
+ {
+  "field": "cond-mat-strongly-correlated",
+  "phrase": "low temperature(s)",
+  "freq": 306
+ },
+ {
+  "field": "cond-mat-materials",
+  "phrase": "first principle(s)",
+  "freq": 254
+ },
+ {
+  "field": "cond-mat-materials",
+  "phrase": "room temperature",
+  "freq": 231
+ },
+ {
+  "field": "cond-mat-materials",
+  "phrase": "electronic structure(s)",
+  "freq": 224
+ },
+ {
+  "field": "cond-mat-materials",
+  "phrase": "graphene",
+  "freq": 215
+ },
+ {
+  "field": "cond-mat-mesoscopic",
+  "phrase": "two dimensional",
+  "freq": 249
+ },
+ {
+  "field": "cond-mat-mesoscopic",
+  "phrase": "quantum dot(s)",
+  "freq": 246
+ },
+ {
+  "field": "cond-mat-mesoscopic",
+  "phrase": "topological insulator(s)",
+  "freq": 208
+ },
+ {
+  "field": "cond-mat-mesoscopic",
+  "phrase": "magnetization",
+  "freq": 149
+ },
+ {
+  "field": "cond-mat-soft",
+  "phrase": "polymer",
+  "freq": 84
+ },
+ {
+  "field": "cond-mat-soft",
+  "phrase": "computer simulation(s)",
+  "freq": 64
+ },
+ {
+  "field": "cond-mat-soft",
+  "phrase": "molecular dynamics simulations",
+  "freq": 57
+ },
+ {
+  "field": "cond-mat-soft",
+  "phrase": "self assembly",
+  "freq": 52
+ },
+ {
+  "field": "cond-mat-disorder",
+  "phrase": "spin glass(es)",
+  "freq": 32
+ },
+ {
+  "field": "cond-mat-disorder",
+  "phrase": "power law(s)",
+  "freq": 29
+ },
+ {
+  "field": "cond-mat-disorder",
+  "phrase": "mean field",
+  "freq": 26
+ },
+ {
+  "field": "cond-mat-disorder",
+  "phrase": "phase transition(s)",
+  "freq": 25
+ },
+ {
+  "field": "cond-mat-statmech",
+  "phrase": "entropy",
+  "freq": 90
+ },
+ {
+  "field": "cond-mat-statmech",
+  "phrase": "non equilibrium",
+  "freq": 89
+ },
+ {
+  "field": "cond-mat-statmech",
+  "phrase": "critical point(s)",
+  "freq": 75
+ },
+ {
+  "field": "cond-mat-statmech",
+  "phrase": "hamiltonian",
+  "freq": 69
+ },
+ {
+  "field": "hep-ph",
+  "phrase": "lhc",
+  "freq": 1082
+ },
+ {
+  "field": "hep-ph",
+  "phrase": "standard model",
+  "freq": 745
+ },
+ {
+  "field": "hep-ph",
+  "phrase": "dark matter",
+  "freq": 516
+ },
+ {
+  "field": "hep-ph",
+  "phrase": "qcd",
+  "freq": 427
+ },
+ {
+  "field": "hep-th",
+  "phrase": "field theory(ies)",
+  "freq": 257
+ },
+ {
+  "field": "hep-th",
+  "phrase": "black hole(s)",
+  "freq": 226
+ },
+ {
+  "field": "hep-th",
+  "phrase": "gauge theory(ies)",
+  "freq": 205
+ },
+ {
+  "field": "hep-th",
+  "phrase": "string theory",
+  "freq": 174
+ },
+ {
+  "field": "hep-ex",
+  "phrase": "integrated luminosity(ies)",
+  "freq": 235
+ },
+ {
+  "field": "hep-ex",
+  "phrase": "pp collision(s)",
+  "freq": 153
+ },
+ {
+  "field": "hep-ex",
+  "phrase": "a search",
+  "freq": 146
+ },
+ {
+  "field": "hep-ex",
+  "phrase": "final state(s)",
+  "freq": 130
+ },
+ {
+  "field": "gr-qc",
+  "phrase": "spacetime",
+  "freq": 287
+ },
+ {
+  "field": "gr-qc",
+  "phrase": "scalar field(s)",
+  "freq": 276
+ },
+ {
+  "field": "gr-qc",
+  "phrase": "cosmological constant(s)",
+  "freq": 176
+ },
+ {
+  "field": "gr-qc",
+  "phrase": "dark energy",
+  "freq": 166
+ },
+ {
+  "field": "nucl-th",
+  "phrase": "nucleon",
+  "freq": 137
+ },
+ {
+  "field": "nucl-th",
+  "phrase": "heavy ion collision(s)",
+  "freq": 123
+ },
+ {
+  "field": "nucl-th",
+  "phrase": "cross section(s)",
+  "freq": 107
+ },
+ {
+  "field": "nucl-th",
+  "phrase": "nuclear matter",
+  "freq": 80
+ },
+ {
+  "field": "quant-ph",
+  "phrase": "entanglement",
+  "freq": 546
+ },
+ {
+  "field": "quant-ph",
+  "phrase": "quantum mechanics",
+  "freq": 355
+ },
+ {
+  "field": "quant-ph",
+  "phrase": "quantum systems",
+  "freq": 279
+ },
+ {
+  "field": "quant-ph",
+  "phrase": "qubit",
+  "freq": 277
+ },
+ {
+  "field": "quantum-info",
+  "phrase": "quantum state",
+  "freq": 233
+ },
+ {
+  "field": "quantum-info",
+  "phrase": "quantum information",
+  "freq": 181
+ },
+ {
+  "field": "physics-optics",
+  "phrase": "laser",
+  "freq": 123
+ },
+ {
+  "field": "physics-optics",
+  "phrase": "polarization",
+  "freq": 118
+ },
+ {
+  "field": "physics-optics",
+  "phrase": "scattering",
+  "freq": 116
+ },
+ {
+  "field": "physics-optics",
+  "phrase": "waveguide",
+  "freq": 99
+ },
+ {
+  "field": "physics-plasma",
+  "phrase": "plasma",
+  "freq": 215
+ },
+ {
+  "field": "physics-plasma",
+  "phrase": "laser pulse(s)",
+  "freq": 48
+ },
+ {
+  "field": "physics-plasma",
+  "phrase": "tokamak",
+  "freq": 43
+ },
+ {
+  "field": "physics-plasma",
+  "phrase": "electric field(s)",
+  "freq": 41
+ },
+ {
+  "field": "physics-atomic",
+  "phrase": "spectroscopy",
+  "freq": 40
+ },
+ {
+  "field": "physics-atomic",
+  "phrase": "ionization",
+  "freq": 39
+ },
+ {
+  "field": "physics-atomic",
+  "phrase": "resonance",
+  "freq": 39
+ },
+ {
+  "field": "physics-atomic",
+  "phrase": "rydberg atom(s)",
+  "freq": 36
+ },
+ {
+  "field": "physics-fluids",
+  "phrase": "reynolds number(s)",
+  "freq": 91
+ },
+ {
+  "field": "physics-fluids",
+  "phrase": "turbulence",
+  "freq": 79
+ },
+ {
+  "field": "physics-fluids",
+  "phrase": "turbulent flow(s)",
+  "freq": 58
+ },
+ {
+  "field": "physics-fluids",
+  "phrase": "three dimensional",
+  "freq": 58
+ },
+ {
+  "field": "physics-bio",
+  "phrase": "diffusion",
+  "freq": 21
+ },
+ {
+  "field": "physics-chem",
+  "phrase": "wave function(s)",
+  "freq": 33
+ },
+ {
+  "field": "physics-chem",
+  "phrase": "excited state(s)",
+  "freq": 27
+ },
+ {
+  "field": "physics-chem",
+  "phrase": "computational cost(s)",
+  "freq": 22
+ },
+ {
+  "field": "physics-chem",
+  "phrase": "quantum chemical",
+  "freq": 21
+ },
+ {
+  "field": "math-AP",
+  "phrase": "initial datum (data)",
+  "freq": 288
+ },
+ {
+  "field": "math-AP",
+  "phrase": "weak solution(s)",
+  "freq": 229
+ },
+ {
+  "field": "math-AP",
+  "phrase": "cauchy problem(s)",
+  "freq": 156
+ },
+ {
+  "field": "math-AP",
+  "phrase": "well posedness",
+  "freq": 130
+ },
+ {
+  "field": "math-CO",
+  "phrase": "connected graph",
+  "freq": 86
+ },
+ {
+  "field": "math-CO",
+  "phrase": "subgraph",
+  "freq": 84
+ },
+ {
+  "field": "math-CO",
+  "phrase": "generating function(s)",
+  "freq": 84
+ },
+ {
+  "field": "math-CO",
+  "phrase": "vertex set",
+  "freq": 74
+ },
+ {
+  "field": "math-OC",
+  "phrase": "optimization problem(s)",
+  "freq": 136
+ },
+ {
+  "field": "math-OC",
+  "phrase": "objective function(s)",
+  "freq": 106
+ },
+ {
+  "field": "math-OC",
+  "phrase": "optimal control(s)",
+  "freq": 78
+ },
+ {
+  "field": "math-OC",
+  "phrase": "optimal solution(s)",
+  "freq": 70
+ },
+ {
+  "field": "math-NA",
+  "phrase": "finite element method",
+  "freq": 112
+ },
+ {
+  "field": "math-NA",
+  "phrase": "finite element",
+  "freq": 88
+ },
+ {
+  "field": "math-NA",
+  "phrase": "high order",
+  "freq": 86
+ },
+ {
+  "field": "math-NA",
+  "phrase": "numerical solution",
+  "freq": 80
+ },
+ {
+  "field": "math-NT",
+  "phrase": "elliptic curve(s)",
+  "freq": 120
+ },
+ {
+  "field": "math-NT",
+  "phrase": "finite field",
+  "freq": 70
+ },
+ {
+  "field": "math-NT",
+  "phrase": "finite fields",
+  "freq": 56
+ },
+ {
+  "field": "math-NT",
+  "phrase": "prime number(s)",
+  "freq": 54
+ },
+ {
+  "field": "math-PR",
+  "phrase": "random variable(s)",
+  "freq": 171
+ },
+ {
+  "field": "math-PR",
+  "phrase": "random walk(s)",
+  "freq": 150
+ },
+ {
+  "field": "math-PR",
+  "phrase": "central limit theorem(s)",
+  "freq": 109
+ },
+ {
+  "field": "math-PR",
+  "phrase": "brownian motion(s)",
+  "freq": 106
+ },
+ {
+  "field": "math-DS",
+  "phrase": "dynamical system(s)",
+  "freq": 178
+ },
+ {
+  "field": "math-DS",
+  "phrase": "fixed point(s)",
+  "freq": 57
+ },
+ {
+  "field": "math-DS",
+  "phrase": "topological entropy",
+  "freq": 57
+ },
+ {
+  "field": "math-DS",
+  "phrase": "periodic orbit(s)",
+  "freq": 47
+ },
+ {
+  "field": "math-AG",
+  "phrase": "moduli space(s)",
+  "freq": 165
+ },
+ {
+  "field": "math-AG",
+  "phrase": "genus",
+  "freq": 90
+ },
+ {
+  "field": "math-AG",
+  "phrase": "cohomology",
+  "freq": 62
+ },
+ {
+  "field": "math-AG",
+  "phrase": "vector bundle(s)",
+  "freq": 59
+ },
+ {
+  "field": "math-DG",
+  "phrase": "manifold",
+  "freq": 154
+ },
+ {
+  "field": "math-DG",
+  "phrase": "riemannian manifold(s)",
+  "freq": 85
+ },
+ {
+  "field": "math-DG",
+  "phrase": "riemannian metric(s)",
+  "freq": 73
+ },
+ {
+  "field": "math-DG",
+  "phrase": "euclidean space(s)",
+  "freq": 70
+ },
+ {
+  "field": "stat-ML",
+  "phrase": "high dimensional",
+  "freq": 139
+ },
+ {
+  "field": "stat-ML",
+  "phrase": "data set(s)",
+  "freq": 119
+ },
+ {
+  "field": "cs-AI",
+  "phrase": "machine learning",
+  "freq": 160
+ },
+ {
+  "field": "cs-AI",
+  "phrase": "neural network(s)",
+  "freq": 98
+ },
+ {
+  "field": "cs-CV",
+  "phrase": "computer vision",
+  "freq": 155
+ },
+ {
+  "field": "cs-CV",
+  "phrase": "convolutional neural network(s)",
+  "freq": 119
+ },
+ {
+  "field": "cs-CL",
+  "phrase": "corpus",
+  "freq": 65
+ },
+ {
+  "field": "cs-CL",
+  "phrase": "word embedding(s)",
+  "freq": 49
+ },
+ {
+  "field": "cs-RO",
+  "phrase": "mobile robot(s)",
+  "freq": 26
+ },
+ {
+  "field": "cs-CR",
+  "phrase": "mobile device(s)",
+  "freq": 27
+ },
+ {
+  "field": "cs-CR",
+  "phrase": "privacy preserving",
+  "freq": 26
+ },
+ {
+  "field": "cs-CR",
+  "phrase": "cryptography",
+  "freq": 23
+ },
+ {
+  "field": "cs-SY",
+  "phrase": "discrete time",
+  "freq": 34
+ },
+ {
+  "field": "cs-SY",
+  "phrase": "continuous time",
+  "freq": 28
+ },
+ {
+  "field": "cs-SY",
+  "phrase": "multi agent systems",
+  "freq": 26
+ },
+ {
+  "field": "cs-SY",
+  "phrase": "control systems",
+  "freq": 26
+ },
+ {
+  "field": "cs-SE",
+  "phrase": "software development",
+  "freq": 43
+ },
+ {
+  "field": "cs-SE",
+  "phrase": "software engineering",
+  "freq": 39
+ },
+ {
+  "field": "cs-SE",
+  "phrase": "business process(es)",
+  "freq": 25
+ },
+ {
+  "field": "cs-DC",
+  "phrase": "wireless networks",
+  "freq": 83
+ },
+ {
+  "field": "cs-DC",
+  "phrase": "energy consumption",
+  "freq": 76
+ },
+ {
+  "field": "cs-DC",
+  "phrase": "cloud computing",
+  "freq": 61
+ },
+ {
+  "field": "cs-DC",
+  "phrase": "cellular network(s)",
+  "freq": 54
+ },
+ {
+  "field": "cs-DB",
+  "phrase": "big data",
+  "freq": 27
+ },
+ {
+  "field": "q-bio",
+  "phrase": "mathematical model(s)",
+  "freq": 67
+ },
+ {
+  "field": "q-bio",
+  "phrase": "amino acid(s)",
+  "freq": 40
+ },
+ {
+  "field": "q-bio",
+  "phrase": "gene expression",
+  "freq": 40
+ },
+ {
+  "field": "q-bio",
+  "phrase": "connectivity",
+  "freq": 36
+ },
+ {
+  "field": "q-fin",
+  "phrase": "financial market(s)",
+  "freq": 58
+ },
+ {
+  "field": "q-fin",
+  "phrase": "arbitrage",
+  "freq": 35
+ },
+ {
+  "field": "q-fin",
+  "phrase": "hedging",
+  "freq": 29
+ },
+ {
+  "field": "q-fin",
+  "phrase": "stock market(s)",
+  "freq": 26
+ },
+ {
+  "field": "nlin",
+  "phrase": "chaos",
+  "freq": 50
+ },
+ {
+  "field": "nlin",
+  "phrase": "synchronization",
+  "freq": 48
+ },
+ {
+  "field": "nlin",
+  "phrase": "soliton",
+  "freq": 39
+ },
+ {
+  "field": "nlin",
+  "phrase": "coupling strength(s)",
+  "freq": 38
+ }
+]

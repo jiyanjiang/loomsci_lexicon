@@ -526,3 +526,27 @@ v20 (08-15) 干净合并版：v17 主库 + v18 G 预测，共用基建，无过�
 - **网站**：https://LoomSci.com
 - **Email**: qiji.list@gmail.com
 - **微信**: ianwest
+
+---
+
+## License
+
+**Code — MIT.** See [`LICENSE`](LICENSE) (Copyright (c) 2026 JI, Yanjiang).
+
+**Data — CC BY 4.0.** The dictionaries, annotations and sample parquet shipped under
+`data/` are licensed under Creative Commons Attribution 4.0 International —
+see [`data/LICENSE.txt`](data/LICENSE.txt) and `data/by_year/LICENSE.txt`.
+They are derived from the arXiv Dataset
+(<https://www.kaggle.com/datasets/Cornell-University/arxiv>); please also respect
+arXiv's terms of use for the source data.
+
+## 许可证
+
+**代码 — MIT**：见 [`LICENSE`](LICENSE)（Copyright (c) 2026 JI, Yanjiang）。
+
+**数据 — CC BY 4.0**：随包分发的 `data/` 下词典、标注与示例 parquet
+采用 Creative Commons Attribution 4.0 International 许可，
+见 [`data/LICENSE.txt`](data/LICENSE.txt) 与 `data/by_year/LICENSE.txt`。
+这些数据派生自 arXiv Dataset
+（<https://www.kaggle.com/datasets/Cornell-University/arxiv>），
+使用时请同时遵守 arXiv 对源数据的使用条款。
