@@ -10,9 +10,12 @@
   [T6] 端点健壮性：空查询 / 非法年份 / 超长查询 不崩溃
 
 用法：
-  python scripts/test_rbo.py                 # 全量（含真实 LLM 调用）
-  python scripts/test_rbo.py --quick         # 只测 T1/T3/T4/T5（跳过真实 LLM）
+  python scripts/test_rbo.py                 # 全量（需 DeepSeek key，含真实 LLM 调用）
+  python scripts/test_rbo.py --quick         # 跳过真实 LLM 调用（有 key 时仍测缓存）
   python scripts/test_rbo.py --query "..."   # 自定义查询跑全链路
+
+无 key 时：T2/T3（LLM 编排与缓存）自动跳过并给出提示，T1/T4/T5/T6 照常执行。
+项目本身不依赖 LLM —— 直接输入英文短语（逗号分隔）即可检索，详见 README §7。
 """
 from __future__ import annotations
 
@@ -26,6 +29,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import config
 import orchestrate_query as oq
 import search_rbo
+from key_loader import has_api_key
 
 PASS, FAIL = "PASS", "FAIL"
 _results: list[tuple[str, str, str]] = []
@@ -135,12 +139,31 @@ def main():
         print(f"  top: {out['results'][0]['arxiv_id'] if out['results'] else '-'}")
         return
 
-    _t1_skip()
-    _t2_llm() if not args.quick else print("  [SKIP] T2 llm 模式（--quick）")
-    _t3_cache()
-    phrases = _t2_llm() if not args.quick else _t1_skip()
-    _t4_correct(phrases)
-    _t5_speed(phrases)
+    # T1 无需 key：直接输入英文短语（逗号分隔）即可检索。
+    phrases = _t1_skip()
+
+    # T2/T3 需要 DeepSeek key（LLM 把自然语言编排成短语）。
+    # 无 key 时项目本身完全可用——直接用英文短语检索即可（见 README §7），
+    # 因此这里跳过而非中断，否则 T4/T5/T6 永远跑不到。
+    if not has_api_key():
+        print("  [SKIP] T2/T3 LLM 编排与缓存（未配置 DeepSeek key）")
+        print("         —— 不影响使用：无 key 时直接输入英文短语（逗号分隔）即可检索，")
+        print("            例如 \"black hole, neutron star\"（详见 README §7）。")
+        print("         —— 配置 key（env DEEPSEEK_API_KEY 或 config.yaml）后可跑全量测试。")
+    elif args.quick:
+        print("  [SKIP] T2 llm 模式（--quick）")
+        _t3_cache()
+    else:
+        _t2_llm()
+        _t3_cache()
+
+    # T4/T5 测的是检索本身，必须用「样例年份真实存在」的概念。
+    # 不可沿用 T1 的 transmon qubit / surface code —— 那是 2000 年代后的概念，
+    # 在随包的 1991-1995 样例上零命中，会让 T4 必然 FAIL，
+    # 给新用户造成"项目坏了"的错觉（实测：black hole/neutron star 命中 5 篇、50 组合）。
+    sample_phrases = ["black hole", "neutron star"]
+    _t4_correct(sample_phrases)
+    _t5_speed(sample_phrases)
     _t6_robust()
 
     print("=" * 60)

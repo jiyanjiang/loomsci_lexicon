@@ -147,9 +147,13 @@ python scripts/scan_year.py --year 1992
 python scripts/annotate.py --years 1992 --normalize
 
 # ③ visualize (three modes) — requires annotation output
-python scripts/visualize.py --mode static --year 1992
-python scripts/visualize.py --mode speed --target 1992 --base 1991
-python scripts/visualize.py --mode accel --target 1992 --prev 1991 --base 1990
+#    --min-edge 5: the shipped sample years hold only ~3K papers each, so the default
+#    threshold (20) filters out nearly every edge and you'd get a 3-node graph.
+#    On the full corpus, 20 (or higher) is the sane default.
+python scripts/visualize.py --mode static --year 1992 --min-edge 5
+python scripts/visualize.py --mode speed --target 1992 --base 1991 --min-edge 5
+# accel needs three consecutive years; 1990 is outside the shipped sample → use 1993
+python scripts/visualize.py --mode accel --target 1993 --prev 1992 --base 1991 --min-edge 5
 
 # ④ G/R for a concept pair (single-pair, ~2s for 35 years)
 python -c "
@@ -173,9 +177,10 @@ python web/explore.py --port 5010   # http://localhost:5010/explore  (gallery at
 >
 > ```bash
 > for y in 1991 1992 1993 1994 1995; do
->   python scripts/visualize.py --mode static --year $y
->   python scripts/visualize.py --mode speed  --target $y --base $((y-1))
->   python scripts/visualize.py --mode accel  --target $y --prev $((y-1)) --base $((y-2))
+>   python scripts/visualize.py --mode static --year $y --min-edge 5
+>   # speed needs a base year → from 1992;  accel needs 3 consecutive years → from 1993
+>   [ $y -ge 1992 ] && python scripts/visualize.py --mode speed --target $y --base $((y-1)) --min-edge 5
+>   [ $y -ge 1993 ] && python scripts/visualize.py --mode accel --target $y --prev $((y-1)) --base $((y-2)) --min-edge 5
 > done
 > python scripts/build_visual_registry.py     # writes data/visual/registry.csv
 > ```
@@ -380,9 +385,12 @@ python scripts/scan_year.py --year 1992
 python scripts/annotate.py --years 1992 --normalize
 
 # ③ 可视化（三模式）——需先有标注产物
-python scripts/visualize.py --mode static --year 1992
-python scripts/visualize.py --mode speed --target 1992 --base 1991
-python scripts/visualize.py --mode accel --target 1992 --prev 1991 --base 1990
+# --min-edge 5：随包样例每年仅约 3 千篇，默认阈值 20 会滤掉几乎所有边（图只剩 3 个节点）；
+# 全量语料上用 20 或更高才合理。
+python scripts/visualize.py --mode static --year 1992 --min-edge 5
+python scripts/visualize.py --mode speed --target 1992 --base 1991 --min-edge 5
+# accel 需连续三年；1990 不在随包样例范围内，故用 1993
+python scripts/visualize.py --mode accel --target 1993 --prev 1992 --base 1991 --min-edge 5
 
 # ④ 概念对 G/R（单对，35 年约 2 秒）
 python -c "
@@ -405,9 +413,10 @@ python web/explore.py --port 5010   # http://localhost:5010/explore  （画廊�
 >
 > ```bash
 > for y in 1991 1992 1993 1994 1995; do
->   python scripts/visualize.py --mode static --year $y
->   python scripts/visualize.py --mode speed  --target $y --base $((y-1))
->   python scripts/visualize.py --mode accel  --target $y --prev $((y-1)) --base $((y-2))
+>   python scripts/visualize.py --mode static --year $y --min-edge 5
+>   # speed 需要基准年 → 从 1992 起；accel 需要连续三年 → 从 1993 起
+>   [ $y -ge 1992 ] && python scripts/visualize.py --mode speed --target $y --base $((y-1)) --min-edge 5
+>   [ $y -ge 1993 ] && python scripts/visualize.py --mode accel --target $y --prev $((y-1)) --base $((y-2)) --min-edge 5
 > done
 > python scripts/build_visual_registry.py     # 生成 data/visual/registry.csv
 > ```
